@@ -1,5 +1,6 @@
-# SparkBigData
-Ssdpark MLLib
+# SparkLearning is project for learning Spark,including some example code and data
+
+1.spark MLLib
 How to use the kmeans or LinearRegression in mllib?
 code in:\src\mllib
 
@@ -7,7 +8,7 @@ code in:\src\mllib
 the code can run in local or Spark cluster.
 
 Data：
-1. kmeans data:
+(1). kmeans data:
 data in:src\mllib\kmeansData
 or :
     
@@ -37,7 +38,7 @@ or :
 
 from:https://github.com/apache/spark/tree/master/data
 
-2.SparkSQL data :
+(2).SparkSQL data :
     
     hadoop@Master:~/cloud/spark-1.5.2/examples/src/main/resources$ ll
     total 40
@@ -53,6 +54,6 @@ from:https://github.com/apache/spark/tree/master/data
 
 from:https://github.com/apache/spark/examples
 
-3.SparkSQL data from databrikcs :wiki-parquet:
+(3).SparkSQL data from databrikcs :wiki-parquet:
 
 https://github.com/databricks/spark-training/tree/master/data
