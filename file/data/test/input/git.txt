@@ -1,0 +1,14 @@
+ git remote add origin git@github.com:xubo245/SparkLearning.git
+git add src
+git commit -m "first commit"
+git push origin master
+git status
+
+
+history:
+ git remote add origin git@github.com:xubo245/SparkLearning.git
+   45  git add src
+   46  git commit -m "first commit"
+   50  git commit -m "first commit"
+   51  git push origin master
+   52  git status

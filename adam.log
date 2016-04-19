@@ -1,0 +1,987 @@
+2016-04-19 14:08:45 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:08:45 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:08:46 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:08:46 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:08:46 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:08:46 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:08:46 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:08:46 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:55975]
+2016-04-19 14:08:46 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 55975.
+2016-04-19 14:08:47 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:08:47 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:08:47 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-6a2d800e-941f-4e82-9f55-9f27d633887b
+2016-04-19 14:08:47 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:08:47 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-487e22b8-c224-458c-9692-fd4a4fe3ee2f\httpd-bf5e1f7d-b282-4ed4-969e-714fa39062ea
+2016-04-19 14:08:47 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:08:47 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:08:47 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:55976
+2016-04-19 14:08:47 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 55976.
+2016-04-19 14:08:47 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:08:47 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:08:47 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:08:47 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:08:47 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:08:47 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:08:47 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:08:47 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 55983.
+2016-04-19 14:08:47 INFO  NettyBlockTransferService:59 - Server created on 55983
+2016-04-19 14:08:47 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:08:47 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:55983 with 730.6 MB RAM, BlockManagerId(driver, localhost, 55983)
+2016-04-19 14:08:47 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:08:49 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:08:50 INFO  ParquetRelation:59 - Listing file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people.txt on driver
+2016-04-19 14:08:50 INFO  SparkContext:59 - Starting job: parquet at DFRead.scala:15
+2016-04-19 14:08:50 INFO  DAGScheduler:59 - Got job 0 (parquet at DFRead.scala:15) with 1 output partitions
+2016-04-19 14:08:50 INFO  DAGScheduler:59 - Final stage: ResultStage 0(parquet at DFRead.scala:15)
+2016-04-19 14:08:50 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:08:50 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:08:50 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at DFRead.scala:15), which has no missing parents
+2016-04-19 14:08:50 INFO  MemoryStore:59 - ensureFreeSpace(63000) called with curMem=0, maxMem=766075207
+2016-04-19 14:08:50 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 61.5 KB, free 730.5 MB)
+2016-04-19 14:08:50 INFO  MemoryStore:59 - ensureFreeSpace(21075) called with curMem=63000, maxMem=766075207
+2016-04-19 14:08:50 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 730.5 MB)
+2016-04-19 14:08:50 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:55983 (size: 20.6 KB, free: 730.6 MB)
+2016-04-19 14:08:50 INFO  SparkContext:59 - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:08:50 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at DFRead.scala:15)
+2016-04-19 14:08:50 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:08:50 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2217 bytes)
+2016-04-19 14:08:50 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:08:50 INFO  ParquetFileReader:151 - Initiating action with parallelism: 5
+2016-04-19 14:08:51 ERROR Executor:96 - Exception in task 0.0 in stage 0.0 (TID 0)
+java.io.IOException: Could not read footer: java.lang.RuntimeException: file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people.txt is not a Parquet file. expected magic number at tail [80, 65, 82, 49] but found [32, 49, 57, 10]
+	at org.apache.parquet.hadoop.ParquetFileReader.readAllFootersInParallel(ParquetFileReader.java:247)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetRelation$$anonfun$28.apply(ParquetRelation.scala:754)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetRelation$$anonfun$28.apply(ParquetRelation.scala:743)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitions$1$$anonfun$apply$17.apply(RDD.scala:710)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitions$1$$anonfun$apply$17.apply(RDD.scala:710)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:300)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:264)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people.txt is not a Parquet file. expected magic number at tail [80, 65, 82, 49] but found [32, 49, 57, 10]
+	at org.apache.parquet.hadoop.ParquetFileReader.readFooter(ParquetFileReader.java:422)
+	at org.apache.parquet.hadoop.ParquetFileReader$2.call(ParquetFileReader.java:237)
+	at org.apache.parquet.hadoop.ParquetFileReader$2.call(ParquetFileReader.java:233)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	... 3 more
+2016-04-19 14:08:51 WARN  TaskSetManager:71 - Lost task 0.0 in stage 0.0 (TID 0, localhost): java.io.IOException: Could not read footer: java.lang.RuntimeException: file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people.txt is not a Parquet file. expected magic number at tail [80, 65, 82, 49] but found [32, 49, 57, 10]
+	at org.apache.parquet.hadoop.ParquetFileReader.readAllFootersInParallel(ParquetFileReader.java:247)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetRelation$$anonfun$28.apply(ParquetRelation.scala:754)
+	at org.apache.spark.sql.execution.datasources.parquet.ParquetRelation$$anonfun$28.apply(ParquetRelation.scala:743)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitions$1$$anonfun$apply$17.apply(RDD.scala:710)
+	at org.apache.spark.rdd.RDD$$anonfun$mapPartitions$1$$anonfun$apply$17.apply(RDD.scala:710)
+	at org.apache.spark.rdd.MapPartitionsRDD.compute(MapPartitionsRDD.scala:38)
+	at org.apache.spark.rdd.RDD.computeOrReadCheckpoint(RDD.scala:300)
+	at org.apache.spark.rdd.RDD.iterator(RDD.scala:264)
+	at org.apache.spark.scheduler.ResultTask.runTask(ResultTask.scala:66)
+	at org.apache.spark.scheduler.Task.run(Task.scala:88)
+	at org.apache.spark.executor.Executor$TaskRunner.run(Executor.scala:214)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.lang.RuntimeException: file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people.txt is not a Parquet file. expected magic number at tail [80, 65, 82, 49] but found [32, 49, 57, 10]
+	at org.apache.parquet.hadoop.ParquetFileReader.readFooter(ParquetFileReader.java:422)
+	at org.apache.parquet.hadoop.ParquetFileReader$2.call(ParquetFileReader.java:237)
+	at org.apache.parquet.hadoop.ParquetFileReader$2.call(ParquetFileReader.java:233)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	... 3 more
+
+2016-04-19 14:08:51 ERROR TaskSetManager:75 - Task 0 in stage 0.0 failed 1 times; aborting job
+2016-04-19 14:08:51 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:08:51 INFO  TaskSchedulerImpl:59 - Cancelling stage 0
+2016-04-19 14:08:51 INFO  DAGScheduler:59 - ResultStage 0 (parquet at DFRead.scala:15) failed in 0.245 s
+2016-04-19 14:08:51 INFO  DAGScheduler:59 - Job 0 failed: parquet at DFRead.scala:15, took 0.518990 s
+2016-04-19 14:08:51 INFO  SparkContext:59 - Invoking stop() from shutdown hook
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:08:51 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:08:51 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:08:51 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:08:51 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:08:51 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:08:51 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:08:51 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:08:51 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:08:51 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:08:51 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:08:51 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-487e22b8-c224-458c-9692-fd4a4fe3ee2f
+2016-04-19 14:08:51 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2016-04-19 14:08:51 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Remote daemon shut down; proceeding with flushing remote transports.
+2016-04-19 14:09:24 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:09:24 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:09:25 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:09:25 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:09:25 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:09:25 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:09:25 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:09:26 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:56001]
+2016-04-19 14:09:26 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 56001.
+2016-04-19 14:09:26 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:09:26 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:09:26 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-c534994e-ae58-4605-8502-92baa2948b84
+2016-04-19 14:09:26 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:09:26 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-f14fa9e5-9b24-4c00-894f-ea2d7fdeafe1\httpd-508e132f-cd51-4a90-852b-85d31e7fdca5
+2016-04-19 14:09:26 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:09:26 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:09:26 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:56002
+2016-04-19 14:09:26 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 56002.
+2016-04-19 14:09:26 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:09:26 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:09:26 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:09:26 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:09:26 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:09:26 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:09:26 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:09:27 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56009.
+2016-04-19 14:09:27 INFO  NettyBlockTransferService:59 - Server created on 56009
+2016-04-19 14:09:27 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:09:27 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:56009 with 730.6 MB RAM, BlockManagerId(driver, localhost, 56009)
+2016-04-19 14:09:27 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:09:27 INFO  MemoryStore:59 - ensureFreeSpace(157304) called with curMem=0, maxMem=766075207
+2016-04-19 14:09:27 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 153.6 KB, free 730.4 MB)
+2016-04-19 14:09:27 INFO  MemoryStore:59 - ensureFreeSpace(14276) called with curMem=157304, maxMem=766075207
+2016-04-19 14:09:27 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 730.4 MB)
+2016-04-19 14:09:27 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:56009 (size: 13.9 KB, free: 730.6 MB)
+2016-04-19 14:09:28 INFO  SparkContext:59 - Created broadcast 0 from textFile at SparkSQLExamplesFromTextSchema.scala:24
+2016-04-19 14:09:30 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:09:31 INFO  FileInputFormat:247 - Total input paths to process : 1
+2016-04-19 14:09:31 INFO  SparkContext:59 - Starting job: collect at SparkSQLExamplesFromTextSchema.scala:54
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Got job 0 (collect at SparkSQLExamplesFromTextSchema.scala:54) with 1 output partitions
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Final stage: ResultStage 0(collect at SparkSQLExamplesFromTextSchema.scala:54)
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[7] at map at SparkSQLExamplesFromTextSchema.scala:54), which has no missing parents
+2016-04-19 14:09:31 INFO  MemoryStore:59 - ensureFreeSpace(7496) called with curMem=171580, maxMem=766075207
+2016-04-19 14:09:31 INFO  MemoryStore:59 - Block broadcast_1 stored as values in memory (estimated size 7.3 KB, free 730.4 MB)
+2016-04-19 14:09:31 INFO  MemoryStore:59 - ensureFreeSpace(3782) called with curMem=179076, maxMem=766075207
+2016-04-19 14:09:31 INFO  MemoryStore:59 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.7 KB, free 730.4 MB)
+2016-04-19 14:09:31 INFO  BlockManagerInfo:59 - Added broadcast_1_piece0 in memory on localhost:56009 (size: 3.7 KB, free: 730.6 MB)
+2016-04-19 14:09:31 INFO  SparkContext:59 - Created broadcast 1 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[7] at map at SparkSQLExamplesFromTextSchema.scala:54)
+2016-04-19 14:09:31 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:09:31 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:09:31 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:09:31 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:09:31 INFO  deprecation:1049 - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2016-04-19 14:09:31 INFO  deprecation:1049 - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2016-04-19 14:09:31 INFO  deprecation:1049 - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2016-04-19 14:09:31 INFO  deprecation:1049 - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2016-04-19 14:09:31 INFO  deprecation:1049 - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2016-04-19 14:09:31 INFO  GenerateUnsafeProjection:59 - Code generated in 310.189668 ms
+2016-04-19 14:09:31 INFO  Executor:59 - Finished task 0.0 in stage 0.0 (TID 0). 2233 bytes result sent to driver
+2016-04-19 14:09:31 INFO  TaskSetManager:59 - Finished task 0.0 in stage 0.0 (TID 0) in 515 ms on localhost (1/1)
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - ResultStage 0 (collect at SparkSQLExamplesFromTextSchema.scala:54) finished in 0.536 s
+2016-04-19 14:09:31 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Job 0 finished: collect at SparkSQLExamplesFromTextSchema.scala:54, took 0.613788 s
+2016-04-19 14:09:31 INFO  SparkContext:59 - Starting job: show at SparkSQLExamplesFromTextSchema.scala:57
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Got job 1 (show at SparkSQLExamplesFromTextSchema.scala:57) with 1 output partitions
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Final stage: ResultStage 1(show at SparkSQLExamplesFromTextSchema.scala:57)
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Submitting ResultStage 1 (MapPartitionsRDD[8] at show at SparkSQLExamplesFromTextSchema.scala:57), which has no missing parents
+2016-04-19 14:09:31 INFO  MemoryStore:59 - ensureFreeSpace(5144) called with curMem=182858, maxMem=766075207
+2016-04-19 14:09:31 INFO  MemoryStore:59 - Block broadcast_2 stored as values in memory (estimated size 5.0 KB, free 730.4 MB)
+2016-04-19 14:09:31 INFO  MemoryStore:59 - ensureFreeSpace(2657) called with curMem=188002, maxMem=766075207
+2016-04-19 14:09:31 INFO  MemoryStore:59 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.6 KB, free 730.4 MB)
+2016-04-19 14:09:31 INFO  BlockManagerInfo:59 - Added broadcast_2_piece0 in memory on localhost:56009 (size: 2.6 KB, free: 730.6 MB)
+2016-04-19 14:09:31 INFO  SparkContext:59 - Created broadcast 2 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[8] at show at SparkSQLExamplesFromTextSchema.scala:57)
+2016-04-19 14:09:31 INFO  TaskSchedulerImpl:59 - Adding task set 1.0 with 1 tasks
+2016-04-19 14:09:31 INFO  TaskSetManager:59 - Starting task 0.0 in stage 1.0 (TID 1, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:09:31 INFO  Executor:59 - Running task 0.0 in stage 1.0 (TID 1)
+2016-04-19 14:09:31 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:09:31 INFO  Executor:59 - Finished task 0.0 in stage 1.0 (TID 1). 2460 bytes result sent to driver
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - ResultStage 1 (show at SparkSQLExamplesFromTextSchema.scala:57) finished in 0.022 s
+2016-04-19 14:09:31 INFO  TaskSetManager:59 - Finished task 0.0 in stage 1.0 (TID 1) in 22 ms on localhost (1/1)
+2016-04-19 14:09:31 INFO  TaskSchedulerImpl:59 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Job 1 finished: show at SparkSQLExamplesFromTextSchema.scala:57, took 0.046481 s
+2016-04-19 14:09:31 INFO  SparkContext:59 - Invoking stop() from shutdown hook
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:09:31 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:09:31 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:09:31 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:09:31 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:09:31 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:09:31 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:09:31 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:09:31 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:09:31 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:09:31 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:09:31 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-f14fa9e5-9b24-4c00-894f-ea2d7fdeafe1
+2016-04-19 14:10:00 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:10:00 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:10:01 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:10:01 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:10:01 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:10:01 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:10:01 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:10:02 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:56027]
+2016-04-19 14:10:02 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 56027.
+2016-04-19 14:10:02 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:10:02 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:10:02 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-153869ef-947f-46b2-abb2-a0b6908a22dc
+2016-04-19 14:10:02 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:10:02 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-a48fcd3d-d9e1-46f9-85ac-fe034d05f8b7\httpd-46829bf9-43cb-410c-a097-f1bec763f6f6
+2016-04-19 14:10:02 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:10:02 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:10:02 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:56028
+2016-04-19 14:10:02 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 56028.
+2016-04-19 14:10:02 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:10:02 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:10:02 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:10:02 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:10:02 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:10:02 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:10:02 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:10:03 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56035.
+2016-04-19 14:10:03 INFO  NettyBlockTransferService:59 - Server created on 56035
+2016-04-19 14:10:03 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:10:03 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:56035 with 730.6 MB RAM, BlockManagerId(driver, localhost, 56035)
+2016-04-19 14:10:03 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:10:03 INFO  MemoryStore:59 - ensureFreeSpace(157304) called with curMem=0, maxMem=766075207
+2016-04-19 14:10:03 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 153.6 KB, free 730.4 MB)
+2016-04-19 14:10:03 INFO  MemoryStore:59 - ensureFreeSpace(14276) called with curMem=157304, maxMem=766075207
+2016-04-19 14:10:03 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 730.4 MB)
+2016-04-19 14:10:03 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:56035 (size: 13.9 KB, free: 730.6 MB)
+2016-04-19 14:10:03 INFO  SparkContext:59 - Created broadcast 0 from textFile at SparkSQLExamplesFromTextReflection.scala:29
+2016-04-19 14:10:06 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:10:06 INFO  FileInputFormat:247 - Total input paths to process : 1
+2016-04-19 14:10:06 INFO  SparkContext:59 - Starting job: show at SparkSQLExamplesFromTextReflection.scala:32
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Got job 0 (show at SparkSQLExamplesFromTextReflection.scala:32) with 1 output partitions
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Final stage: ResultStage 0(show at SparkSQLExamplesFromTextReflection.scala:32)
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[5] at show at SparkSQLExamplesFromTextReflection.scala:32), which has no missing parents
+2016-04-19 14:10:06 INFO  MemoryStore:59 - ensureFreeSpace(4056) called with curMem=171580, maxMem=766075207
+2016-04-19 14:10:06 INFO  MemoryStore:59 - Block broadcast_1 stored as values in memory (estimated size 4.0 KB, free 730.4 MB)
+2016-04-19 14:10:06 INFO  MemoryStore:59 - ensureFreeSpace(2237) called with curMem=175636, maxMem=766075207
+2016-04-19 14:10:06 INFO  MemoryStore:59 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.2 KB, free 730.4 MB)
+2016-04-19 14:10:06 INFO  BlockManagerInfo:59 - Added broadcast_1_piece0 in memory on localhost:56035 (size: 2.2 KB, free: 730.6 MB)
+2016-04-19 14:10:06 INFO  SparkContext:59 - Created broadcast 1 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[5] at show at SparkSQLExamplesFromTextReflection.scala:32)
+2016-04-19 14:10:06 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:10:06 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:10:06 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:10:06 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:10:06 INFO  deprecation:1049 - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2016-04-19 14:10:06 INFO  deprecation:1049 - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2016-04-19 14:10:06 INFO  deprecation:1049 - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2016-04-19 14:10:06 INFO  deprecation:1049 - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2016-04-19 14:10:06 INFO  deprecation:1049 - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2016-04-19 14:10:06 INFO  Executor:59 - Finished task 0.0 in stage 0.0 (TID 0). 2512 bytes result sent to driver
+2016-04-19 14:10:06 INFO  TaskSetManager:59 - Finished task 0.0 in stage 0.0 (TID 0) in 128 ms on localhost (1/1)
+2016-04-19 14:10:06 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - ResultStage 0 (show at SparkSQLExamplesFromTextReflection.scala:32) finished in 0.148 s
+2016-04-19 14:10:06 INFO  DAGScheduler:59 - Job 0 finished: show at SparkSQLExamplesFromTextReflection.scala:32, took 0.279348 s
+2016-04-19 14:10:07 INFO  BlockManagerInfo:59 - Removed broadcast_1_piece0 on localhost:56035 in memory (size: 2.2 KB, free: 730.6 MB)
+2016-04-19 14:10:07 INFO  ContextCleaner:59 - Cleaned accumulator 1
+2016-04-19 14:10:07 INFO  SparkContext:59 - Starting job: collect at SparkSQLExamplesFromTextReflection.scala:39
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Got job 1 (collect at SparkSQLExamplesFromTextReflection.scala:39) with 1 output partitions
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Final stage: ResultStage 1(collect at SparkSQLExamplesFromTextReflection.scala:39)
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Submitting ResultStage 1 (MapPartitionsRDD[8] at map at SparkSQLExamplesFromTextReflection.scala:39), which has no missing parents
+2016-04-19 14:10:07 INFO  MemoryStore:59 - ensureFreeSpace(7728) called with curMem=171580, maxMem=766075207
+2016-04-19 14:10:07 INFO  MemoryStore:59 - Block broadcast_2 stored as values in memory (estimated size 7.5 KB, free 730.4 MB)
+2016-04-19 14:10:07 INFO  MemoryStore:59 - ensureFreeSpace(3984) called with curMem=179308, maxMem=766075207
+2016-04-19 14:10:07 INFO  MemoryStore:59 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.9 KB, free 730.4 MB)
+2016-04-19 14:10:07 INFO  BlockManagerInfo:59 - Added broadcast_2_piece0 in memory on localhost:56035 (size: 3.9 KB, free: 730.6 MB)
+2016-04-19 14:10:07 INFO  SparkContext:59 - Created broadcast 2 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[8] at map at SparkSQLExamplesFromTextReflection.scala:39)
+2016-04-19 14:10:07 INFO  TaskSchedulerImpl:59 - Adding task set 1.0 with 1 tasks
+2016-04-19 14:10:07 INFO  TaskSetManager:59 - Starting task 0.0 in stage 1.0 (TID 1, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:10:07 INFO  Executor:59 - Running task 0.0 in stage 1.0 (TID 1)
+2016-04-19 14:10:07 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:10:07 INFO  GeneratePredicate:59 - Code generated in 120.996005 ms
+2016-04-19 14:10:07 INFO  Executor:59 - Finished task 0.0 in stage 1.0 (TID 1). 2273 bytes result sent to driver
+2016-04-19 14:10:07 INFO  TaskSetManager:59 - Finished task 0.0 in stage 1.0 (TID 1) in 161 ms on localhost (1/1)
+2016-04-19 14:10:07 INFO  TaskSchedulerImpl:59 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - ResultStage 1 (collect at SparkSQLExamplesFromTextReflection.scala:39) finished in 0.161 s
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Job 1 finished: collect at SparkSQLExamplesFromTextReflection.scala:39, took 0.177108 s
+2016-04-19 14:10:07 INFO  SparkContext:59 - Starting job: collect at SparkSQLExamplesFromTextReflection.scala:42
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Got job 2 (collect at SparkSQLExamplesFromTextReflection.scala:42) with 1 output partitions
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Final stage: ResultStage 2(collect at SparkSQLExamplesFromTextReflection.scala:42)
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Submitting ResultStage 2 (MapPartitionsRDD[9] at map at SparkSQLExamplesFromTextReflection.scala:42), which has no missing parents
+2016-04-19 14:10:07 INFO  MemoryStore:59 - ensureFreeSpace(7728) called with curMem=183292, maxMem=766075207
+2016-04-19 14:10:07 INFO  MemoryStore:59 - Block broadcast_3 stored as values in memory (estimated size 7.5 KB, free 730.4 MB)
+2016-04-19 14:10:07 INFO  MemoryStore:59 - ensureFreeSpace(3984) called with curMem=191020, maxMem=766075207
+2016-04-19 14:10:07 INFO  MemoryStore:59 - Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.9 KB, free 730.4 MB)
+2016-04-19 14:10:07 INFO  BlockManagerInfo:59 - Added broadcast_3_piece0 in memory on localhost:56035 (size: 3.9 KB, free: 730.6 MB)
+2016-04-19 14:10:07 INFO  SparkContext:59 - Created broadcast 3 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 2 (MapPartitionsRDD[9] at map at SparkSQLExamplesFromTextReflection.scala:42)
+2016-04-19 14:10:07 INFO  TaskSchedulerImpl:59 - Adding task set 2.0 with 1 tasks
+2016-04-19 14:10:07 INFO  TaskSetManager:59 - Starting task 0.0 in stage 2.0 (TID 2, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:10:07 INFO  Executor:59 - Running task 0.0 in stage 2.0 (TID 2)
+2016-04-19 14:10:07 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:10:07 INFO  Executor:59 - Finished task 0.0 in stage 2.0 (TID 2). 2273 bytes result sent to driver
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - ResultStage 2 (collect at SparkSQLExamplesFromTextReflection.scala:42) finished in 0.011 s
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Job 2 finished: collect at SparkSQLExamplesFromTextReflection.scala:42, took 0.032257 s
+2016-04-19 14:10:07 INFO  TaskSetManager:59 - Finished task 0.0 in stage 2.0 (TID 2) in 11 ms on localhost (1/1)
+2016-04-19 14:10:07 INFO  TaskSchedulerImpl:59 - Removed TaskSet 2.0, whose tasks have all completed, from pool 
+2016-04-19 14:10:07 INFO  SparkContext:59 - Starting job: collect at SparkSQLExamplesFromTextReflection.scala:45
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Got job 3 (collect at SparkSQLExamplesFromTextReflection.scala:45) with 1 output partitions
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Final stage: ResultStage 3(collect at SparkSQLExamplesFromTextReflection.scala:45)
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Submitting ResultStage 3 (MapPartitionsRDD[10] at map at SparkSQLExamplesFromTextReflection.scala:45), which has no missing parents
+2016-04-19 14:10:07 INFO  MemoryStore:59 - ensureFreeSpace(7776) called with curMem=195004, maxMem=766075207
+2016-04-19 14:10:07 INFO  MemoryStore:59 - Block broadcast_4 stored as values in memory (estimated size 7.6 KB, free 730.4 MB)
+2016-04-19 14:10:07 INFO  MemoryStore:59 - ensureFreeSpace(3990) called with curMem=202780, maxMem=766075207
+2016-04-19 14:10:07 INFO  MemoryStore:59 - Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.9 KB, free 730.4 MB)
+2016-04-19 14:10:07 INFO  BlockManagerInfo:59 - Added broadcast_4_piece0 in memory on localhost:56035 (size: 3.9 KB, free: 730.6 MB)
+2016-04-19 14:10:07 INFO  SparkContext:59 - Created broadcast 4 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 3 (MapPartitionsRDD[10] at map at SparkSQLExamplesFromTextReflection.scala:45)
+2016-04-19 14:10:07 INFO  TaskSchedulerImpl:59 - Adding task set 3.0 with 1 tasks
+2016-04-19 14:10:07 INFO  TaskSetManager:59 - Starting task 0.0 in stage 3.0 (TID 3, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:10:07 INFO  Executor:59 - Running task 0.0 in stage 3.0 (TID 3)
+2016-04-19 14:10:07 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:10:07 INFO  Executor:59 - Finished task 0.0 in stage 3.0 (TID 3). 2494 bytes result sent to driver
+2016-04-19 14:10:07 INFO  TaskSetManager:59 - Finished task 0.0 in stage 3.0 (TID 3) in 28 ms on localhost (1/1)
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - ResultStage 3 (collect at SparkSQLExamplesFromTextReflection.scala:45) finished in 0.028 s
+2016-04-19 14:10:07 INFO  TaskSchedulerImpl:59 - Removed TaskSet 3.0, whose tasks have all completed, from pool 
+2016-04-19 14:10:07 INFO  DAGScheduler:59 - Job 3 finished: collect at SparkSQLExamplesFromTextReflection.scala:45, took 0.034404 s
+2016-04-19 14:10:07 INFO  SparkContext:59 - Invoking stop() from shutdown hook
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:10:07 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:10:08 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:10:08 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:10:08 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:10:08 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:10:08 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:10:08 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:10:08 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:10:08 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:10:08 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:10:08 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-a48fcd3d-d9e1-46f9-85ac-fe034d05f8b7
+2016-04-19 14:11:04 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:11:04 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:11:05 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:11:05 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:11:05 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:11:05 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:11:06 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:11:06 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:56054]
+2016-04-19 14:11:06 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 56054.
+2016-04-19 14:11:06 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:11:06 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:11:06 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-9e47f347-03c6-4e83-bee2-efaf798de47b
+2016-04-19 14:11:06 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:11:06 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-25c96069-6ef0-4c1a-9a2d-3cc88b2127f5\httpd-69e459e3-5a11-4524-b4f3-a77a3b401a7a
+2016-04-19 14:11:06 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:11:06 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:11:06 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:56055
+2016-04-19 14:11:06 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 56055.
+2016-04-19 14:11:06 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:11:06 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:11:07 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:11:07 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:11:07 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:11:07 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:11:07 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:11:07 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56062.
+2016-04-19 14:11:07 INFO  NettyBlockTransferService:59 - Server created on 56062
+2016-04-19 14:11:07 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:11:07 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:56062 with 730.6 MB RAM, BlockManagerId(driver, localhost, 56062)
+2016-04-19 14:11:07 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:11:08 INFO  MemoryStore:59 - ensureFreeSpace(157304) called with curMem=0, maxMem=766075207
+2016-04-19 14:11:08 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 153.6 KB, free 730.4 MB)
+2016-04-19 14:11:08 INFO  MemoryStore:59 - ensureFreeSpace(14276) called with curMem=157304, maxMem=766075207
+2016-04-19 14:11:08 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 730.4 MB)
+2016-04-19 14:11:08 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:56062 (size: 13.9 KB, free: 730.6 MB)
+2016-04-19 14:11:08 INFO  SparkContext:59 - Created broadcast 0 from textFile at DFRead.scala:16
+2016-04-19 14:11:11 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:11:11 INFO  FileInputFormat:247 - Total input paths to process : 1
+2016-04-19 14:11:11 INFO  SparkContext:59 - Starting job: show at DFRead.scala:20
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Got job 0 (show at DFRead.scala:20) with 1 output partitions
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Final stage: ResultStage 0(show at DFRead.scala:20)
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[5] at show at DFRead.scala:20), which has no missing parents
+2016-04-19 14:11:11 INFO  MemoryStore:59 - ensureFreeSpace(4000) called with curMem=171580, maxMem=766075207
+2016-04-19 14:11:11 INFO  MemoryStore:59 - Block broadcast_1 stored as values in memory (estimated size 3.9 KB, free 730.4 MB)
+2016-04-19 14:11:11 INFO  MemoryStore:59 - ensureFreeSpace(2226) called with curMem=175580, maxMem=766075207
+2016-04-19 14:11:11 INFO  MemoryStore:59 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 2.2 KB, free 730.4 MB)
+2016-04-19 14:11:11 INFO  BlockManagerInfo:59 - Added broadcast_1_piece0 in memory on localhost:56062 (size: 2.2 KB, free: 730.6 MB)
+2016-04-19 14:11:11 INFO  SparkContext:59 - Created broadcast 1 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[5] at show at DFRead.scala:20)
+2016-04-19 14:11:11 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:11:11 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:11:11 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:11:11 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:11:11 INFO  deprecation:1049 - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2016-04-19 14:11:11 INFO  deprecation:1049 - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2016-04-19 14:11:11 INFO  deprecation:1049 - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2016-04-19 14:11:11 INFO  deprecation:1049 - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2016-04-19 14:11:11 INFO  deprecation:1049 - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2016-04-19 14:11:11 INFO  Executor:59 - Finished task 0.0 in stage 0.0 (TID 0). 2512 bytes result sent to driver
+2016-04-19 14:11:11 INFO  TaskSetManager:59 - Finished task 0.0 in stage 0.0 (TID 0) in 129 ms on localhost (1/1)
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - ResultStage 0 (show at DFRead.scala:20) finished in 0.156 s
+2016-04-19 14:11:11 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Job 0 finished: show at DFRead.scala:20, took 0.309738 s
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:11:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:11:11 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:11:11 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:11:11 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:11:11 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:11:11 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:11:11 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:11:11 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:11:11 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:11:11 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:11:11 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-25c96069-6ef0-4c1a-9a2d-3cc88b2127f5
+2016-04-19 14:11:11 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2016-04-19 14:11:11 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Remote daemon shut down; proceeding with flushing remote transports.
+2016-04-19 14:12:49 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:12:50 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:12:50 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:12:50 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:12:50 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:12:51 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:12:51 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:12:51 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:56084]
+2016-04-19 14:12:51 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 56084.
+2016-04-19 14:12:51 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:12:51 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:12:51 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-98539495-d2ea-482f-a0fb-3d9435119147
+2016-04-19 14:12:51 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:12:51 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-20a0483a-0c73-4f88-aa51-09dee4c6adee\httpd-ae792c7f-09ac-4491-ad65-15ae2185718d
+2016-04-19 14:12:51 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:12:51 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:12:51 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:56092
+2016-04-19 14:12:51 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 56092.
+2016-04-19 14:12:51 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:12:52 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:12:52 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:12:52 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:12:52 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:12:52 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:12:52 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:12:52 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 56099.
+2016-04-19 14:12:52 INFO  NettyBlockTransferService:59 - Server created on 56099
+2016-04-19 14:12:52 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:12:52 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:56099 with 730.6 MB RAM, BlockManagerId(driver, localhost, 56099)
+2016-04-19 14:12:52 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:12:53 INFO  MemoryStore:59 - ensureFreeSpace(157304) called with curMem=0, maxMem=766075207
+2016-04-19 14:12:53 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 153.6 KB, free 730.4 MB)
+2016-04-19 14:12:53 INFO  MemoryStore:59 - ensureFreeSpace(14276) called with curMem=157304, maxMem=766075207
+2016-04-19 14:12:53 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 13.9 KB, free 730.4 MB)
+2016-04-19 14:12:53 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:56099 (size: 13.9 KB, free: 730.6 MB)
+2016-04-19 14:12:53 INFO  SparkContext:59 - Created broadcast 0 from textFile at DFRead.scala:16
+2016-04-19 14:12:55 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:12:56 INFO  deprecation:1049 - mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2016-04-19 14:12:56 INFO  deprecation:1049 - mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2016-04-19 14:12:56 INFO  deprecation:1049 - mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2016-04-19 14:12:56 INFO  deprecation:1049 - mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2016-04-19 14:12:56 INFO  deprecation:1049 - mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2016-04-19 14:12:56 INFO  ParquetRelation:59 - Using default output committer for Parquet: org.apache.parquet.hadoop.ParquetOutputCommitter
+2016-04-19 14:12:56 INFO  DefaultWriterContainer:59 - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2016-04-19 14:12:56 INFO  FileInputFormat:247 - Total input paths to process : 1
+2016-04-19 14:12:56 INFO  SparkContext:59 - Starting job: save at DFRead.scala:18
+2016-04-19 14:12:56 INFO  DAGScheduler:59 - Got job 0 (save at DFRead.scala:18) with 1 output partitions
+2016-04-19 14:12:56 INFO  DAGScheduler:59 - Final stage: ResultStage 0(save at DFRead.scala:18)
+2016-04-19 14:12:56 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:12:56 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:12:56 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[4] at rddToDataFrameHolder at DFRead.scala:16), which has no missing parents
+2016-04-19 14:12:56 INFO  MemoryStore:59 - ensureFreeSpace(68016) called with curMem=171580, maxMem=766075207
+2016-04-19 14:12:56 INFO  MemoryStore:59 - Block broadcast_1 stored as values in memory (estimated size 66.4 KB, free 730.4 MB)
+2016-04-19 14:12:56 INFO  MemoryStore:59 - ensureFreeSpace(24004) called with curMem=239596, maxMem=766075207
+2016-04-19 14:12:56 INFO  MemoryStore:59 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 23.4 KB, free 730.3 MB)
+2016-04-19 14:12:56 INFO  BlockManagerInfo:59 - Added broadcast_1_piece0 in memory on localhost:56099 (size: 23.4 KB, free: 730.5 MB)
+2016-04-19 14:12:56 INFO  SparkContext:59 - Created broadcast 1 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:12:56 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[4] at rddToDataFrameHolder at DFRead.scala:16)
+2016-04-19 14:12:56 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:12:56 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:12:56 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:12:56 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:12:56 INFO  DefaultWriterContainer:59 - Using user defined output committer class org.apache.parquet.hadoop.ParquetOutputCommitter
+2016-04-19 14:12:56 INFO  CodecConfig:151 - Compression: GZIP
+2016-04-19 14:12:56 INFO  ParquetOutputFormat:151 - Parquet block size to 134217728
+2016-04-19 14:12:56 INFO  ParquetOutputFormat:151 - Parquet page size to 1048576
+2016-04-19 14:12:56 INFO  ParquetOutputFormat:151 - Parquet dictionary page size to 1048576
+2016-04-19 14:12:56 INFO  ParquetOutputFormat:151 - Dictionary is on
+2016-04-19 14:12:56 INFO  ParquetOutputFormat:151 - Validation is off
+2016-04-19 14:12:56 INFO  ParquetOutputFormat:151 - Writer version is: PARQUET_1_0
+2016-04-19 14:12:57 INFO  CodecPool:151 - Got brand-new compressor [.gz]
+2016-04-19 14:12:58 INFO  InternalParquetRecordWriter:151 - Flushing mem columnStore to file. allocated memory: 65
+2016-04-19 14:12:58 INFO  ColumnChunkPageWriteStore:151 - written 87B for [name] BINARY: 3 values, 35B raw, 51B comp, 1 pages, encodings: [RLE, PLAIN, BIT_PACKED]
+2016-04-19 14:12:58 INFO  ColumnChunkPageWriteStore:151 - written 66B for [age] INT32: 3 values, 18B raw, 33B comp, 1 pages, encodings: [RLE, PLAIN, BIT_PACKED]
+2016-04-19 14:12:58 INFO  FileOutputCommitter:439 - Saved output of task 'attempt_201604191412_0000_m_000000_0' to file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people/_temporary/0/task_201604191412_0000_m_000000
+2016-04-19 14:12:58 INFO  SparkHadoopMapRedUtil:59 - attempt_201604191412_0000_m_000000_0: Committed
+2016-04-19 14:12:58 INFO  Executor:59 - Finished task 0.0 in stage 0.0 (TID 0). 2044 bytes result sent to driver
+2016-04-19 14:12:58 INFO  TaskSetManager:59 - Finished task 0.0 in stage 0.0 (TID 0) in 1838 ms on localhost (1/1)
+2016-04-19 14:12:58 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - ResultStage 0 (save at DFRead.scala:18) finished in 1.858 s
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Job 0 finished: save at DFRead.scala:18, took 1.970946 s
+2016-04-19 14:12:58 INFO  ParquetFileReader:151 - Initiating action with parallelism: 5
+2016-04-19 14:12:58 INFO  DefaultWriterContainer:59 - Job job_201604191412_0000 committed.
+2016-04-19 14:12:58 INFO  ParquetRelation:59 - Listing file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people on driver
+2016-04-19 14:12:58 INFO  ParquetRelation:59 - Listing file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people on driver
+2016-04-19 14:12:58 INFO  SparkContext:59 - Starting job: show at DFRead.scala:20
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Got job 1 (show at DFRead.scala:20) with 1 output partitions
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Final stage: ResultStage 1(show at DFRead.scala:20)
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Submitting ResultStage 1 (MapPartitionsRDD[6] at show at DFRead.scala:20), which has no missing parents
+2016-04-19 14:12:58 INFO  MemoryStore:59 - ensureFreeSpace(4000) called with curMem=263600, maxMem=766075207
+2016-04-19 14:12:58 INFO  MemoryStore:59 - Block broadcast_2 stored as values in memory (estimated size 3.9 KB, free 730.3 MB)
+2016-04-19 14:12:58 INFO  MemoryStore:59 - ensureFreeSpace(2227) called with curMem=267600, maxMem=766075207
+2016-04-19 14:12:58 INFO  MemoryStore:59 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.2 KB, free 730.3 MB)
+2016-04-19 14:12:58 INFO  BlockManagerInfo:59 - Added broadcast_2_piece0 in memory on localhost:56099 (size: 2.2 KB, free: 730.5 MB)
+2016-04-19 14:12:58 INFO  SparkContext:59 - Created broadcast 2 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[6] at show at DFRead.scala:20)
+2016-04-19 14:12:58 INFO  TaskSchedulerImpl:59 - Adding task set 1.0 with 1 tasks
+2016-04-19 14:12:58 INFO  TaskSetManager:59 - Starting task 0.0 in stage 1.0 (TID 1, localhost, PROCESS_LOCAL, 2195 bytes)
+2016-04-19 14:12:58 INFO  Executor:59 - Running task 0.0 in stage 1.0 (TID 1)
+2016-04-19 14:12:58 INFO  HadoopRDD:59 - Input split: file:/D:/all/eclipse432/SparkLearning/file/data/examples/src/main/resources/people.txt:0+32
+2016-04-19 14:12:58 INFO  Executor:59 - Finished task 0.0 in stage 1.0 (TID 1). 2512 bytes result sent to driver
+2016-04-19 14:12:58 INFO  TaskSetManager:59 - Finished task 0.0 in stage 1.0 (TID 1) in 18 ms on localhost (1/1)
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - ResultStage 1 (show at DFRead.scala:20) finished in 0.018 s
+2016-04-19 14:12:58 INFO  TaskSchedulerImpl:59 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Job 1 finished: show at DFRead.scala:20, took 0.032100 s
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:12:58 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:12:58 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:12:58 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:12:58 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:12:58 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:12:58 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:12:58 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:12:58 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:12:58 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:12:58 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:12:58 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-20a0483a-0c73-4f88-aa51-09dee4c6adee
+2016-04-19 14:14:04 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:14:05 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:14:05 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:14:05 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:14:05 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:14:06 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:14:06 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:14:06 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:64629]
+2016-04-19 14:14:06 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 64629.
+2016-04-19 14:14:06 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:14:06 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:14:06 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-f987e6d5-cf48-47af-b0c7-30c9a5e717d3
+2016-04-19 14:14:06 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:14:06 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-856a40d5-b59b-4e04-9ebf-837d682f9f7c\httpd-af08fc72-aab4-4573-9fac-957894f5f108
+2016-04-19 14:14:06 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:14:06 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:14:06 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:64630
+2016-04-19 14:14:06 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 64630.
+2016-04-19 14:14:06 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:14:07 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:14:07 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:14:07 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:14:07 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:14:07 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:14:07 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:14:07 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 64637.
+2016-04-19 14:14:07 INFO  NettyBlockTransferService:59 - Server created on 64637
+2016-04-19 14:14:07 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:14:07 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:64637 with 730.6 MB RAM, BlockManagerId(driver, localhost, 64637)
+2016-04-19 14:14:07 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:14:09 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:14:09 INFO  ParquetRelation:59 - Listing file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people on driver
+2016-04-19 14:14:09 INFO  SparkContext:59 - Starting job: parquet at DFRead.scala:23
+2016-04-19 14:14:09 INFO  DAGScheduler:59 - Got job 0 (parquet at DFRead.scala:23) with 1 output partitions
+2016-04-19 14:14:09 INFO  DAGScheduler:59 - Final stage: ResultStage 0(parquet at DFRead.scala:23)
+2016-04-19 14:14:09 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:14:09 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:14:09 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at DFRead.scala:23), which has no missing parents
+2016-04-19 14:14:10 INFO  MemoryStore:59 - ensureFreeSpace(63000) called with curMem=0, maxMem=766075207
+2016-04-19 14:14:10 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 61.5 KB, free 730.5 MB)
+2016-04-19 14:14:10 INFO  MemoryStore:59 - ensureFreeSpace(21075) called with curMem=63000, maxMem=766075207
+2016-04-19 14:14:10 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 730.5 MB)
+2016-04-19 14:14:10 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:64637 (size: 20.6 KB, free: 730.6 MB)
+2016-04-19 14:14:10 INFO  SparkContext:59 - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:14:10 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at DFRead.scala:23)
+2016-04-19 14:14:10 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:14:10 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2230 bytes)
+2016-04-19 14:14:10 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:14:10 INFO  ParquetFileReader:151 - Initiating action with parallelism: 5
+2016-04-19 14:14:11 INFO  Executor:59 - Finished task 0.0 in stage 0.0 (TID 0). 1701 bytes result sent to driver
+2016-04-19 14:14:11 INFO  TaskSetManager:59 - Finished task 0.0 in stage 0.0 (TID 0) in 738 ms on localhost (1/1)
+2016-04-19 14:14:11 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - ResultStage 0 (parquet at DFRead.scala:23) finished in 0.760 s
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Job 0 finished: parquet at DFRead.scala:23, took 1.096968 s
+2016-04-19 14:14:11 INFO  MemoryStore:59 - ensureFreeSpace(88512) called with curMem=84075, maxMem=766075207
+2016-04-19 14:14:11 INFO  MemoryStore:59 - Block broadcast_1 stored as values in memory (estimated size 86.4 KB, free 730.4 MB)
+2016-04-19 14:14:11 INFO  MemoryStore:59 - ensureFreeSpace(19788) called with curMem=88512, maxMem=766075207
+2016-04-19 14:14:11 INFO  BlockManagerInfo:59 - Removed broadcast_0_piece0 on localhost:64637 in memory (size: 20.6 KB, free: 730.6 MB)
+2016-04-19 14:14:11 INFO  MemoryStore:59 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 19.3 KB, free 730.5 MB)
+2016-04-19 14:14:11 INFO  BlockManagerInfo:59 - Added broadcast_1_piece0 in memory on localhost:64637 (size: 19.3 KB, free: 730.6 MB)
+2016-04-19 14:14:11 INFO  ContextCleaner:59 - Cleaned accumulator 1
+2016-04-19 14:14:11 INFO  SparkContext:59 - Created broadcast 1 from show at DFRead.scala:24
+2016-04-19 14:14:11 INFO  deprecation:1049 - mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+2016-04-19 14:14:11 INFO  ParquetRelation:59 - Reading Parquet file(s) from file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people/part-r-00000-9f79a0f8-d35d-4542-8c2a-1817d08f45b5.gz.parquet
+2016-04-19 14:14:11 INFO  SparkContext:59 - Starting job: show at DFRead.scala:24
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Got job 1 (show at DFRead.scala:24) with 1 output partitions
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Final stage: ResultStage 1(show at DFRead.scala:24)
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Submitting ResultStage 1 (MapPartitionsRDD[3] at show at DFRead.scala:24), which has no missing parents
+2016-04-19 14:14:11 INFO  MemoryStore:59 - ensureFreeSpace(4024) called with curMem=108300, maxMem=766075207
+2016-04-19 14:14:11 INFO  MemoryStore:59 - Block broadcast_2 stored as values in memory (estimated size 3.9 KB, free 730.5 MB)
+2016-04-19 14:14:11 INFO  MemoryStore:59 - ensureFreeSpace(2335) called with curMem=112324, maxMem=766075207
+2016-04-19 14:14:11 INFO  MemoryStore:59 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.3 KB, free 730.5 MB)
+2016-04-19 14:14:11 INFO  BlockManagerInfo:59 - Added broadcast_2_piece0 in memory on localhost:64637 (size: 2.3 KB, free: 730.6 MB)
+2016-04-19 14:14:11 INFO  SparkContext:59 - Created broadcast 2 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at show at DFRead.scala:24)
+2016-04-19 14:14:11 INFO  TaskSchedulerImpl:59 - Adding task set 1.0 with 1 tasks
+2016-04-19 14:14:11 INFO  TaskSetManager:59 - Starting task 0.0 in stage 1.0 (TID 1, localhost, PROCESS_LOCAL, 2263 bytes)
+2016-04-19 14:14:11 INFO  Executor:59 - Running task 0.0 in stage 1.0 (TID 1)
+2016-04-19 14:14:11 INFO  ParquetRelation$$anonfun$buildScan$1$$anon$1:59 - Input split: ParquetInputSplit{part: file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people/part-r-00000-9f79a0f8-d35d-4542-8c2a-1817d08f45b5.gz.parquet start: 0 end: 524 length: 524 hosts: []}
+2016-04-19 14:14:11 WARN  ParquetRecordReader:193 - Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+2016-04-19 14:14:11 INFO  CatalystReadSupport:59 - Going to read the following fields from the Parquet file:
+
+Parquet form:
+message root {
+  optional binary name (UTF8);
+  optional int32 age;
+}
+
+Catalyst form:
+StructType(StructField(name,StringType,true), StructField(age,IntegerType,true))
+       
+2016-04-19 14:14:11 INFO  InternalParquetRecordReader:151 - RecordReader initialized will read a total of 3 records.
+2016-04-19 14:14:11 INFO  InternalParquetRecordReader:151 - at row 0. reading next block
+2016-04-19 14:14:11 INFO  CodecPool:179 - Got brand-new decompressor [.gz]
+2016-04-19 14:14:11 INFO  InternalParquetRecordReader:151 - block read in memory in 24 ms. row count = 3
+2016-04-19 14:14:11 INFO  Executor:59 - Finished task 0.0 in stage 1.0 (TID 1). 2512 bytes result sent to driver
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - ResultStage 1 (show at DFRead.scala:24) finished in 0.209 s
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Job 1 finished: show at DFRead.scala:24, took 0.234482 s
+2016-04-19 14:14:11 INFO  TaskSetManager:59 - Finished task 0.0 in stage 1.0 (TID 1) in 209 ms on localhost (1/1)
+2016-04-19 14:14:11 INFO  TaskSchedulerImpl:59 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:14:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:14:11 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:14:11 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:14:11 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:14:11 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:14:11 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:14:11 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:14:11 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:14:11 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:14:11 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:14:11 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-856a40d5-b59b-4e04-9ebf-837d682f9f7c
+2016-04-19 14:14:11 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2016-04-19 14:14:11 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Remote daemon shut down; proceeding with flushing remote transports.
+2016-04-19 14:16:04 INFO  SparkContext:59 - Running Spark version 1.5.2
+2016-04-19 14:16:05 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-04-19 14:16:05 INFO  SecurityManager:59 - Changing view acls to: xubo
+2016-04-19 14:16:05 INFO  SecurityManager:59 - Changing modify acls to: xubo
+2016-04-19 14:16:05 INFO  SecurityManager:59 - SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(xubo); users with modify permissions: Set(xubo)
+2016-04-19 14:16:06 INFO  Slf4jLogger:80 - Slf4jLogger started
+2016-04-19 14:16:06 INFO  Remoting:74 - Starting remoting
+2016-04-19 14:16:06 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@211.86.159.44:64665]
+2016-04-19 14:16:06 INFO  Utils:59 - Successfully started service 'sparkDriver' on port 64665.
+2016-04-19 14:16:06 INFO  SparkEnv:59 - Registering MapOutputTracker
+2016-04-19 14:16:06 INFO  SparkEnv:59 - Registering BlockManagerMaster
+2016-04-19 14:16:06 INFO  DiskBlockManager:59 - Created local directory at C:\Users\xubo\AppData\Local\Temp\blockmgr-e427bc48-652b-439f-bc3f-75a965a3aff8
+2016-04-19 14:16:06 INFO  MemoryStore:59 - MemoryStore started with capacity 730.6 MB
+2016-04-19 14:16:06 INFO  HttpFileServer:59 - HTTP File server directory is C:\Users\xubo\AppData\Local\Temp\spark-79862736-69bb-45aa-aede-fb5da81d70e7\httpd-fdaba18a-f31f-413e-be9b-d5526d4b1f53
+2016-04-19 14:16:06 INFO  HttpServer:59 - Starting HTTP Server
+2016-04-19 14:16:06 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:16:06 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:64666
+2016-04-19 14:16:06 INFO  Utils:59 - Successfully started service 'HTTP file server' on port 64666.
+2016-04-19 14:16:06 INFO  SparkEnv:59 - Registering OutputCommitCoordinator
+2016-04-19 14:16:07 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2016-04-19 14:16:07 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2016-04-19 14:16:07 INFO  Utils:59 - Successfully started service 'SparkUI' on port 4040.
+2016-04-19 14:16:07 INFO  SparkUI:59 - Started SparkUI at http://211.86.159.44:4040
+2016-04-19 14:16:07 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-04-19 14:16:07 INFO  Executor:59 - Starting executor ID driver on host localhost
+2016-04-19 14:16:07 INFO  Utils:59 - Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 64673.
+2016-04-19 14:16:07 INFO  NettyBlockTransferService:59 - Server created on 64673
+2016-04-19 14:16:07 INFO  BlockManagerMaster:59 - Trying to register BlockManager
+2016-04-19 14:16:07 INFO  BlockManagerMasterEndpoint:59 - Registering block manager localhost:64673 with 730.6 MB RAM, BlockManagerId(driver, localhost, 64673)
+2016-04-19 14:16:07 INFO  BlockManagerMaster:59 - Registered BlockManager
+2016-04-19 14:16:09 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%39, but we couldn't find any external IP address!
+2016-04-19 14:16:09 INFO  ParquetRelation:59 - Listing file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people on driver
+2016-04-19 14:16:09 INFO  SparkContext:59 - Starting job: parquet at DFRead.scala:26
+2016-04-19 14:16:09 INFO  DAGScheduler:59 - Got job 0 (parquet at DFRead.scala:26) with 1 output partitions
+2016-04-19 14:16:09 INFO  DAGScheduler:59 - Final stage: ResultStage 0(parquet at DFRead.scala:26)
+2016-04-19 14:16:09 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:16:09 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:16:09 INFO  DAGScheduler:59 - Submitting ResultStage 0 (MapPartitionsRDD[1] at parquet at DFRead.scala:26), which has no missing parents
+2016-04-19 14:16:10 INFO  MemoryStore:59 - ensureFreeSpace(63000) called with curMem=0, maxMem=766075207
+2016-04-19 14:16:10 INFO  MemoryStore:59 - Block broadcast_0 stored as values in memory (estimated size 61.5 KB, free 730.5 MB)
+2016-04-19 14:16:10 INFO  MemoryStore:59 - ensureFreeSpace(21075) called with curMem=63000, maxMem=766075207
+2016-04-19 14:16:10 INFO  MemoryStore:59 - Block broadcast_0_piece0 stored as bytes in memory (estimated size 20.6 KB, free 730.5 MB)
+2016-04-19 14:16:10 INFO  BlockManagerInfo:59 - Added broadcast_0_piece0 in memory on localhost:64673 (size: 20.6 KB, free: 730.6 MB)
+2016-04-19 14:16:10 INFO  SparkContext:59 - Created broadcast 0 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:16:10 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 0 (MapPartitionsRDD[1] at parquet at DFRead.scala:26)
+2016-04-19 14:16:10 INFO  TaskSchedulerImpl:59 - Adding task set 0.0 with 1 tasks
+2016-04-19 14:16:10 INFO  TaskSetManager:59 - Starting task 0.0 in stage 0.0 (TID 0, localhost, PROCESS_LOCAL, 2230 bytes)
+2016-04-19 14:16:10 INFO  Executor:59 - Running task 0.0 in stage 0.0 (TID 0)
+2016-04-19 14:16:10 INFO  ParquetFileReader:151 - Initiating action with parallelism: 5
+2016-04-19 14:16:10 INFO  Executor:59 - Finished task 0.0 in stage 0.0 (TID 0). 1701 bytes result sent to driver
+2016-04-19 14:16:10 INFO  TaskSetManager:59 - Finished task 0.0 in stage 0.0 (TID 0) in 767 ms on localhost (1/1)
+2016-04-19 14:16:10 INFO  TaskSchedulerImpl:59 - Removed TaskSet 0.0, whose tasks have all completed, from pool 
+2016-04-19 14:16:10 INFO  DAGScheduler:59 - ResultStage 0 (parquet at DFRead.scala:26) finished in 0.777 s
+2016-04-19 14:16:10 INFO  DAGScheduler:59 - Job 0 finished: parquet at DFRead.scala:26, took 0.980093 s
+2016-04-19 14:16:11 INFO  MemoryStore:59 - ensureFreeSpace(88512) called with curMem=84075, maxMem=766075207
+2016-04-19 14:16:11 INFO  MemoryStore:59 - Block broadcast_1 stored as values in memory (estimated size 86.4 KB, free 730.4 MB)
+2016-04-19 14:16:11 INFO  MemoryStore:59 - ensureFreeSpace(19788) called with curMem=172587, maxMem=766075207
+2016-04-19 14:16:11 INFO  MemoryStore:59 - Block broadcast_1_piece0 stored as bytes in memory (estimated size 19.3 KB, free 730.4 MB)
+2016-04-19 14:16:11 INFO  BlockManagerInfo:59 - Added broadcast_1_piece0 in memory on localhost:64673 (size: 19.3 KB, free: 730.5 MB)
+2016-04-19 14:16:11 INFO  SparkContext:59 - Created broadcast 1 from show at DFRead.scala:27
+2016-04-19 14:16:11 INFO  deprecation:1049 - mapred.min.split.size is deprecated. Instead, use mapreduce.input.fileinputformat.split.minsize
+2016-04-19 14:16:11 INFO  ParquetRelation:59 - Reading Parquet file(s) from file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people/part-r-00000-9f79a0f8-d35d-4542-8c2a-1817d08f45b5.gz.parquet
+2016-04-19 14:16:11 INFO  SparkContext:59 - Starting job: show at DFRead.scala:27
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Got job 1 (show at DFRead.scala:27) with 1 output partitions
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Final stage: ResultStage 1(show at DFRead.scala:27)
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Parents of final stage: List()
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Missing parents: List()
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Submitting ResultStage 1 (MapPartitionsRDD[3] at show at DFRead.scala:27), which has no missing parents
+2016-04-19 14:16:11 INFO  MemoryStore:59 - ensureFreeSpace(4024) called with curMem=192375, maxMem=766075207
+2016-04-19 14:16:11 INFO  MemoryStore:59 - Block broadcast_2 stored as values in memory (estimated size 3.9 KB, free 730.4 MB)
+2016-04-19 14:16:11 INFO  MemoryStore:59 - ensureFreeSpace(2335) called with curMem=196399, maxMem=766075207
+2016-04-19 14:16:11 INFO  MemoryStore:59 - Block broadcast_2_piece0 stored as bytes in memory (estimated size 2.3 KB, free 730.4 MB)
+2016-04-19 14:16:11 INFO  BlockManagerInfo:59 - Added broadcast_2_piece0 in memory on localhost:64673 (size: 2.3 KB, free: 730.5 MB)
+2016-04-19 14:16:11 INFO  SparkContext:59 - Created broadcast 2 from broadcast at DAGScheduler.scala:861
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Submitting 1 missing tasks from ResultStage 1 (MapPartitionsRDD[3] at show at DFRead.scala:27)
+2016-04-19 14:16:11 INFO  TaskSchedulerImpl:59 - Adding task set 1.0 with 1 tasks
+2016-04-19 14:16:11 INFO  TaskSetManager:59 - Starting task 0.0 in stage 1.0 (TID 1, localhost, PROCESS_LOCAL, 2263 bytes)
+2016-04-19 14:16:11 INFO  Executor:59 - Running task 0.0 in stage 1.0 (TID 1)
+2016-04-19 14:16:11 INFO  ParquetRelation$$anonfun$buildScan$1$$anon$1:59 - Input split: ParquetInputSplit{part: file:/D:/all/eclipse432/SparkLearning/file/data/sql/input/people/part-r-00000-9f79a0f8-d35d-4542-8c2a-1817d08f45b5.gz.parquet start: 0 end: 524 length: 524 hosts: []}
+2016-04-19 14:16:11 WARN  ParquetRecordReader:193 - Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+2016-04-19 14:16:11 INFO  CatalystReadSupport:59 - Going to read the following fields from the Parquet file:
+
+Parquet form:
+message root {
+  optional binary name (UTF8);
+  optional int32 age;
+}
+
+Catalyst form:
+StructType(StructField(name,StringType,true), StructField(age,IntegerType,true))
+       
+2016-04-19 14:16:11 INFO  InternalParquetRecordReader:151 - RecordReader initialized will read a total of 3 records.
+2016-04-19 14:16:11 INFO  InternalParquetRecordReader:151 - at row 0. reading next block
+2016-04-19 14:16:11 INFO  CodecPool:179 - Got brand-new decompressor [.gz]
+2016-04-19 14:16:11 INFO  InternalParquetRecordReader:151 - block read in memory in 28 ms. row count = 3
+2016-04-19 14:16:11 INFO  Executor:59 - Finished task 0.0 in stage 1.0 (TID 1). 2512 bytes result sent to driver
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - ResultStage 1 (show at DFRead.scala:27) finished in 0.255 s
+2016-04-19 14:16:11 INFO  TaskSetManager:59 - Finished task 0.0 in stage 1.0 (TID 1) in 255 ms on localhost (1/1)
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Job 1 finished: show at DFRead.scala:27, took 0.291083 s
+2016-04-19 14:16:11 INFO  TaskSchedulerImpl:59 - Removed TaskSet 1.0, whose tasks have all completed, from pool 
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2016-04-19 14:16:11 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2016-04-19 14:16:11 INFO  SparkUI:59 - Stopped Spark web UI at http://211.86.159.44:4040
+2016-04-19 14:16:11 INFO  DAGScheduler:59 - Stopping DAGScheduler
+2016-04-19 14:16:11 INFO  MapOutputTrackerMasterEndpoint:59 - MapOutputTrackerMasterEndpoint stopped!
+2016-04-19 14:16:11 INFO  MemoryStore:59 - MemoryStore cleared
+2016-04-19 14:16:11 INFO  BlockManager:59 - BlockManager stopped
+2016-04-19 14:16:11 INFO  BlockManagerMaster:59 - BlockManagerMaster stopped
+2016-04-19 14:16:11 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:59 - OutputCommitCoordinator stopped!
+2016-04-19 14:16:11 INFO  SparkContext:59 - Successfully stopped SparkContext
+2016-04-19 14:16:11 INFO  ShutdownHookManager:59 - Shutdown hook called
+2016-04-19 14:16:11 INFO  ShutdownHookManager:59 - Deleting directory C:\Users\xubo\AppData\Local\Temp\spark-79862736-69bb-45aa-aede-fb5da81d70e7
+2016-04-19 14:16:11 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2016-04-19 14:16:11 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Remote daemon shut down; proceeding with flushing remote transports.
