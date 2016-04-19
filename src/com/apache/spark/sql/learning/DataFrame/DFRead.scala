@@ -8,7 +8,7 @@ object DFRead {
   case class Person(name: String, age: Int)
   def main(args: Array[String]) {
 
-    val conf = new SparkConf().setAppName("DataFrame").setMaster("local")
+    val conf = new SparkConf().setAppName("DataFrame").setMaster("local[4]")
     val sc = new SparkContext(conf)
     val sqlContext = new SQLContext(sc)
     import sqlContext.implicits._
@@ -23,18 +23,34 @@ object DFRead {
     /**
      * read file from parquet
      */
-    val people = sqlContext.read.parquet("file/data/sql/input/people")
-    people.show
-    people.printSchema
+
+    val file1 = "file/data/sparkCSV/input/sample_submission.csv"
+    //      "file/data/sql/input/people"
+    //    val people = sqlContext.read.parquet(file1)
+    val df = sqlContext.load("com.databricks.spark.csv", Map("path" -> file1, "header" -> "false"))
+    df.show
+    df.printSchema
+
+    df.groupBy("C0").count.show
+    val ageOrdered=df.groupBy("C0").count.orderBy("C0")
+    ageOrdered.show
+    println(ageOrdered.count())
+    
+    //Save result
+    //    df.groupBy("C0").count.write.save("file/data/sql/output/GroupedByAge")
 
     //To select a column from the data frame, use apply method in Scala and col in Java.
-    val ageCol = people("age")
-    println(ageCol);
-    //    for(i<-ageCol){
-    //      println(i);
-    //    }
-
-    people("age") + 10
+    //    val ageCol = people("age")
+    //    val groupByAge=people.groupBy("age").count.show
+    //    
+    //    people.registerTempTable("people")
+    //    val ageColumn=sqlContext.sql("select age from people")
+    //    ageColumn.show
+    //
+    //    println(ageCol);
+    //
+    //    people.select("age").show
+    //    people("age") + 10
 
     println("DataFrame end");
     sc.stop

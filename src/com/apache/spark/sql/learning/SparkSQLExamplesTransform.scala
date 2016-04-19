@@ -24,8 +24,6 @@ object SparkSQLExamplesTransform {
     import sqlContext._
     import sqlContext.implicits._
 
-    //    val people = sc.textFile("hdfs://219.219.220.149:9000/xubo/spark/examples/src/main/resources/people.txt")
-
     //1.parquet to parquet
     val df = sqlContext.read.load("file/data/examples/src/main/resources/users.parquet")
     df.show
