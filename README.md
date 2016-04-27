@@ -12,6 +12,7 @@ scala-2.10.5
 spark-assembly-1.5.2-hadoop2.6.0.jar
 
 you can run most code in local  and don't need SparkCluster and HDFS. 
+
 Examples: 
 http://blog.csdn.net/bob601450868/article/category/5730447
 
