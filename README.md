@@ -4,6 +4,7 @@
 SparkLearning博客：http://blog.csdn.net/bob601450868/article/category/5730447
 SparkLearning代码和数据：https://github.com/xubo245/SparkLearning
 
+<<<<<<< HEAD
 具体博客目录：
 **1.Spark基本学习篇：**
 spark学习1之examples运行：http://blog.csdn.net/xubo245/article/details/48548079
@@ -23,6 +24,21 @@ Spark代码1之RDDparallelizeSaveAsFile：http://blog.csdn.net/xubo245/article/d
 Spark代码2之Transformation：union，distinct，join：http://blog.csdn.net/xubo245/article/details/50792201
 Spark代码3之Action：reduce，reduceByKey,sorted,lookup,take,saveAsTextFile：http://blog.csdn.net/xubo245/article/details/50800934
 Spark代码4之Spark 文件API及其对搜狗数据的操作：http://blog.csdn.net/xubo245/article/details/50801827
+=======
+data:/file/data/
+
+code:SparkLearning/src/org/apache/spark/
+
+Environment:
+
+Spark-1.5.2
+
+eclipse-4.3.2
+
+scala-2.10.5
+
+spark-assembly-1.5.2-hadoop2.6.0.jar
+>>>>>>> 122fb6a9fbc7c92173063fef309d36878e3bfd31
 
 **3.Spark组件之Mllib学习篇**
 Spark中组件Mllib的学习1之Kmeans错误解决：http://blog.csdn.net/xubo245/article/details/51007690
@@ -107,4 +123,10 @@ Spark生态之Spark-csv学习1之安装和简单的examples：http://blog.csdn.n
 Spark疑问1之如何查看sparkContext没有关闭的sc：Spark疑问1之如何查看sparkContext没有关闭的sc
 Spark疑问2之spark 丢了executor会恢复吗？：http://blog.csdn.net/xubo245/article/details/51173493
 
+<<<<<<< HEAD
+=======
+Examples: 
+
+http://blog.csdn.net/bob601450868/article/category/5730447
+>>>>>>> 122fb6a9fbc7c92173063fef309d36878e3bfd31
 
