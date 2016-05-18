@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://D:/1win7/java/otherJar/spark-assembly-1.5.2-hadoop2.6.0.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/adam-apis_2.10-0.18.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/adam-cli_2.10-0.18.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/adam-core_2.10-0.18.3-SNAPSHOT.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/SparkCSV/com.databricks_spark-csv_2.10-1.4.0.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/SparkCSV/com.univocity_univocity-parsers-1.5.1.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/SparkCSV/org.apache.commons_commons-csv-1.1.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/SparkAvro/spark-avro_2.10-2.0.1.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/SparkAvro/spark-avro_2.10-2.0.1-javadoc.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/SparkAvro/spark-avro_2.10-2.0.1-sources.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/avro/spark-avro_2.10-2.0.2-SNAPSHOT.jar!/" />
+    <libelement value="jar://D:/1win7/java/otherJar/tachyon/tachyon-assemblies-0.7.1-jar-with-dependencies.jar!/" />
+    <conelement value="org.scala-ide.sdt.launching.SCALA_CONTAINER" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src" expected_position="0" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/target/classes" />
+    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.scala-ide.sdt.launching.SCALA_CONTAINER" level="application" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="spark-assembly-1.5.2-hadoop2.6.0.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/spark-assembly-1.5.2-hadoop2.6.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://D:/1win7/java/spark-1.5.2" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="adam-apis_2.10-0.18.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/adam-apis_2.10-0.18.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="adam-cli_2.10-0.18.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/adam-cli_2.10-0.18.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file:///adam" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="adam-core_2.10-0.18.3-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/adam-core_2.10-0.18.3-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.databricks_spark-csv_2.10-1.4.0.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/SparkCSV/com.databricks_spark-csv_2.10-1.4.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="com.univocity_univocity-parsers-1.5.1.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/SparkCSV/com.univocity_univocity-parsers-1.5.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="org.apache.commons_commons-csv-1.1.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/SparkCSV/org.apache.commons_commons-csv-1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spark-avro_2.10-2.0.1.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/SparkAvro/spark-avro_2.10-2.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spark-avro_2.10-2.0.1-javadoc.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/SparkAvro/spark-avro_2.10-2.0.1-javadoc.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spark-avro_2.10-2.0.1-sources.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/SparkAvro/spark-avro_2.10-2.0.1-sources.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="spark-avro_2.10-2.0.2-SNAPSHOT.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/avro/spark-avro_2.10-2.0.2-SNAPSHOT.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="tachyon-assemblies-0.7.1-jar-with-dependencies.jar">
+        <CLASSES>
+          <root url="jar://D:/1win7/java/otherJar/tachyon/tachyon-assemblies-0.7.1-jar-with-dependencies.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="library" name="scala-sdk-2.10" level="application" />
+    <orderEntry type="library" name="Maven: com.github.scopt:scopt_2.10:3.2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.3" level="project" />
+  </component>
+</module>
