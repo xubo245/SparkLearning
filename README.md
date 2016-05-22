@@ -5,7 +5,8 @@
 SparkLearning博客：http://blog.csdn.net/bob601450868/article/category/5730447  
 SparkLearning代码和数据：https://github.com/xubo245/SparkLearning
 
-环境:  
+SparkLearning是在spark上运行的，spark搭建等请见spark官网或其他网站。
+SparkLearning运行环境:  
 Spark-1.5.2  
 eclipse-4.3.2  
 scala-2.10.4  
