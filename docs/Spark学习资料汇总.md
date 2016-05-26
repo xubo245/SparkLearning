@@ -23,7 +23,7 @@
 
 
 # （二）视频： #
-http://pan.baidu.com/s/1qY5pI3a
+http://pan.baidu.com/s/1qY5pI3a（分享立即失效了，请自己按图片搜）
 
 截图：   
 （1）   
