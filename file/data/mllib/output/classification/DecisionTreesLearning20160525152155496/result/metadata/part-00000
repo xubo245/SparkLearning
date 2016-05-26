@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.mllib.tree.DecisionTreeModel","version":"1.0","algo":"Regression","numNodes":5}

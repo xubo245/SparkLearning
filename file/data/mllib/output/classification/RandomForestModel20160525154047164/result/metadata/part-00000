@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.mllib.tree.model.RandomForestModel","version":"1.0","metadata":{"algo":"Classification","treeAlgo":"Classification","combiningStrategy":"Vote","treeWeights":[1.0,1.0,1.0]}}

@@ -1,0 +1,1 @@
+{"class":"org.apache.spark.mllib.tree.model.GradientBoostedTreesModel","version":"1.0","metadata":{"algo":"Classification","treeAlgo":"Regression","combiningStrategy":"Sum","treeWeights":[1.0,0.1,0.1]}}
