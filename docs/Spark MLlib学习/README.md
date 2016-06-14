@@ -5,7 +5,7 @@ hadoop2.6.0
 scala-2.10.4
 idea 15.0.4
 
-Spark mllib学习目录：
+*Spark mllib学习目录：  
 
 **1.数据类型**
 
