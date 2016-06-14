@@ -4,6 +4,7 @@ import org.apache.spark.{SparkContext, SparkConf}
 
 /**
   * Created by xubo on 2016/6/13.
+  * data:http://qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz
   */
 object TfIdf20News {
   def main(args: Array[String]) {
@@ -388,7 +389,8 @@ object TfIdf20News {
     train.cache
     val model = NaiveBayes.train(train, lambda = 0.1)
 
-    val testPath = "/PATH/20news-bydate-test/*"
+//    val testPath = "/PATH/20news-bydate-test/*"
+    val testPath = args(1)
     val testRDD = sc.wholeTextFiles(testPath)
     val testLabels = testRDD.map { case (file, text) =>
       val topic = file.split("/").takeRight(2).head

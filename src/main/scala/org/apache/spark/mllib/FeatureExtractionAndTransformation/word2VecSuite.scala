@@ -29,7 +29,7 @@ class word2VecSuite extends SparkLearningFunSuite {
 
     val model = word2vec.fit(input)
 
-    val synonyms = model.findSynonyms("china", 40)
+    val synonyms = model.findSynonyms("taiwan", 40)
     //    val synonyms = model.findSynonyms("hello", 2)
     //    val synonyms = model.findSynonyms("hell", 2)
     println("synonyms:" + synonyms.length)
