@@ -13,6 +13,7 @@ Spark中组件Mllib的学习
 	    高效。单机可处理1小时2千万词。
 
 
+
 ![](http://images0.cnblogs.com/blog2015/679630/201506/181709121708170.png)
 
 
