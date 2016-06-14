@@ -1,8 +1,8 @@
 /**
- * @author xubo
- * rdd:count id name partitions toDebugString
- * Transform and action is not included
- */
+  * @author xubo
+  *         rdd:count id name partitions toDebugString
+  *         Transform and action is not included
+  */
 package org.apache.spark.rdd.learning
 
 import org.apache.spark.SparkConf
@@ -20,6 +20,9 @@ object rddTest {
     text1.partitions.foreach(println)
     println(text1.toDebugString);
     var text2 = sc.textFile("file/data/RDD/input/kmeans", 1)
+
+    //    text2.coalesce()
+//    text2.repartition()
     println("\ntext2:");
     println(text2.count);
     println(text2.id);
@@ -27,9 +30,9 @@ object rddTest {
     println(text2.partitions.length);
     text2.partitions.foreach(println)
     println(text2.toDebugString);
-//    for (i <- text2.partitions) {
-//      for (j <- i.toString()) println(j)
-//    }
+    //    for (i <- text2.partitions) {
+    //      for (j <- i.toString()) println(j)
+    //    }
 
     sc.stop
 

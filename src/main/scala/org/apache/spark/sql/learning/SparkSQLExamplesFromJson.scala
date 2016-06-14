@@ -1,9 +1,9 @@
 /**
- * @author xubo
- * spark 1.5.2
- *
- * reference :http://spark.apache.org/docs/1.5.2/sql-programming-guide.html
- */
+  * @author xubo
+  *         spark 1.5.2
+  *
+  *         reference :http://spark.apache.org/docs/1.5.2/sql-programming-guide.html
+  */
 package org.apache.spark.sql.learning
 
 import org.apache.spark.SparkConf

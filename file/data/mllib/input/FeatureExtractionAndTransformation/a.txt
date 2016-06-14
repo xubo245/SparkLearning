@@ -1,0 +1,6 @@
+hello scala hello scala hello scala hello
+goodbye spark
+hello spark
+hello mllib
+spark
+goodbye spark
