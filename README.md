@@ -46,8 +46,9 @@ Spark中组件Mllib的学习6之ALS测试（apache spark 含隐式转换）：ht
 Spark中组件Mllib的学习7之ALS隐式转换训练的model来预测数据：http://blog.csdn.net/xubo245/article/details/51429490  
 Spark中组件Mllib的学习8之ALS训练的model来预测数据：http://blog.csdn.net/xubo245/article/details/51429503  
 Spark中组件Mllib的学习9之ALS训练的model来预测数据的准确率研究：http://blog.csdn.net/xubo245/article/details/51439208  
-Spark中组件Mllib的学习10之修改MovieLens来对movieLen中的100k数据进行预测：http://blog.csdn.net/xubo245/article/details/51439491  
-Spark中组件Mllib的学习11之使用ALS对movieLens中一百万条（1M）数据集进行训练，并对输入的新用户数据进行电影推荐：http://blog.csdn.net/xubo245/article/details/51439920  
+Spark中组件Mllib的学习10之修改MovieLens来对movieLen中的100k数据进行预测：http://blog.csdn.net/xubo245/article/details/51439491   
+Spark中组件Mllib的学习11之使用ALS对movieLens中一百万条（1M）数据集进行训练，并对输入的新用户数据进行电影推荐：http://blog.csdn.net/xubo245/article/details/51439920   
+更多请见：https://github.com/xubo245/SparkLearning/tree/master/docs/Spark%20MLlib%E5%AD%A6%E4%B9%A0
 
 **4.Spark组件之SparkSQL学习篇**  
 Spark组件之SparkSQL学习1之问题报错No TypeTag available for Person：http://blog.csdn.net/xubo245/article/details/51153243  
