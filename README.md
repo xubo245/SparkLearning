@@ -118,5 +118,5 @@ Spark生态之Spark-csv学习1之安装和简单的examples：http://blog.csdn.n
 Spark疑问1之如何查看sparkContext没有关闭的sc：http://blog.csdn.net/xubo245/article/details/51173463  
 Spark疑问2之spark 丢了executor会恢复吗？：http://blog.csdn.net/xubo245/article/details/51173493  
 
-**12.其他：**
+**12.其他：**   
 MLlib学习文档：https://github.com/xubo245/SparkLearning/tree/master/docs/Spark%20MLlib%E5%AD%A6%E4%B9%A0
