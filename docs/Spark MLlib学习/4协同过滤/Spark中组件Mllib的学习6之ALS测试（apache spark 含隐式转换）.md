@@ -1,108 +1,106 @@
-	代码：
-	
-	```
-	/**
-	  * @author xubo
-	  *         time 2016.516
-	  *         ref 《Spark MlLib 机器学习实战》P64
-	  */
-	package org.apache.spark.mllib.learning.recommend
-	
-	import org.apache.spark.{SparkConf, SparkContext}
-	
-	import scala.collection.mutable.Map
-	
-	object CollaborativeFilteringSpark {
-	  val conf = new SparkConf().setMaster("local").setAppName(this.getClass().getSimpleName().filter(!_.equals('$')))
-	    println(this.getClass().getSimpleName().filter(!_.equals('$')))
-	  //设置环境变量
-	  val sc = new SparkContext(conf)
-	  //实例化环境
-	  val users = sc.parallelize(Array("aaa", "bbb", "ccc", "ddd", "eee"))
-	  //设置用户
-	  val films = sc.parallelize(Array("smzdm", "ylxb", "znh", "nhsc", "fcwr")) //设置电影名
-	
-	  val source = Map[String, Map[String, Int]]()
-	  //使用一个source嵌套map作为姓名电影名和分值的存储
-	  val filmSource = Map[String, Int]()
-	
-	  //设置一个用以存放电影分的map
-	  def getSource(): Map[String, Map[String, Int]] = {
-	    //设置电影评分
-	    val user1FilmSource = Map("smzdm" -> 2, "ylxb" -> 3, "znh" -> 1, "nhsc" -> 0, "fcwr" -> 1)
-	    val user2FilmSource = Map("smzdm" -> 1, "ylxb" -> 2, "znh" -> 2, "nhsc" -> 1, "fcwr" -> 4)
-	    val user3FilmSource = Map("smzdm" -> 2, "ylxb" -> 1, "znh" -> 0, "nhsc" -> 1, "fcwr" -> 4)
-	    val user4FilmSource = Map("smzdm" -> 3, "ylxb" -> 2, "znh" -> 0, "nhsc" -> 5, "fcwr" -> 3)
-	    val user5FilmSource = Map("smzdm" -> 5, "ylxb" -> 3, "znh" -> 1, "nhsc" -> 1, "fcwr" -> 2)
-	    source += ("aaa" -> user1FilmSource) //对人名进行存储
-	    source += ("bbb" -> user2FilmSource) //对人名进行存储
-	    source += ("ccc" -> user3FilmSource) //对人名进行存储
-	    source += ("ddd" -> user4FilmSource) //对人名进行存储
-	    source += ("eee" -> user5FilmSource) //对人名进行存储
-	    source //返回嵌套map
-	  }
-	
-	  //两两计算分值,采用余弦相似性
-	  def getCollaborateSource(user1: String, user2: String): Double = {
-	    val user1FilmSource = source.get(user1).get.values.toVector //获得第1个用户的评分
-	    val user2FilmSource = source.get(user2).get.values.toVector //获得第2个用户的评分
-	    val member = user1FilmSource.zip(user2FilmSource).map(d => d._1 * d._2).reduce(_ + _).toDouble //对公式分子部分进行计算
-	    val temp1 = math.sqrt(user1FilmSource.map(num => {
-	        //求出分母第1个变量值
-	        math.pow(num, 2) //数学计算
-	      }).reduce(_ + _)) //进行叠加
-	    val temp2 = math.sqrt(user2FilmSource.map(num => {
-	        ////求出分母第2个变量值
-	        math.pow(num, 2) //数学计算
-	      }).reduce(_ + _)) //进行叠加
-	    val denominator = temp1 * temp2 //求出分母
-	    member / denominator //进行计算
-	  }
-	
-	  def main(args: Array[String]) {
-	    getSource() //初始化分数
-	    var name = "bbb" //设定目标对象
-	    users.foreach(user => {
-	      //迭代进行计算
-	      println(name + " 相对于 " + user + "的相似性分数是：" + getCollaborateSource(name, user))
-	    })
-	    println()
-	    name = "aaa"
-	    users.foreach(user => {
-	      //迭代进行计算
-	      println(name + " 相对于 " + user + "的相似性分数是：" + getCollaborateSource(name, user))
-	    })
-	  }
-	}
-	
-	```
-	
-	
-	结果：
-	
-	```
-	D:\1win7\java\jdk\bin\java -Didea.launcher.port=7534 "-Didea.launcher.bin.path=D:\1win7\idea\IntelliJ IDEA Community Edition 15.0.4\bin" -Dfile.encoding=UTF-8 -classpath "D:\all\idea\SparkLearning\bin;D:\1win7\java\jdk\jre\lib\charsets.jar;D:\1win7\java\jdk\jre\lib\deploy.jar;D:\1win7\java\jdk\jre\lib\ext\access-bridge-64.jar;D:\1win7\java\jdk\jre\lib\ext\dnsns.jar;D:\1win7\java\jdk\jre\lib\ext\jaccess.jar;D:\1win7\java\jdk\jre\lib\ext\localedata.jar;D:\1win7\java\jdk\jre\lib\ext\sunec.jar;D:\1win7\java\jdk\jre\lib\ext\sunjce_provider.jar;D:\1win7\java\jdk\jre\lib\ext\sunmscapi.jar;D:\1win7\java\jdk\jre\lib\ext\zipfs.jar;D:\1win7\java\jdk\jre\lib\javaws.jar;D:\1win7\java\jdk\jre\lib\jce.jar;D:\1win7\java\jdk\jre\lib\jfr.jar;D:\1win7\java\jdk\jre\lib\jfxrt.jar;D:\1win7\java\jdk\jre\lib\jsse.jar;D:\1win7\java\jdk\jre\lib\management-agent.jar;D:\1win7\java\jdk\jre\lib\plugin.jar;D:\1win7\java\jdk\jre\lib\resources.jar;D:\1win7\java\jdk\jre\lib\rt.jar;D:\1win7\scala;D:\1win7\scala\lib;D:\1win7\java\otherJar\spark-assembly-1.5.2-hadoop2.6.0.jar;D:\1win7\java\otherJar\adam-apis_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\adam-cli_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\adam-core_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\SparkCSV\com.databricks_spark-csv_2.10-1.4.0.jar;D:\1win7\java\otherJar\SparkCSV\com.univocity_univocity-parsers-1.5.1.jar;D:\1win7\java\otherJar\SparkCSV\org.apache.commons_commons-csv-1.1.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1-javadoc.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1-sources.jar;D:\1win7\java\otherJar\avro\spark-avro_2.10-2.0.2-SNAPSHOT.jar;D:\1win7\java\otherJar\tachyon\tachyon-assemblies-0.7.1-jar-with-dependencies.jar;D:\1win7\scala\lib\scala-actors-migration.jar;D:\1win7\scala\lib\scala-actors.jar;D:\1win7\scala\lib\scala-library.jar;D:\1win7\scala\lib\scala-reflect.jar;D:\1win7\scala\lib\scala-swing.jar;D:\1win7\idea\IntelliJ IDEA Community Edition 15.0.4\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain org.apache.spark.mllib.learning.recommend.CollaborativeFilteringSpark
-	CollaborativeFilteringSpark
-	SLF4J: Class path contains multiple SLF4J bindings.
-	SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/spark-assembly-1.5.2-hadoop2.6.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-	SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/adam-cli_2.10-0.18.3-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-	SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/tachyon/tachyon-assemblies-0.7.1-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-	SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-	SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-	2016-05-16 20:57:50 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-	2016-05-16 20:57:52 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
-	bbb 相对于 aaa的相似性分数是：0.7089175569585667
-	bbb 相对于 bbb的相似性分数是：1.0000000000000002
-	bbb 相对于 ccc的相似性分数是：0.8780541105074453
-	bbb 相对于 ddd的相似性分数是：0.6865554812287477
-	bbb 相对于 eee的相似性分数是：0.6821910402406466
-	
-	aaa 相对于 aaa的相似性分数是：0.9999999999999999
-	aaa 相对于 bbb的相似性分数是：0.7089175569585667
-	aaa 相对于 ccc的相似性分数是：0.6055300708194983
-	aaa 相对于 ddd的相似性分数是：0.564932682866032
-	aaa 相对于 eee的相似性分数是：0.8981462390204985
-	
-	Process finished with exit code 0
-	
-	```
+更多代码请见：https://github.com/xubo245/SparkLearning
+spark-1.5.2
+1解释
+使用spark 官网推荐的算法,使用了隐式转换
+
+2.代码：
+
+```
+package apache.spark.mllib.learning.recommend
+
+import java.text.SimpleDateFormat
+import java.util.Date
+
+import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
+import org.apache.spark.{SparkConf, SparkContext}
+
+/**
+  * Created by xubo on 2016/5/16.
+  */
+object ALSImplicitFromSpark {
+  def main(args: Array[String]) {
+    val conf = new SparkConf().setMaster("local").setAppName(this.getClass().getSimpleName().filter(!_.equals('$')))
+    //    println(this.getClass().getSimpleName().filter(!_.equals('$')))
+    //设置环境变量
+    val sc = new SparkContext(conf)
+
+    // Load and parse the data
+    //    val data = sc.textFile("data/mllib/als/test.data")
+    val data = sc.textFile("file/data/mllib/input/test.data")
+
+    val ratings = data.map(_.split(',') match { case Array(user, item, rate) =>
+      Rating(user.toInt, item.toInt, rate.toDouble)
+    })
+
+    // Build the recommendation model using ALS
+    val rank = 10
+    val numIterations = 10
+
+    val alpha = 0.01
+    val lambda = 0.01
+    val model = ALS.trainImplicit(ratings, rank, numIterations, lambda, alpha)
+    //    val model = ALS.train(ratings, rank, numIterations, 0.01)
+
+    // Evaluate the model on rating data
+    val usersProducts = ratings.map { case Rating(user, product, rate) =>
+      (user, product)
+    }
+    val predictions =
+      model.predict(usersProducts).map { case Rating(user, product, rate) =>
+        ((user, product), rate)
+      }
+    val ratesAndPreds = ratings.map { case Rating(user, product, rate) =>
+      ((user, product), rate)
+    }.join(predictions)
+    val MSE = ratesAndPreds.map { case ((user, product), (r1, r2)) =>
+      val err = (r1 - r2)
+      err * err
+    }.mean()
+    println("Mean Squared Error = " + MSE)
+
+    // Save and load model
+    val iString = new SimpleDateFormat("yyyyMMddHHmmssSSS").format(new Date())
+    model.save(sc, "myModelPath" + iString)
+    val sameModel = MatrixFactorizationModel.load(sc, "myModelPath")
+  }
+}
+
+```
+
+3.结果：
+
+```
+D:\1win7\java\jdk\bin\java -Didea.launcher.port=7533 "-Didea.launcher.bin.path=D:\1win7\idea\IntelliJ IDEA Community Edition 15.0.4\bin" -Dfile.encoding=UTF-8 -classpath "D:\all\idea\SparkLearning\target\classes;D:\1win7\java\jdk\jre\lib\charsets.jar;D:\1win7\java\jdk\jre\lib\deploy.jar;D:\1win7\java\jdk\jre\lib\ext\access-bridge-64.jar;D:\1win7\java\jdk\jre\lib\ext\dnsns.jar;D:\1win7\java\jdk\jre\lib\ext\jaccess.jar;D:\1win7\java\jdk\jre\lib\ext\localedata.jar;D:\1win7\java\jdk\jre\lib\ext\sunec.jar;D:\1win7\java\jdk\jre\lib\ext\sunjce_provider.jar;D:\1win7\java\jdk\jre\lib\ext\sunmscapi.jar;D:\1win7\java\jdk\jre\lib\ext\zipfs.jar;D:\1win7\java\jdk\jre\lib\javaws.jar;D:\1win7\java\jdk\jre\lib\jce.jar;D:\1win7\java\jdk\jre\lib\jfr.jar;D:\1win7\java\jdk\jre\lib\jfxrt.jar;D:\1win7\java\jdk\jre\lib\jsse.jar;D:\1win7\java\jdk\jre\lib\management-agent.jar;D:\1win7\java\jdk\jre\lib\plugin.jar;D:\1win7\java\jdk\jre\lib\resources.jar;D:\1win7\java\jdk\jre\lib\rt.jar;D:\1win7\scala;D:\1win7\scala\lib;D:\1win7\java\otherJar\spark-assembly-1.5.2-hadoop2.6.0.jar;D:\1win7\java\otherJar\adam-apis_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\adam-cli_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\adam-core_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\SparkCSV\com.databricks_spark-csv_2.10-1.4.0.jar;D:\1win7\java\otherJar\SparkCSV\com.univocity_univocity-parsers-1.5.1.jar;D:\1win7\java\otherJar\SparkCSV\org.apache.commons_commons-csv-1.1.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1-javadoc.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1-sources.jar;D:\1win7\java\otherJar\avro\spark-avro_2.10-2.0.2-SNAPSHOT.jar;D:\1win7\java\otherJar\tachyon\tachyon-assemblies-0.7.1-jar-with-dependencies.jar;D:\1win7\scala\lib\scala-actors-migration.jar;D:\1win7\scala\lib\scala-actors.jar;D:\1win7\scala\lib\scala-library.jar;D:\1win7\scala\lib\scala-reflect.jar;D:\1win7\scala\lib\scala-swing.jar;C:\Users\xubo\.m2\repository\com\github\scopt\scopt_2.10\3.2.0\scopt_2.10-3.2.0.jar;C:\Users\xubo\.m2\repository\org\scala-lang\scala-library\2.10.3\scala-library-2.10.3.jar;D:\1win7\idea\IntelliJ IDEA Community Edition 15.0.4\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain apache.spark.mllib.learning.recommend.ALSImplicitFromSpark
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/spark-assembly-1.5.2-hadoop2.6.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/adam-cli_2.10-0.18.3-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/tachyon/tachyon-assemblies-0.7.1-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+2016-05-16 22:46:20 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2016-05-16 22:46:22 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
+2016-05-16 22:46:25 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:200:5efe:ca26:541d%20, but we couldn't find any external IP address!
+2016-05-16 22:46:27 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2016-05-16 22:46:27 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2016-05-16 22:46:27 WARN  LAPACK:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
+2016-05-16 22:46:27 WARN  LAPACK:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
+Mean Squared Error = 8.011502126568448
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+2016-05-16 22:46:36 WARN  ParquetRecordReader:193 - Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+2016-05-16 22:46:36 WARN  MatrixFactorizationModel:71 - User factor does not have a partitioner. Prediction on individual records could be slow.
+2016-05-16 22:46:36 WARN  MatrixFactorizationModel:71 - User factor is not cached. Prediction could be slow.
+2016-05-16 22:46:36 WARN  ParquetRecordReader:193 - Can not initialize counter due to context is not a instance of TaskInputOutputContext, but is org.apache.hadoop.mapreduce.task.TaskAttemptContextImpl
+2016-05-16 22:46:36 WARN  MatrixFactorizationModel:71 - Product factor does not have a partitioner. Prediction on individual records could be slow.
+2016-05-16 22:46:36 WARN  MatrixFactorizationModel:71 - Product factor is not cached. Prediction could be slow.
+
+Process finished with exit code 0
+
+```
+
+
+参考
+【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html
+【2】http://spark.apache.org/docs/1.5.2/mllib-collaborative-filtering.html#collaborative-filtering
+【3】https://github.com/xubo245/SparkLearning

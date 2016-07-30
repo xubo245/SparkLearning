@@ -1,272 +1,58 @@
-	更多代码请见：https://github.com/xubo245/SparkLearning
-	
-	1解释
-	数据下载：http://files.grouplens.org/datasets/movielens/
-	
-	
-	2.代码：
-	
-	```
-	/*
-	 * Licensed to the Apache Software Foundation (ASF) under one or more
-	 * contributor license agreements.  See the NOTICE file distributed with
-	 * this work for additional information regarding copyright ownership.
-	 * The ASF licenses this file to You under the Apache License, Version 2.0
-	 * (the "License"); you may not use this file except in compliance with
-	 * the License.  You may obtain a copy of the License at
-	 *
-	 *    http://www.apache.org/licenses/LICENSE-2.0
-	 *
-	 * Unless required by applicable law or agreed to in writing, software
-	 * distributed under the License is distributed on an "AS IS" BASIS,
-	 * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-	 * See the License for the specific language governing permissions and
-	 * limitations under the License.
-	 */
-	
-	/** *
-	  *
-	  * @author xubo
-	  *         time 20160516
-	  *         args:file/data/mllib/input/sample_movielens_data.txt
-	  *         args:--rank 5 --numIterations 20 --lambda 1.0 --kryo file/data/mllib/input/sample_movielens_data.txt
-	  *         ref http://spark.apache.org/docs/1.5.2/mllib-collaborative-filtering.html#collaborative-filtering
-	  */
-	// scalastyle:off println
-	package apache.spark.mllib.learning.recommend
-	
-	import org.apache.log4j.{Level, Logger}
-	import org.apache.spark.mllib.recommendation.{ALS, MatrixFactorizationModel, Rating}
-	import org.apache.spark.rdd.RDD
-	import org.apache.spark.{SparkConf, SparkContext}
-	import scopt.OptionParser
-	
-	import scala.collection.mutable
-	
-	/**
-	  * An example app for ALS on MovieLens data (http://grouplens.org/datasets/movielens/).
-	  * Run with
-	  * {{{
-	  * bin/run-example org.apache.spark.examples.mllib.MovieLensALS
-	  * }}}
-	  * A synthetic dataset in MovieLens format can be found at `data/mllib/sample_movielens_data.txt`.
-	  * If you use it as a template to create your own app, please use `spark-submit` to submit your app.
-	  */
-	object MovieLensALS100k {
-	
-	  case class Params(
-	                     input: String = null,
-	                     kryo: Boolean = false,
-	                     numIterations: Int = 20,
-	                     lambda: Double = 1.0,
-	                     rank: Int = 10,
-	                     numUserBlocks: Int = -1,
-	                     numProductBlocks: Int = -1,
-	                     implicitPrefs: Boolean = false) extends AbstractParams[Params]
-	
-	  def main(args: Array[String]) {
-	    val defaultParams = Params()
-	
-	    val parser = new OptionParser[Params]("MovieLensALS") {
-	      head("MovieLensALS: an example app for ALS on MovieLens data.")
-	      opt[Int]("rank")
-	        .text(s"rank, default: ${defaultParams.rank}")
-	        .action((x, c) => c.copy(rank = x))
-	      opt[Int]("numIterations")
-	        .text(s"number of iterations, default: ${defaultParams.numIterations}")
-	        .action((x, c) => c.copy(numIterations = x))
-	      opt[Double]("lambda")
-	        .text(s"lambda (smoothing constant), default: ${defaultParams.lambda}")
-	        .action((x, c) => c.copy(lambda = x))
-	      opt[Unit]("kryo")
-	        .text("use Kryo serialization")
-	        .action((_, c) => c.copy(kryo = true))
-	      opt[Int]("numUserBlocks")
-	        .text(s"number of user blocks, default: ${defaultParams.numUserBlocks} (auto)")
-	        .action((x, c) => c.copy(numUserBlocks = x))
-	      opt[Int]("numProductBlocks")
-	        .text(s"number of product blocks, default: ${defaultParams.numProductBlocks} (auto)")
-	        .action((x, c) => c.copy(numProductBlocks = x))
-	      opt[Unit]("implicitPrefs")
-	        .text("use implicit preference")
-	        .action((_, c) => c.copy(implicitPrefs = true))
-	      arg[String]("<input>")
-	        .required()
-	        .text("input paths to a MovieLens dataset of ratings")
-	        .action((x, c) => c.copy(input = x))
-	      note(
-	        """
-	          |For example, the following command runs this app on a synthetic dataset:
-	          |
-	          | bin/spark-submit --class org.apache.spark.examples.mllib.MovieLensALS \
-	          |  examples/target/scala-*/spark-examples-*.jar \
-	          |  --rank 5 --numIterations 20 --lambda 1.0 --kryo \
-	          |  data/mllib/sample_movielens_data.txt
-	        """.stripMargin)
-	    }
-	
-	    parser.parse(args, defaultParams).map { params =>
-	      run(params)
-	    } getOrElse {
-	      System.exit(1)
-	    }
-	  }
-	
-	  def run(params: Params) {
-	    val conf = new SparkConf().setAppName(s"MovieLensALS with $params").setMaster("local[4]")
-	    if (params.kryo) {
-	      conf.registerKryoClasses(Array(classOf[mutable.BitSet], classOf[Rating]))
-	        .set("spark.kryoserializer.buffer", "8m")
-	    }
-	    val sc = new SparkContext(conf)
-	
-	    Logger.getRootLogger.setLevel(Level.WARN)
-	
-	    val implicitPrefs = params.implicitPrefs
-	
-	    val ratings = sc.textFile(params.input).map { line =>
-	      val fields = line.split("\\s+")
-	      if (implicitPrefs) {
-	        /*
-	         * MovieLens ratings are on a scale of 1-5:
-	         * 5: Must see
-	         * 4: Will enjoy
-	         * 3: It's okay
-	         * 2: Fairly bad
-	         * 1: Awful
-	         * So we should not recommend a movie if the predicted rating is less than 3.
-	         * To map ratings to confidence scores, we use
-	         * 5 -> 2.5, 4 -> 1.5, 3 -> 0.5, 2 -> -0.5, 1 -> -1.5. This mappings means unobserved
-	         * entries are generally between It's okay and Fairly bad.
-	         * The semantics of 0 in this expanded world of non-positive weights
-	         * are "the same as never having interacted at all".
-	         */
-	        Rating(fields(0).toInt, fields(1).toInt, fields(2).toDouble - 2.5)
-	      } else {
-	        Rating(fields(0).toInt, fields(1).toInt, fields(2).toDouble)
-	      }
-	    }.cache()
-	
-	    val numRatings = ratings.count()
-	    val numUsers = ratings.map(_.user).distinct().count()
-	    val numMovies = ratings.map(_.product).distinct().count()
-	
-	    println(s"Got $numRatings ratings from $numUsers users on $numMovies movies.")
-	
-	    val splits = ratings.randomSplit(Array(0.8, 0.2))
-	    val training = splits(0).cache()
-	    val test = if (params.implicitPrefs) {
-	      /*
-	       * 0 means "don't know" and positive values mean "confident that the prediction should be 1".
-	       * Negative values means "confident that the prediction should be 0".
-	       * We have in this case used some kind of weighted RMSE. The weight is the absolute value of
-	       * the confidence. The error is the difference between prediction and either 1 or 0,
-	       * depending on whether r is positive or negative.
-	       */
-	      splits(1).map(x => Rating(x.user, x.product, if (x.rating > 0) 1.0 else 0.0))
-	    } else {
-	      splits(1)
-	    }.cache()
-	
-	    val numTraining = training.count()
-	    val numTest = test.count()
-	    println(s"Training: $numTraining, test: $numTest.")
-	
-	    ratings.unpersist(blocking = false)
-	
-	    val model = new ALS()
-	      .setRank(params.rank)
-	      .setIterations(params.numIterations)
-	      .setLambda(params.lambda)
-	      .setImplicitPrefs(params.implicitPrefs)
-	      .setUserBlocks(params.numUserBlocks)
-	      .setProductBlocks(params.numProductBlocks)
-	      .run(training)
-	
-	    val rmse = computeRmse(model, test, params.implicitPrefs)
-	
-	    println(s"Test RMSE = $rmse.")
-	    println(model.predict(196, 242))
-	    println(model.predict(186, 302))
-	    println(model.predict(22, 377))
-	    println(model.predict(244, 51))
-	    println(model.predict(166, 346))
-	    println(model.predict(298, 474))
-	
-	    //    196	242	3	881250949
-	    //    186	302	3	891717742
-	    //    22	377	1	878887116
-	    //    244	51	2	880606923
-	    //    166	346	1	886397596
-	    //    298	474	4	884182806
-	
-	    //    predict
-	    //    2.90972069181384
-	    //    2.9659688329909253
-	    //    1.6347869848052985
-	    //    2.5944938058703233
-	    //    2.7894103509399906
-	    //    3.362232859053514
-	
-	    sc.stop()
-	
-	  }
-	
-	  /** Compute RMSE (Root Mean Squared Error). */
-	  def computeRmse(model: MatrixFactorizationModel, data: RDD[Rating], implicitPrefs: Boolean)
-	  : Double = {
-	
-	    def mapPredictedRating(r: Double): Double = {
-	      if (implicitPrefs) math.max(math.min(r, 1.0), 0.0) else r
-	    }
-	
-	    val predictions: RDD[Rating] = model.predict(data.map(x => (x.user, x.product)))
-	    val predictionsAndRatings = predictions.map { x =>
-	      ((x.user, x.product), mapPredictedRating(x.rating))
-	    }.join(data.map(x => ((x.user, x.product), x.rating))).values
-	    math.sqrt(predictionsAndRatings.map(x => (x._1 - x._2) * (x._1 - x._2)).mean())
-	  }
-	}
-	
-	// scalastyle:on println
-	
-	```
-	
-	3.结果：
-	
-	```
-	D:\1win7\java\jdk\bin\java -Didea.launcher.port=7532 "-Didea.launcher.bin.path=D:\1win7\idea\IntelliJ IDEA Community Edition 15.0.4\bin" -Dfile.encoding=UTF-8 -classpath "D:\all\idea\SparkLearning\target\classes;D:\1win7\java\jdk\jre\lib\charsets.jar;D:\1win7\java\jdk\jre\lib\deploy.jar;D:\1win7\java\jdk\jre\lib\ext\access-bridge-64.jar;D:\1win7\java\jdk\jre\lib\ext\dnsns.jar;D:\1win7\java\jdk\jre\lib\ext\jaccess.jar;D:\1win7\java\jdk\jre\lib\ext\localedata.jar;D:\1win7\java\jdk\jre\lib\ext\sunec.jar;D:\1win7\java\jdk\jre\lib\ext\sunjce_provider.jar;D:\1win7\java\jdk\jre\lib\ext\sunmscapi.jar;D:\1win7\java\jdk\jre\lib\ext\zipfs.jar;D:\1win7\java\jdk\jre\lib\javaws.jar;D:\1win7\java\jdk\jre\lib\jce.jar;D:\1win7\java\jdk\jre\lib\jfr.jar;D:\1win7\java\jdk\jre\lib\jfxrt.jar;D:\1win7\java\jdk\jre\lib\jsse.jar;D:\1win7\java\jdk\jre\lib\management-agent.jar;D:\1win7\java\jdk\jre\lib\plugin.jar;D:\1win7\java\jdk\jre\lib\resources.jar;D:\1win7\java\jdk\jre\lib\rt.jar;D:\1win7\scala;D:\1win7\scala\lib;D:\1win7\java\otherJar\spark-assembly-1.5.2-hadoop2.6.0.jar;D:\1win7\java\otherJar\adam-apis_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\adam-cli_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\adam-core_2.10-0.18.3-SNAPSHOT.jar;D:\1win7\java\otherJar\SparkCSV\com.databricks_spark-csv_2.10-1.4.0.jar;D:\1win7\java\otherJar\SparkCSV\com.univocity_univocity-parsers-1.5.1.jar;D:\1win7\java\otherJar\SparkCSV\org.apache.commons_commons-csv-1.1.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1-javadoc.jar;D:\1win7\java\otherJar\SparkAvro\spark-avro_2.10-2.0.1-sources.jar;D:\1win7\java\otherJar\avro\spark-avro_2.10-2.0.2-SNAPSHOT.jar;D:\1win7\java\otherJar\tachyon\tachyon-assemblies-0.7.1-jar-with-dependencies.jar;D:\1win7\scala\lib\scala-actors-migration.jar;D:\1win7\scala\lib\scala-actors.jar;D:\1win7\scala\lib\scala-library.jar;D:\1win7\scala\lib\scala-reflect.jar;D:\1win7\scala\lib\scala-swing.jar;C:\Users\xubo\.m2\repository\com\github\scopt\scopt_2.10\3.2.0\scopt_2.10-3.2.0.jar;C:\Users\xubo\.m2\repository\org\scala-lang\scala-library\2.10.3\scala-library-2.10.3.jar;D:\1win7\idea\IntelliJ IDEA Community Edition 15.0.4\lib\idea_rt.jar" com.intellij.rt.execution.application.AppMain apache.spark.mllib.learning.recommend.MovieLensALS100k D:\all\idea\SparkLearning\file\data\mllib\input\movielens\ml-100k\u.data
-	SLF4J: Class path contains multiple SLF4J bindings.
-	SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/spark-assembly-1.5.2-hadoop2.6.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-	SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/adam-cli_2.10-0.18.3-SNAPSHOT.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-	SLF4J: Found binding in [jar:file:/D:/1win7/java/otherJar/tachyon/tachyon-assemblies-0.7.1-jar-with-dependencies.jar!/org/slf4j/impl/StaticLoggerBinder.class]
-	SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
-	SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
-	2016-05-17 21:09:21 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
-	2016-05-17 21:09:24 WARN  MetricsSystem:71 - Using default name DAGScheduler for source because spark.app.id is not set.
-	2016-05-17 21:09:26 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:200:5efe:d356:9f8e%20, but we couldn't find any external IP address!
-	Got 100000 ratings from 943 users on 1682 movies.
-	Training: 79936, test: 20064.
-	2016-05-17 21:09:42 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
-	2016-05-17 21:09:42 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
-	2016-05-17 21:09:43 WARN  LAPACK:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemLAPACK
-	2016-05-17 21:09:43 WARN  LAPACK:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefLAPACK
-	Test RMSE = 1.381439230726954.
-	2.7669578494275573
-	2.8469469555029345
-	1.5082034472386099
-	2.597366713905704
-	2.6186014383179406
-	3.366311990686616
-	
-	Process finished with exit code 0
-	
-	```
-	
-	结果分析：由于每次运行时train和testdata按照8：2随机划分，所以每次训练结果不一样，如果数据在train中，predict会很接近，如果在test中，数据就不一定了。
-	
-	
-	参考
-	【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
-	【2】http://spark.apache.org/docs/1.5.2/mllib-collaborative-filtering.html#collaborative-filtering 
-	【3】https://github.com/xubo245/SparkLearning
+更多代码请见：https://github.com/xubo245/SparkLearning
+Spark中组件Mllib的学习之基础概念篇
+1解释
+从文本中读取带标签的数据，生成带label的向量
+
+2.代码：
+
+```
+/**
+  * @author xubo
+  *         ref:Spark MlLib机器学习实战
+  *         more code:https://github.com/xubo245/SparkLearning
+  *         more blog:http://blog.csdn.net/xubo245
+  */
+package org.apache.spark.mllib.learning.basic
+
+import org.apache.spark.mllib.util.MLUtils
+import org.apache.spark.{SparkContext, SparkConf}
+
+/**
+  * Created by xubo on 2016/5/23.
+  * 从文本中读取带标签的数据
+  */
+object LabeledPointLoadlibSVMFile {
+  def main(args: Array[String]) {
+    val conf = new SparkConf().setMaster("local").setAppName(this.getClass().getSimpleName().filter(!_.equals('$')))
+    //  println(this.getClass().getSimpleName().filter(!_.equals('$')))
+    //设置环境变量
+    val sc = new SparkContext(conf)
+
+    val mu = MLUtils.loadLibSVMFile(sc, "file/data/mllib/input/basic/sample_libsvm_data.txt") //读取文件
+    mu.foreach(println) //打印内容
+
+    sc.stop
+  }
+}
+
+```
+数据：
+一行
+
+```
+0 128:51 129:159 130:253 131:159 132:50 155:48 156:238 157:252 158:252 159:252 160:237 182:54 183:227 184:253 185:252 186:239 187:233 188:252 189:57 190:6 208:10 209:60 210:224 211:252 212:253 213:252 214:202 215:84 216:252 217:253 218:122 236:163 237:252 238:252 239:252 240:253 241:252 242:252 243:96 244:189 245:253 246:167 263:51 264:238 265:253 266:253 267:190 268:114 269:253 270:228 271:47 272:79 273:255 274:168 290:48 291:238 292:252 293:252 294:179 295:12 296:75 297:121 298:21 301:253 302:243 303:50 317:38 318:165 319:253 320:233 321:208 322:84 329:253 330:252 331:165 344:7 345:178 346:252 347:240 348:71 349:19 350:28 357:253 358:252 359:195 372:57 373:252 374:252 375:63 385:253 386:252 387:195 400:198 401:253 402:190 413:255 414:253 415:196 427:76 428:246 429:252 430:112 441:253 442:252 443:148 455:85 456:252 457:230 458:25 467:7 468:135 469:253 470:186 471:12 483:85 484:252 485:223 494:7 495:131 496:252 497:225 498:71 511:85 512:252 513:145 521:48 522:165 523:252 524:173 539:86 540:253 541:225 548:114 549:238 550:253 551:162 567:85 568:252 569:249 570:146 571:48 572:29 573:85 574:178 575:225 576:253 577:223 578:167 579:56 595:85 596:252 597:252 598:252 599:229 600:215 601:252 602:252 603:252 604:196 605:130 623:28 624:199 625:252 626:252 627:253 628:252 629:252 630:233 631:145 652:25 653:128 654:252 655:253 656:252 657:141 658:37
+。。。
+
+```
+
+3.结果：
+
+```
+(0.0,(692,[127,128,129,130,131,154,155,156,157,158,159,181,182,183,184,185,186,187,188,189,207,208,209,210,211,212,213,214,215,216,217,235,236,237,238,239,240,241,242,243,244,245,262,263,264,265,266,267,268,269,270,271,272,273,289,290,291,292,293,294,295,296,297,300,301,302,316,317,318,319,320,321,328,329,330,343,344,345,346,347,348,349,356,357,358,371,372,373,374,384,385,386,399,400,401,412,413,414,426,427,428,429,440,441,442,454,455,456,457,466,467,468,469,470,482,483,484,493,494,495,496,497,510,511,512,520,521,522,523,538,539,540,547,548,549,550,566,567,568,569,570,571,572,573,574,575,576,577,578,594,595,596,597,598,599,600,601,602,603,604,622,623,624,625,626,627,628,629,630,651,652,653,654,655,656,657],[51.0,159.0,253.0,159.0,50.0,48.0,238.0,252.0,252.0,252.0,237.0,54.0,227.0,253.0,252.0,239.0,233.0,252.0,57.0,6.0,10.0,60.0,224.0,252.0,253.0,252.0,202.0,84.0,252.0,253.0,122.0,163.0,252.0,252.0,252.0,253.0,252.0,252.0,96.0,189.0,253.0,167.0,51.0,238.0,253.0,253.0,190.0,114.0,253.0,228.0,47.0,79.0,255.0,168.0,48.0,238.0,252.0,252.0,179.0,12.0,75.0,121.0,21.0,253.0,243.0,50.0,38.0,165.0,253.0,233.0,208.0,84.0,253.0,252.0,165.0,7.0,178.0,252.0,240.0,71.0,19.0,28.0,253.0,252.0,195.0,57.0,252.0,252.0,63.0,253.0,252.0,195.0,198.0,253.0,190.0,255.0,253.0,196.0,76.0,246.0,252.0,112.0,253.0,252.0,148.0,85.0,252.0,230.0,25.0,7.0,135.0,253.0,186.0,12.0,85.0,252.0,223.0,7.0,131.0,252.0,225.0,71.0,85.0,252.0,145.0,48.0,165.0,252.0,173.0,86.0,253.0,225.0,114.0,238.0,253.0,162.0,85.0,252.0,249.0,146.0,48.0,29.0,85.0,178.0,225.0,253.0,223.0,167.0,56.0,85.0,252.0,252.0,252.0,229.0,215.0,252.0,252.0,252.0,196.0,130.0,28.0,199.0,252.0,252.0,253.0,252.0,252.0,233.0,145.0,25.0,128.0,252.0,253.0,252.0,141.0,37.0]))
+。。。
+```
+
+参考
+【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
+【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
+【3】https://github.com/xubo245/SparkLearning

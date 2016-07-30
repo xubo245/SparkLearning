@@ -18,7 +18,7 @@ Spark中组件Mllib的学习
 
 参考
 
-	【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
+	【1】http://spark.apache.org/docs/1.5.2/ml-guide.html
 	【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
 	【3】https://github.com/xubo245/SparkLearning
 	【4】book:Machine Learning with Spark ,Nick Pertreach

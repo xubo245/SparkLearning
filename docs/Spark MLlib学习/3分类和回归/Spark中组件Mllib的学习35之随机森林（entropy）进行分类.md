@@ -4,7 +4,6 @@
 
 1解释
 	
-	
 	支持向量机(Support Vector Machine，SVM)是Corinna Cortes和Vapnik等于1995年首先提出的，它在解决小样本、非线性及高维模式识别中表现出许多特有的优势，并能够推广应用到函数拟合等其他机器学习问题中。
 	
 	SVM的概念在机器学习的书上讲的比较清楚，博客请见【4】
@@ -100,7 +99,7 @@
 后面model.save和load好慢，就没等了
 	
 
-参考
+参考   
 
 	【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
 	【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
