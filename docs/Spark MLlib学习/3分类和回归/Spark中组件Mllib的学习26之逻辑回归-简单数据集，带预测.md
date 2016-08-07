@@ -1,130 +1,113 @@
-	
-	更多代码请见：https://github.com/xubo245/SparkLearning
-	Spark中组件Mllib的学习之基础概念篇 
-	1解释
-	参考【4】的博文讲的比较清楚了，只是里面有些错误。
-	 定义
-	 
-	    卡方检验就是统计样本的实际观测值与理论推断值之间的偏离程度，实际观测值与理论推断值之间的偏离程度就决定卡方值的大小，卡方值越大，越不符合；卡方值越小，偏差越小，越趋于符合，若两个值完全相等时，卡方值就为0，表明理论值完全符合。
-	    
-	 （1）提出原假设：
-	H0：总体X的分布函数为F(x).
-	 
-	  基于皮尔逊的检验统计量：
-	  ![这里写图片描述](http://img.blog.csdn.net/20160524113039028)
-	
-	理解：n次试验中样本值落入第i个小区间Ai的频率fi/n与概率pi应很接近，当H0不真时，则fi/n与pi相差很大。在假设成立的情况下服从自由度为k-1的卡方分布。
-	
-	参考【4】中给了例子，比较好理解，下面是截图：
-	![这里写图片描述](http://img.blog.csdn.net/20160524113559186)
-	
-	说明：19，34，24，10为实际测量值，括号内为计算值，比如26.2=(53/87)*43
-	计算卡方检验的值：
-	如上图3，也可以是下图专门的计算公式：
-	![这里写图片描述](http://img.blog.csdn.net/20160524113840250)
-	
-	p-value确定：具体的没理解，根据参考【4】查表可以知道大概在0.001
-	
-	
-	【4】中还给出了：“从表20-14可见，T1.2和T2.2数值都＜5，且总例数大于40，故宜用校正公式（20.15）检验”，可以去看看
-	
-	2.代码：
-	
-	```
-	/**
-	  * @author xubo
-	  *         ref:Spark MlLib机器学习实战
-	  *         more code:https://github.com/xubo245/SparkLearning
-	  *         more blog:http://blog.csdn.net/xubo245
-	  */
-	package org.apache.spark.mllib.learning.basic
-	
-	import org.apache.spark.mllib.linalg.{Matrix, Matrices, Vectors}
-	import org.apache.spark.mllib.stat.Statistics
-	import org.apache.spark.{SparkConf, SparkContext}
-	
-	/**
-	  * Created by xubo on 2016/5/23.
-	  */
-	object ChiSqLearning {
-	  def main(args: Array[String]) {
-	    val vd = Vectors.dense(1, 2, 3, 4, 5)
-	    val vdResult = Statistics.chiSqTest(vd)
-	    println(vd)
-	    println(vdResult)
-	    println("-------------------------------")
-	    val mtx = Matrices.dense(3, 2, Array(1, 3, 5, 2, 4, 6))
-	    val mtxResult = Statistics.chiSqTest(mtx)
-	    println(mtx)
-	    println(mtxResult)
-	    //print :方法、自由度、方法的统计量、p值
-	    println("-------------------------------")
-	    val mtx2 = Matrices.dense(2, 2, Array(19.0, 34, 24, 10.0))
-	    printChiSqTest(mtx2)
-	    printChiSqTest( Matrices.dense(2, 2, Array(26.0, 36, 7, 2.0)))
-	//    val mtxResult2 = Statistics.chiSqTest(mtx2)
-	//    println(mtx2)
-	//    println(mtxResult2)
-	  }
-	
-	  def printChiSqTest(matrix: Matrix): Unit = {
-	    println("-------------------------------")
-	    val mtxResult2 = Statistics.chiSqTest(matrix)
-	    println(matrix)
-	    println(mtxResult2)
-	  }
-	
-	
-	}
-	
-	```
-	
-	3.结果：
-	
-	```
-	[1.0,2.0,3.0,4.0,5.0]
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 4 
-	statistic = 3.333333333333333 
-	pValue = 0.5036682742334986 
-	No presumption against null hypothesis: observed follows the same distribution as expected..
-	-------------------------------
-	1.0  2.0  
-	3.0  4.0  
-	5.0  6.0  
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 2 
-	statistic = 0.14141414141414144 
-	pValue = 0.931734784568187 
-	No presumption against null hypothesis: the occurrence of the outcomes is statistically independent..
-	-------------------------------
-	-------------------------------
-	19.0  24.0  
-	34.0  10.0  
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 1 
-	statistic = 9.999815802502738 
-	pValue = 0.0015655588405594223 
-	Very strong presumption against null hypothesis: the occurrence of the outcomes is statistically independent..
-	-------------------------------
-	26.0  7.0  
-	36.0  2.0  
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 1 
-	statistic = 4.05869675818742 
-	pValue = 0.043944401832082036 
-	Strong presumption against null hypothesis: the occurrence of the outcomes is statistically independent..
-	
-	```
-	第四个例子可以用【4】中的校正公式，这里代码没用。
-	
-	参考
-	【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
-	【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
-	【3】https://github.com/xubo245/SparkLearning
-	【4】http://blog.csdn.net/wermnb/article/details/6628555
-	【5】http://baike.baidu.com/link?url=y1Ryc0tbOLSL4zULGihtY3gXRbJO26FvHw05cfFYZ01V87h9h2gF0Bl2su2uA52TWq4FGnPAblXLX2jQhFRK3K
+更多代码请见：https://github.com/xubo245/SparkLearning
+Spark中组件Mllib的学习之逻辑回归篇 
+1解释
+什么是逻辑回归？
+
+Logistic回归与多重线性回归实际上有很多相同之处，最大的区别就在于它们的因变量不同，其他的基本都差不多。正是因为如此，这两种回归可以归于同一个家族，即广义线性模型（generalizedlinear model）。
+
+这一家族中的模型形式基本上都差不多，不同的就是因变量不同。
+
+    如果是连续的，就是多重线性回归；
+    如果是二项分布，就是Logistic回归；
+    如果是Poisson分布，就是Poisson回归；
+    如果是负二项分布，就是负二项回归。
+
+Logistic回归的因变量可以是二分类的，也可以是多分类的，但是二分类的更为常用，也更加容易解释。所以实际中最常用的就是二分类的Logistic回归。
+
+Logistic回归的主要用途：
+
+    寻找危险因素：寻找某一疾病的危险因素等；
+    预测：根据模型，预测在不同的自变量情况下，发生某病或某种情况的概率有多大；
+    判别：实际上跟预测有些类似，也是根据模型，判断某人属于某病或属于某种情况的概率有多大，也就是看一下这个人有多大的可能性是属于某病。
+
+更多请见参考【4】，【4】中还有推理、迭代更新和求解过程，正则化也有
+
+逻辑回归：
+![这里写图片描述](http://img.blog.csdn.net/20160524215642836)
+
+2.代码：
+
+```
+/**
+  * @author xubo
+  *         ref:Spark MlLib机器学习实战
+  *         more code:https://github.com/xubo245/SparkLearning
+  *         more blog:http://blog.csdn.net/xubo245
+  */
+package org.apache.spark.mllib.learning.regression
+
+import org.apache.spark.mllib.classification.LogisticRegressionWithSGD
+import org.apache.spark.mllib.linalg.Vectors
+import org.apache.spark.mllib.regression.LabeledPoint
+import org.apache.spark.{SparkConf, SparkContext}
+
+/**
+  * Created by xubo on 2016/5/23.
+  * 一元逻辑回归
+  */
+object LogisticRegressionLearning {
+  def main(args: Array[String]) {
+    val conf = new SparkConf().setMaster("local[4]").setAppName(this.getClass().getSimpleName().filter(!_.equals('$')))
+    val sc = new SparkContext(conf)
+
+    val data = sc.textFile("file/data/mllib/input/regression/logisticRegression1.data") //获取数据集路径
+    val parsedData = data.map { line => //开始对数据集处理
+        val parts = line.split('|') //根据逗号进行分区
+        LabeledPoint(parts(0).toDouble, Vectors.dense(parts(1).split(' ').map(_.toDouble)))
+      }.cache() //转化数据格式
+    parsedData.foreach(println)
+    val model = LogisticRegressionWithSGD.train(parsedData, 50) //建立模型
+    val target = Vectors.dense(-1) //创建测试值
+    val resulet = model.predict(target) //根据模型计算结果
+    println("model.weights:")
+    println(model.weights)
+    println(resulet) //打印结果
+    println(model.predict(Vectors.dense(10)))
+    sc.stop
+  }
+}
+
+```
+
+数据：
+
+```
+1|2
+1|3
+1|4
+1|5
+1|6
+0|7
+0|8
+0|9
+0|10
+0|11
+```
+
+3.结果：
+
+```
+2016-05-24 21:59:06 WARN  :139 - Your hostname, xubo-PC resolves to a loopback/non-reachable address: fe80:0:0:0:482:722f:5976:ce1f%20, but we couldn't find any external IP address!
+(0.0,[8.0])
+(1.0,[2.0])
+(0.0,[9.0])
+(1.0,[3.0])
+(0.0,[10.0])
+(1.0,[4.0])
+(0.0,[11.0])
+(1.0,[5.0])
+(1.0,[6.0])
+(0.0,[7.0])
+2016-05-24 21:59:07 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2016-05-24 21:59:07 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+model.weights:
+[-0.10590621151462867]
+1.0
+0.0
+```
+
+参考
+【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
+【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
+【3】https://github.com/xubo245/SparkLearning
+【4】http://blog.csdn.net/pakko/article/details/37878837

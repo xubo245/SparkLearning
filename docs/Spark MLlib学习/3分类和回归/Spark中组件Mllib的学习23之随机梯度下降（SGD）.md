@@ -1,130 +1,164 @@
-	
-	更多代码请见：https://github.com/xubo245/SparkLearning
-	Spark中组件Mllib的学习之基础概念篇 
-	1解释
-	参考【4】的博文讲的比较清楚了，只是里面有些错误。
-	 定义
-	 
-	    卡方检验就是统计样本的实际观测值与理论推断值之间的偏离程度，实际观测值与理论推断值之间的偏离程度就决定卡方值的大小，卡方值越大，越不符合；卡方值越小，偏差越小，越趋于符合，若两个值完全相等时，卡方值就为0，表明理论值完全符合。
-	    
-	 （1）提出原假设：
-	H0：总体X的分布函数为F(x).
-	 
-	  基于皮尔逊的检验统计量：
-	  ![这里写图片描述](http://img.blog.csdn.net/20160524113039028)
-	
-	理解：n次试验中样本值落入第i个小区间Ai的频率fi/n与概率pi应很接近，当H0不真时，则fi/n与pi相差很大。在假设成立的情况下服从自由度为k-1的卡方分布。
-	
-	参考【4】中给了例子，比较好理解，下面是截图：
-	![这里写图片描述](http://img.blog.csdn.net/20160524113559186)
-	
-	说明：19，34，24，10为实际测量值，括号内为计算值，比如26.2=(53/87)*43
-	计算卡方检验的值：
-	如上图3，也可以是下图专门的计算公式：
-	![这里写图片描述](http://img.blog.csdn.net/20160524113840250)
-	
-	p-value确定：具体的没理解，根据参考【4】查表可以知道大概在0.001
-	
-	
-	【4】中还给出了：“从表20-14可见，T1.2和T2.2数值都＜5，且总例数大于40，故宜用校正公式（20.15）检验”，可以去看看
-	
-	2.代码：
-	
-	```
-	/**
-	  * @author xubo
-	  *         ref:Spark MlLib机器学习实战
-	  *         more code:https://github.com/xubo245/SparkLearning
-	  *         more blog:http://blog.csdn.net/xubo245
-	  */
-	package org.apache.spark.mllib.learning.basic
-	
-	import org.apache.spark.mllib.linalg.{Matrix, Matrices, Vectors}
-	import org.apache.spark.mllib.stat.Statistics
-	import org.apache.spark.{SparkConf, SparkContext}
-	
-	/**
-	  * Created by xubo on 2016/5/23.
-	  */
-	object ChiSqLearning {
-	  def main(args: Array[String]) {
-	    val vd = Vectors.dense(1, 2, 3, 4, 5)
-	    val vdResult = Statistics.chiSqTest(vd)
-	    println(vd)
-	    println(vdResult)
-	    println("-------------------------------")
-	    val mtx = Matrices.dense(3, 2, Array(1, 3, 5, 2, 4, 6))
-	    val mtxResult = Statistics.chiSqTest(mtx)
-	    println(mtx)
-	    println(mtxResult)
-	    //print :方法、自由度、方法的统计量、p值
-	    println("-------------------------------")
-	    val mtx2 = Matrices.dense(2, 2, Array(19.0, 34, 24, 10.0))
-	    printChiSqTest(mtx2)
-	    printChiSqTest( Matrices.dense(2, 2, Array(26.0, 36, 7, 2.0)))
-	//    val mtxResult2 = Statistics.chiSqTest(mtx2)
-	//    println(mtx2)
-	//    println(mtxResult2)
-	  }
-	
-	  def printChiSqTest(matrix: Matrix): Unit = {
-	    println("-------------------------------")
-	    val mtxResult2 = Statistics.chiSqTest(matrix)
-	    println(matrix)
-	    println(mtxResult2)
-	  }
-	
-	
-	}
-	
-	```
-	
-	3.结果：
-	
-	```
-	[1.0,2.0,3.0,4.0,5.0]
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 4 
-	statistic = 3.333333333333333 
-	pValue = 0.5036682742334986 
-	No presumption against null hypothesis: observed follows the same distribution as expected..
-	-------------------------------
-	1.0  2.0  
-	3.0  4.0  
-	5.0  6.0  
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 2 
-	statistic = 0.14141414141414144 
-	pValue = 0.931734784568187 
-	No presumption against null hypothesis: the occurrence of the outcomes is statistically independent..
-	-------------------------------
-	-------------------------------
-	19.0  24.0  
-	34.0  10.0  
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 1 
-	statistic = 9.999815802502738 
-	pValue = 0.0015655588405594223 
-	Very strong presumption against null hypothesis: the occurrence of the outcomes is statistically independent..
-	-------------------------------
-	26.0  7.0  
-	36.0  2.0  
-	Chi squared test summary:
-	method: pearson
-	degrees of freedom = 1 
-	statistic = 4.05869675818742 
-	pValue = 0.043944401832082036 
-	Strong presumption against null hypothesis: the occurrence of the outcomes is statistically independent..
-	
-	```
-	第四个例子可以用【4】中的校正公式，这里代码没用。
-	
-	参考
-	【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
-	【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
-	【3】https://github.com/xubo245/SparkLearning
-	【4】http://blog.csdn.net/wermnb/article/details/6628555
-	【5】http://baike.baidu.com/link?url=y1Ryc0tbOLSL4zULGihtY3gXRbJO26FvHw05cfFYZ01V87h9h2gF0Bl2su2uA52TWq4FGnPAblXLX2jQhFRK3K
+更多代码请见：https://github.com/xubo245/SparkLearning
+Spark中组件Mllib的学习之回归分析篇
+1解释
+SGD(Stochastic Gradient Descent-随机梯度下降) 
+
+![这里写图片描述](http://img.blog.csdn.net/20160524165035690)
+  sgd解决了梯度下降的两个问题： 收敛速度慢和陷入局部最优。
+  具体的介绍请见【4】、【5】和【6】
+
+背景：
+梯度下降法的缺点是：
+靠近极小值时速度减慢。
+直线搜索可能会产生一些问题。
+可能会'之字型'地下降。
+   
+```
+随机梯度下降法stochastic gradient descent，也叫增量梯度下降
+由于梯度下降法收敛速度慢，而随机梯度下降法会快很多
+
+–根据某个单独样例的误差增量计算权值更新，得到近似的梯度下降搜索（随机取一个样例）
+
+–可以看作为每个单独的训练样例定义不同的误差函数
+
+–在迭代所有训练样例时，这些权值更新的序列给出了对于原来误差函数的梯度下降的一个合理近似
+
+–通过使下降速率的值足够小，可以使随机梯度下降以任意程度接近于真实梯度下降
+
+•标准梯度下降和随机梯度下降之间的关键区别
+
+–标准梯度下降是在权值更新前对所有样例汇总误差，而随机梯度下降的权值是通过考查某个训练样例来更新的
+
+–在标准梯度下降中，权值更新的每一步对多个样例求和，需要更多的计算
+
+–标准梯度下降，由于使用真正的梯度，标准梯度下降对于每一次权值更新经常使用比随机梯度下降大的步长
+
+–如果标准误差曲面有多个局部极小值，随机梯度下降有时可能避免陷入这些局部极小值中
+```
+2.代码：
+
+```
+/**
+  * @author xubo
+  *         ref:Spark MlLib机器学习实战
+  *         more code:https://github.com/xubo245/SparkLearning
+  *         more blog:http://blog.csdn.net/xubo245
+  */
+package org.apache.spark.mllib.learning.regression
+
+import org.apache.spark.{SparkConf, SparkContext}
+
+import scala.collection.mutable.HashMap
+
+/**
+  * Created by xubo on 2016/5/23.
+  */
+object SGDLearning {
+  val data = HashMap[Int, Int]()
+
+  //创建数据集
+  def getData(): HashMap[Int, Int] = {
+    //生成数据集内容
+    for (i <- 1 to 50) {
+      //创建50个数据
+      data += (i -> (20 * i)) //写入公式y=2x
+    }
+    data //返回数据集
+  }
+
+  var θ: Double = 0
+  //第一步假设θ为0
+  var α: Double = 0.1 //设置步进系数
+
+  def sgd(x: Double, y: Double) = {
+    //设置迭代公式
+    θ = θ - α * ((θ * x) - y) //迭代公式
+  }
+
+  def main(args: Array[String]) {
+    val dataSource = getData() //获取数据集
+    println("data:")
+    dataSource.foreach(each => print(each + " "))
+    println("\nresult:")
+    var num = 1;
+    dataSource.foreach(myMap => {
+      //开始迭代
+      println(num + ":" + θ+" ("+myMap._1+","+myMap._2+")")
+      sgd(myMap._1, myMap._2) //输入数据
+      num = num + 1;
+    })
+    println("最终结果θ值为 " + θ) //显示结果
+  }
+}
+
+```
+
+3.结果：
+
+```
+data:
+(23,460) (50,1000) (32,640) (41,820) (17,340) (8,160) (35,700) (44,880) (26,520) (11,220) (29,580) (38,760) (47,940) (20,400) (2,40) (5,100) (14,280) (46,920) (40,800) (49,980) (4,80) (13,260) (22,440) (31,620) (16,320) (7,140) (43,860) (25,500) (34,680) (10,200) (37,740) (1,20) (19,380) (28,560) (45,900) (27,540) (36,720) (18,360) (9,180) (21,420) (48,960) (3,60) (12,240) (30,600) (39,780) (15,300) (42,840) (24,480) (6,120) (33,660) 
+result:
+1:0.0 (23,460)
+2:46.0 (50,1000)
+3:-84.0 (32,640)
+4:248.8 (41,820)
+5:-689.2800000000002 (17,340)
+6:516.4960000000003 (8,160)
+7:119.29920000000004 (35,700)
+8:-228.24800000000016 (44,880)
+9:864.0432000000006 (26,520)
+10:-1330.469120000001 (11,220)
+11:155.04691200000025 (29,580)
+12:-236.58913280000047 (38,760)
+13:738.4495718400013 (47,940)
+14:-2638.263415808005 (20,400)
+15:2678.263415808006 (2,40)
+16:2146.610732646405 (5,100)
+17:1083.3053663232024 (14,280)
+18:-405.3221465292811 (46,920)
+19:1551.159727505412 (40,800)
+20:-4573.4791825162365 (49,980)
+21:17934.568811813326 (4,80)
+22:10768.741287087996 (13,260)
+23:-3204.6223861264007 (22,440)
+24:3889.546863351681 (31,620)
+25:-8106.04841303853 (16,320)
+26:4895.6290478231185 (7,140)
+27:1482.6887143469353 (43,860)
+28:-4806.872757344887 (25,500)
+29:7260.309136017331 (34,680)
+30:-17356.741926441595 (10,200)
+31:20.0 (37,740)
+32:20.0 (1,20)
+33:20.0 (19,380)
+34:20.0 (28,560)
+35:20.0 (45,900)
+36:20.0 (27,540)
+37:20.0 (36,720)
+38:20.0 (18,360)
+39:20.0 (9,180)
+40:20.0 (21,420)
+41:20.0 (48,960)
+42:20.0 (3,60)
+43:20.0 (12,240)
+44:20.0 (30,600)
+45:20.0 (39,780)
+46:20.0 (15,300)
+47:20.0 (42,840)
+48:20.0 (24,480)
+49:20.0 (6,120)
+50:20.0 (33,660)
+最终结果θ值为 20.0
+```
+
+分析：
+当α为0.1的时候，一般30次计算就计算出来了；如果是0.5，一般15次计算就有正确结果 。如果是1，则50次都没有结果
+
+参考
+【1】http://spark.apache.org/docs/1.5.2/mllib-guide.html 
+【2】http://spark.apache.org/docs/1.5.2/programming-guide.html
+【3】https://github.com/xubo245/SparkLearning
+【4】Spark MlLib机器学习实战
+【5】http://blog.csdn.net/zbc1090549839/article/details/38149561
+【6】http://blog.csdn.net/woxincd/article/details/7040944
