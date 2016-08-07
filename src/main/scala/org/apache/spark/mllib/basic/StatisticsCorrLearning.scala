@@ -8,6 +8,7 @@
   */
 package org.apache.spark.mllib.basic
 
+import org.apache.log4j.{Level, Logger}
 import org.apache.spark.mllib.linalg.Vectors
 import org.apache.spark.mllib.stat.Statistics
 import org.apache.spark.{SparkConf, SparkContext}
@@ -17,6 +18,9 @@ import org.apache.spark.{SparkConf, SparkContext}
   */
 object StatisticsCorrLearning {
   def main(args: Array[String]) {
+    Logger.getLogger("org.apache.spark").setLevel(Level.ERROR)
+    Logger.getLogger("org.eclipse.jetty.server").setLevel(Level.ERROR)
+
     val conf = new SparkConf().setMaster("local[4]").setAppName(this.getClass().getSimpleName().filter(!_.equals('$')))
     val sc = new SparkContext(conf)
 

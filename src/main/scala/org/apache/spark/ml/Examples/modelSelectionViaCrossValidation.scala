@@ -17,6 +17,11 @@ import org.apache.spark.mllib.linalg.Vector
 import org.apache.spark.sql.Row
 
 /**
+  * 交叉验证
+  * 多组参数，比如
+  *  .addGrid(hashingTF.numFeatures, Array(10, 100, 1000))
+  *  .addGrid(lr.regParam, Array(0.1, 0.01))
+  *  验证次数为3*2=6次
   * Created by xubo on 2016/5/23.
   */
 object modelSelectionViaCrossValidation {

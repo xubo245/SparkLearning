@@ -10,8 +10,10 @@ import org.apache.spark.mllib.util.MLUtils
 import org.apache.spark.{SparkContext, SparkConf}
 
 /**
-  * Created by xubo on 2016/5/23.
   * 从文本中读取带标签的数据
+  *
+  * Created by xubo on 2016/5/23.
+  *
   */
 object LabeledPointLoadlibSVMFile {
   def main(args: Array[String]) {

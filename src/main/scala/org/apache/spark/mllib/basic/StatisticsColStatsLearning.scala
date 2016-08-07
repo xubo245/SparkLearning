@@ -32,7 +32,7 @@ object StatisticsColStatsLearning {
     println(summary)
     println(summary.max) //最大
     println(summary.min) //最小
-    println("count" + summary.count) //个数
+    println("count:" + summary.count) //个数
     println(summary.numNonzeros) //非零
     println("variance:" + summary.variance) //方差
     println(summary.mean) //计算均值

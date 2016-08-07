@@ -5,7 +5,6 @@ import java.util.Date
 
 import org.apache.log4j.{Level, Logger}
 import org.apache.spark.mllib.linalg.Vectors
-import org.apache.spark.mllib.regression.{LabeledPoint, LinearRegressionWithSGD}
 import org.apache.spark.{SparkConf, SparkContext}
 
 import scala.Array.canBuildFrom
