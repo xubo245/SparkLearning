@@ -14,8 +14,10 @@ jdk1.7
 spark-assembly-1.5.2-hadoop2.6.0.jar
 idea 15.04
 
+**说明：**   
+SparkLearning项目带有数据，下载会比较慢，如果只想下载部分文件夹，可以实用svn。另外也在20160810弄了一个没有数据的project，方便下载：https://github.com/xubo245/SparkLearning_NoData
 
-具体博客目录：  
+**具体博客目录：**  
 **1.Spark基本学习篇：**  
 spark学习1之examples运行：http://blog.csdn.net/xubo245/article/details/48548079  
 spark学习2之OutOfMemoryError错误的解决办法：http://blog.csdn.net/xubo245/article/details/48548507  
