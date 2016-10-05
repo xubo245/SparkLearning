@@ -33,15 +33,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="module-library">
-      <library name="com.databricks_spark-csv_2.10-1.4.0.jar">
-        <CLASSES>
-          <root url="jar://D:/1win7/java/otherJar/SparkCSV/com.databricks_spark-csv_2.10-1.4.0.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="com.univocity_univocity-parsers-1.5.1.jar">
         <CLASSES>
           <root url="jar://D:/1win7/java/otherJar/SparkCSV/com.univocity_univocity-parsers-1.5.1.jar!/" />
@@ -134,6 +125,9 @@
     <orderEntry type="library" name="Maven: com.google.inject.extensions:guice-multibindings:4.0" level="project" />
     <orderEntry type="library" name="Maven: org.bdgenomics.adam:adam-apis_2.10:0.18.2" level="project" />
     <orderEntry type="library" name="Maven: com.databricks:spark-avro_2.10:2.0.1" level="project" />
+    <orderEntry type="library" name="Maven: com.databricks:spark-csv_2.10:1.4.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.commons:commons-csv:1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.univocity:univocity-parsers:1.5.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-mllib_2.10:test-jar:tests:1.5.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-core_2.10:1.5.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.spark:spark-streaming_2.10:1.5.2" level="project" />

@@ -21,13 +21,14 @@ object readCsvBySparkSQLLoadWithCompressedOutput {
     import sqlContext._
 
     val file = "file/data/sparkCSV/input/cars.csv"
-    val fileOut = "file/data/sparkCSV/output/newcars.csv.gz"
+    val fileOut = "file/data/sparkCSV/output/newcars2.csv.gz"
 
     val df = sqlContext.read
       .format("com.databricks.spark.csv")
       .option("header", "true") // Use first line of all files as header
       .option("inferSchema", "true") // Automatically infer data types
       .load(file)
+    df.show()
 
     val selectedData = df.select("year", "model")
     selectedData.write
