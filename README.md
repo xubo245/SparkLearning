@@ -11,7 +11,7 @@ Spark-1.5.2
 eclipse-4.3.2  
 scala-2.10.4  
 jdk1.7  
-spark-assembly-1.5.2-hadoop2.6.0.jar
+spark-assembly-1.5.2-hadoop2.6.0.jar(下载地址: http://pan.baidu.com/s/1hrSxiDI)   
 idea 15.04
 
 **说明：**   
