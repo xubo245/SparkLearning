@@ -14,6 +14,7 @@ object rddJoin {
     val rdd3 = rdd1.join(rdd2)
     rdd3.foreach(println)
     rdd1.zipWithIndex.foreach(println)
+    var rdd4=rdd1.sortByKey();
     //    rdd1.zip
   }
   //   def alignment()=withScope{}
