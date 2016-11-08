@@ -328,6 +328,14 @@ threshold取max，max不一定是最大值，里面调用了compare，compare方
           queue1
         }.toArray.sorted(ord)
 
+spark-2.0.1修改RDD的takeOrdered的sorted之后会报错：结果无序
+
+	Array(9, 10, 7, 8, 6) did not equal Array(10, 9, 8, 7, 6)
+	ScalaTestFailureLocation: org.apache.spark.rdd.RDDSuite$$anonfun$52 at (RDDSuite.scala:656)
+	org.scalatest.exceptions.TestFailedException: Array(9, 10, 7, 8, 6) did not equal Array(10, 9, 8, 7, 6)
+
+
+
 3.2 快排中为什么用2*k的buffer？为什么不直接用有界的优先队列？这样操作也简单，时间也更低？
 可能情况：避免极端情况？值相同的有多个；k比较大时维护有界的成本较大？
 
