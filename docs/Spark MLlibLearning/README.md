@@ -9,47 +9,46 @@ idea 15.0.4
 
 **1.数据类型**
 
-	Spark中组件Mllib的学习3之用户相似度计算
-	Spark中组件Mllib的学习12之密集向量和稀疏向量的生成
-	Spark中组件Mllib的学习13之给向量打标签
-	Spark中组件Mllib的学习14之从文本中读取带标签的数据，生成带label的向量
-	Spark中组件Mllib的学习15之创建分布式矩阵
-	Spark中组件Mllib的学习16之分布式行矩阵的四种形式
-	Spark中组件Mllib的学习43之BlockMatrix
+[Spark中组件Mllib的学习3之用户相似度计算](1数据类型/Spark中组件Mllib的学习3之用户相似度计算.md)  
+[Spark中组件Mllib的学习12之密集向量和稀疏向量的生成](1数据类型/Spark中组件Mllib的学习12之密集向量和稀疏向量的生成.md)  
+[Spark中组件Mllib的学习13之给向量打标签](1数据类型/Spark中组件Mllib的学习13之给向量打标签.md)  
+[Spark中组件Mllib的学习14之从文本中读取带标签的数据，生成带label的向量](1数据类型/Spark中组件Mllib的学习14之从文本中读取带标签的数据，生成带label的向量.md)  
+[Spark中组件Mllib的学习15之创建分布式矩阵](1数据类型/Spark中组件Mllib的学习15之创建分布式矩阵.md)  
+[Spark中组件Mllib的学习16之分布式行矩阵的四种形式](1数据类型/Spark中组件Mllib的学习16之分布式行矩阵的四种形式.md)  
+[Spark中组件Mllib的学习43之BlockMatrix](1数据类型/Spark中组件Mllib的学习43之BlockMatrix.md)  
 
 **2.基本统计**
 
-	Spark中组件Mllib的学习3之用户相似度计算
-	Spark中组件Mllib的学习17之colStats_以列为基础计算统计量的基本数据
-	Spark中组件Mllib的学习18之corr_两组数据相关关系计算（Pearson、Spearman）
-	Spark中组件Mllib的学习19之分层抽样
-	Spark中组件Mllib的学习20之假设检验-卡方检验
-	Spark中组件Mllib的学习21之随机数-RandomRDD产生
-	Spark中组件Mllib的学习22之假设检验-卡方检验概念理解
-	Spark中组件Mllib的学习42之rowMatrix的QR分解
+[Spark中组件Mllib的学习3之用户相似度计算](2基本统计/Spark中组件Mllib的学习3之用户相似度计算.md)  
+[Spark中组件Mllib的学习17之colStats_以列为基础计算统计量的基本数据](2基本统计/Spark中组件Mllib的学习17之colStats_以列为基础计算统计量的基本数据.md)  
+[Spark中组件Mllib的学习18之corr_两组数据相关关系计算（Pearson、Spearman）](2基本统计/Spark中组件Mllib的学习18之corr_两组数据相关关系计算（Pearson、Spearman）.md)  
+[Spark中组件Mllib的学习19之分层抽样](2基本统计/Spark中组件Mllib的学习19之分层抽样.md)  
+[Spark中组件Mllib的学习20之假设检验-卡方检验](2基本统计/Spark中组件Mllib的学习20之假设检验-卡方检验.md)  
+[Spark中组件Mllib的学习21之随机数-RandomRDD产生](2基本统计/Spark中组件Mllib的学习21之随机数-RandomRDD产生.md)  
+[Spark中组件Mllib的学习22之假设检验-卡方检验概念理解](2基本统计/Spark中组件Mllib的学习22之假设检验-卡方检验概念理解.md)  
+[Spark中组件Mllib的学习42之rowMatrix的QR分解](2基本统计/Spark中组件Mllib的学习42之rowMatrix的QR分解.md)  
 
 **3.分类和回归**
 
-	Spark中组件Mllib的学习23之随机梯度下降（SGD）
-	Spark中组件Mllib的学习24之线性回归1-小数据集
-	Spark中组件Mllib的学习25之线性回归2-较大数据集（多元）
-	Spark中组件Mllib的学习26之逻辑回归-简单数据集，带预测
-	Spark中组件Mllib的学习27之逻辑回归-多元逻辑回归，较大数据集，带预测准确度计算
-	Spark中组件Mllib的学习28之支持向量机SVM-方法1
-	Spark中组件Mllib的学习29之支持向量机SVM-方法2
-	Spark中组件Mllib的学习30之逻辑回归LogisticRegressionWithLBFGS
-	Spark中组件Mllib的学习31之朴素贝叶斯分类器（多项式朴素贝叶斯）
-	Spark中组件Mllib的学习32之朴素贝叶斯分类器（伯努利朴素贝叶斯）
-	Spark中组件Mllib的学习33之决策树（使用Gini）
-	Spark中组件Mllib的学习34之决策树（使用entropy）
-	Spark中组件Mllib的学习35之随机森林（entropy）进行分类
-	Spark中组件Mllib的学习36之决策树（使用variance）进行回归
-	Spark中组件Mllib的学习37之随机森林（Gini）进行分类
-	Spark中组件Mllib的学习38之随机森林（使用variance）进行回归
-	Spark中组件Mllib的学习39之梯度提升树（GBT）用于分类
-	Spark中组件Mllib的学习40之梯度提升树（GBT）用于回归
-	Spark中组件Mllib的学习41之保序回归（Isotonic regression）
-
+[Spark中组件Mllib的学习23之随机梯度下降（SGD）](3分类和回归/Spark中组件Mllib的学习23之随机梯度下降（SGD）.md)  
+[Spark中组件Mllib的学习24之线性回归1-小数据集](3分类和回归/Spark中组件Mllib的学习24之线性回归1-小数据集.md)  
+[Spark中组件Mllib的学习25之线性回归2-较大数据集（多元）](3分类和回归/Spark中组件Mllib的学习25之线性回归2-较大数据集（多元）.md)  
+[Spark中组件Mllib的学习26之逻辑回归-简单数据集，带预测](3分类和回归/Spark中组件Mllib的学习26之逻辑回归-简单数据集，带预测.md)  
+[Spark中组件Mllib的学习27之逻辑回归-多元逻辑回归，较大数据集，带预测准确度计算](3分类和回归/Spark中组件Mllib的学习27之逻辑回归-多元逻辑回归，较大数据集，带预测准确度计算.md)  
+[Spark中组件Mllib的学习28之支持向量机SVM-方法1](3分类和回归/Spark中组件Mllib的学习28之支持向量机SVM-方法1.md)  
+[Spark中组件Mllib的学习29之支持向量机SVM-方法2](3分类和回归/Spark中组件Mllib的学习29之支持向量机SVM-方法2.md)  
+[Spark中组件Mllib的学习30之逻辑回归LogisticRegressionWithLBFGS](3分类和回归/Spark中组件Mllib的学习30之逻辑回归LogisticRegressionWithLBFGS.md)  
+[Spark中组件Mllib的学习31之朴素贝叶斯分类器（多项式朴素贝叶斯）](3分类和回归/Spark中组件Mllib的学习31之朴素贝叶斯分类器（多项式朴素贝叶斯）.md)  
+[Spark中组件Mllib的学习32之朴素贝叶斯分类器（伯努利朴素贝叶斯）](3分类和回归/Spark中组件Mllib的学习32之朴素贝叶斯分类器（伯努利朴素贝叶斯）_.md)  
+[Spark中组件Mllib的学习33之决策树（使用Gini）](3分类和回归/Spark中组件Mllib的学习33之决策树（使用Gini）.md)  
+[Spark中组件Mllib的学习34之决策树（使用entropy）](3分类和回归/Spark中组件Mllib的学习34之决策树（使用entropy）_.md)  
+[Spark中组件Mllib的学习35之随机森林（entropy）进行分类](3分类和回归/Spark中组件Mllib的学习35之随机森林（entropy）进行分类.md)  
+[Spark中组件Mllib的学习36之决策树（使用variance）进行回归](3分类和回归/Spark中组件Mllib的学习36之决策树（使用variance）进行回归.md)  
+[Spark中组件Mllib的学习37之随机森林（Gini）进行分类](3分类和回归/Spark中组件Mllib的学习37之随机森林（Gini）进行分类.md)  
+[Spark中组件Mllib的学习38之随机森林（使用variance）进行回归](3分类和回归/Spark中组件Mllib的学习38之随机森林（使用variance）进行回归.md)  
+[Spark中组件Mllib的学习39之梯度提升树（GBT）用于分类](3分类和回归/Spark中组件Mllib的学习39之梯度提升树（GBT）用于分类_.md)  
+[Spark中组件Mllib的学习40之梯度提升树（GBT）用于回归](3分类和回归/Spark中组件Mllib的学习40之梯度提升树（GBT）用于回归_.md)  
+[Spark中组件Mllib的学习41之保序回归（Isotonic regression）](3分类和回归/Spark中组件Mllib的学习41之保序回归（Isotonic regression）.md)  
 
 **4.协同过滤**
 
