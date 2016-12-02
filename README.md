@@ -1,5 +1,5 @@
 
-为了更好的学习和理解spark，也为了记录自己学习过程中的遇到的各种问题，方便以后查询，故谢了相关博客，也公开了代码和数据，代码基本都可以本地(local)运行。论文部分由于是ppt，故没有放上来。
+为了更好的学习和理解spark，也为了记录自己学习过程中遇到的各种问题，方便以后查询，故写了相关博客，也公开了代码和数据，代码基本都可以本地(local)运行。论文部分由于是ppt，故没有放上来。
 
 # 0.总目录： #
 SparkLearning博客：http://blog.csdn.net/bob601450868/article/category/5730447  
@@ -13,11 +13,12 @@ Spark-1.5.2
 eclipse-4.3.2  
 scala-2.10.4  
 jdk1.7  
+idea 15.04  
 spark-assembly-1.5.2-hadoop2.6.0.jar(下载地址: http://pan.baidu.com/s/1hrSxiDI)   
-idea 15.04
+
 
 # 2.说明： #
-SparkLearning项目带有数据，下载会比较慢，如果只想下载部分文件夹，可以实用svn。另外也在20160810弄了一个没有数据的project，方便下载：https://github.com/xubo245/SparkLearning_NoData
+SparkLearning项目带有数据，下载会比较慢，如果只想下载部分文件夹，可以使用svn。另外也在20160810弄了一个没有数据的project，方便下载：https://github.com/xubo245/SparkLearning_NoData
 
 # 3.具体博客目录： #
 ## (1).Spark基本学习篇： ##

@@ -12,6 +12,13 @@ import org.apache.spark.util.SparkLearningFunSuite
   */
 class BreezeFromScalaNLPSuite extends SparkLearningFunSuite {
 
+  test("bv add"){
+    val bd=new BDV(Array(1, 2, 3, 4))
+    print(bd)
+    println(bd.+(bd))
+    println(bd.+=(bd))
+
+  }
   test(" create functions: scalaNLP breeze Suite") {
 
     println()
@@ -22,7 +29,6 @@ class BreezeFromScalaNLPSuite extends SparkLearningFunSuite {
 
     println()
     println(BDV.ones[Double](2))
-
     println()
     println(BDV.fill[Double](5) {
       3.0
@@ -64,6 +70,7 @@ class BreezeFromScalaNLPSuite extends SparkLearningFunSuite {
 
     println()
     println(BDV.rand(10))
+    BDV.rand(10)
 
     println()
     println(BDM.rand(3, 10))
