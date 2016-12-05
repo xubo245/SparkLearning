@@ -62,7 +62,7 @@ Spark mllib学习目录：
 [Spark中组件Mllib的学习44之高斯混合聚类GaussianMixture](./5聚类/Spark中组件Mllib的学习44之高斯混合聚类GaussianMixture.md)  
 [Spark中组件Mllib的学习45之用高斯混合模型来预测](./5聚类/Spark中组件Mllib的学习45之用高斯混合模型来预测.md)  
 [Spark中组件Mllib的学习46之Power iteration clustering](./5聚类/Spark中组件Mllib的学习46之Power iteration clustering.md)  
-[Spark中组件Mllib的学习47之隐含狄利克雷分布(Latent Dirichlet allocation (LDA)学习](./5聚类/Spark中组件Mllib的学习47之隐含狄利克雷分布(Latent%20Dirichlet%20allocation%20(LDA)学习.md)  
+[Spark中组件Mllib的学习47之隐含狄利克雷分布(Latent Dirichlet allocation (LDA)学习](./5聚类/Spark中组件Mllib的学习47之隐含狄利克雷分布(Latent Dirichlet allocation (LDA)学习.md)  
 [Spark中组件Mllib的学习48之流式k均值（Streaming kmeans）](./5聚类/Spark中组件Mllib的学习48之流式k均值（Streaming kmeans）.md)  
 
 
