@@ -66,7 +66,7 @@ Spark mllib学习目录：
 [Spark中组件Mllib的学习48之流式k均值（Streaming kmeans）](./5聚类/Spark中组件Mllib的学习48之流式k均值（Streaming kmeans）.md)  
 
 
-##6.降维**
+##6.降维
 [Spark中组件Mllib的学习49之奇异值分解SVD(Singular value decomposition)](./6降维/Spark中组件Mllib的学习49之奇异值分解SVD(Singular value decomposition).md)  
 [Spark中组件Mllib的学习50之主成份分析PCA](./6降维/Spark中组件Mllib的学习50之主成份分析PCA.md)  
 [Spark中组件Mllib的学习51之使用PCA从数据集中得到主向量](./6降维/Spark中组件Mllib的学习51之使用PCA从数据集中得到主向量.md)  
@@ -78,11 +78,11 @@ Spark mllib学习目录：
 [Spark中组件Mllib的学习54之word2Vec实例分析（text8数据集）](./7特征提取和转换/Spark中组件Mllib的学习54之word2Vec实例分析（text8数据集）.md)  
 [Spark中组件Mllib的学习55之使用TfIdf来分析20news数据集](./7特征提取和转换/Spark中组件Mllib的学习55之使用TfIdf来分析20news数据集.md)  
 [Spark中组件Mllib的学习56之标准化（StandardScaler，来自SparkWeb）](./7特征提取和转换/Spark中组件Mllib的学习56之标准化（StandardScaler，来自SparkWeb）.md)  
-[Spark中组件Mllib的学习57之标准化参数和公式理解（StandardScaler，来自SparkCode)](./7特征提取和转换/Spark中组件Mllib的学习57之标准化参数和公式理解（StandardScaler，来自SparkCode).md)  
-[Spark中组件Mllib的学习58之归一化(Normalizer)Normalization using L1 distance]("./7特征提取和转换/Spark中组件Mllib的学习58之归一化(Normalizer)Normalization using L1 distance.md")  
-[Spark中组件Mllib的学习59之归一化(Normalizer)Normalization using L2 distance]("./7特征提取和转换/Spark中组件Mllib的学习59之归一化(Normalizer)Normalization using L2 distance.md")  
-[Spark中组件Mllib的学习60之归一化(Normalizer)Normalization using L^Inf distance]("./7特征提取和转换/Spark中组件Mllib的学习60之归一化(Normalizer)Normalization using L^Inf distance.md")  
-[Spark中组件Mllib的学习61之归一化(Normalizer)SparkWeb实例分析]("./7特征提取和转换/Spark中组件Mllib的学习61之归一化(Normalizer)SparkWeb实例分析.md")  
+[Spark中组件Mllib的学习57之标准化参数和公式理解（StandardScaler，来自SparkCode)](./7特征提取和转换/Spark中组件Mllib的学习57之标准化参数和公式理解（StandardScaler，来自SparkCode）.md)  
+[Spark中组件Mllib的学习58之归一化(Normalizer)Normalization using L1 distance]("./7特征提取和转换/Spark中组件Mllib的学习58之归一化（Normalizer）Normalization using L1 distance.md")  
+[Spark中组件Mllib的学习59之归一化(Normalizer)Normalization using L2 distance]("./7特征提取和转换/Spark中组件Mllib的学习59之归一化（Normalizer）Normalization using L2 distance.md")  
+[Spark中组件Mllib的学习60之归一化(Normalizer)Normalization using L^Inf distance]("./7特征提取和转换/Spark中组件Mllib的学习60之归一化（Normalizer）Normalization using L^Inf distance.md")  
+[Spark中组件Mllib的学习61之归一化(Normalizer)SparkWeb实例分析]("./7特征提取和转换/Spark中组件Mllib的学习61之归一化（Normalizer）SparkWeb实例分析.md")  
 [Spark中组件Mllib的学习62之特征选择中的卡方选择器](./7特征提取和转换/Spark中组件Mllib的学习62之特征选择中的卡方选择器.md)  
 [Spark中组件Mllib的学习63之特征选择中的卡方选择器实例（libsvm数据集）]("./7特征提取和转换/Spark中组件Mllib的学习63之特征选择中的卡方选择器实例（libsvm数据集）.md")  
 [Spark中组件Mllib的学习64之元素智能乘积ElementwiseProduct](./7特征提取和转换/Spark中组件Mllib的学习64之元素智能乘积ElementwiseProduct.md)  
