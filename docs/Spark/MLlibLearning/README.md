@@ -103,10 +103,10 @@ Spark mllib学习目录：
 ##10.PMML模型输出
 [Spark中组件Mllib的学习74之预言模型标记语言PMML](./10PMML模型输出/Spark中组件Mllib的学习74之预言模型标记语言PMML.md)  
 	
-##11优化
+##11.优化
 [Spark中组件Mllib的学习75之L-BFGS](./11优化/Spark中组件Mllib的学习75之L-BFGS.md)  
 
-##12.Spark组件之Mllib学习篇 ##
+##12.CSDN blog##
 Spark中组件Mllib的学习1之Kmeans错误解决：http://blog.csdn.net/xubo245/article/details/51007690  
 Spark中组件Mllib的学习2之MovieLensALS学习（集群run-eaxmples运行）：http://blog.csdn.net/xubo245/article/details/51264145  
 Spark中组件Mllib的学习3之用户相似度计算：http://blog.csdn.net/xubo245/article/details/51428175  
