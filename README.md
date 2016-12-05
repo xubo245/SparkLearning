@@ -22,7 +22,7 @@ SparkLearning项目带有数据，下载会比较慢，如果只想下载部分�
 
 # 3.具体博客目录： #
 ## (1).Spark基本学习篇： ## 
-[SparkBaseLearning](docs/spark/SparkBaseLearning)
+[SparkBaseLearning](docs\Spark\SparkBaseLearning)
 
 
 ## (2).Spark代码篇： ##
