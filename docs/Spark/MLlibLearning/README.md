@@ -5,11 +5,10 @@ hadoop2.6.0
 scala-2.10.4
 idea 15.0.4
 
-*Spark mllib学习目录：  
+Spark mllib学习目录：
 
-**1.数据类型**
+##1.数据类型
 
-	Spark中组件Mllib的学习3之用户相似度计算
 	Spark中组件Mllib的学习12之密集向量和稀疏向量的生成
 	Spark中组件Mllib的学习13之给向量打标签
 	Spark中组件Mllib的学习14之从文本中读取带标签的数据，生成带label的向量
@@ -17,7 +16,7 @@ idea 15.0.4
 	Spark中组件Mllib的学习16之分布式行矩阵的四种形式
 	Spark中组件Mllib的学习43之BlockMatrix
 
-**2.基本统计**
+##2.基本统计
 
 	Spark中组件Mllib的学习3之用户相似度计算
 	Spark中组件Mllib的学习17之colStats_以列为基础计算统计量的基本数据
@@ -28,7 +27,7 @@ idea 15.0.4
 	Spark中组件Mllib的学习22之假设检验-卡方检验概念理解
 	Spark中组件Mllib的学习42之rowMatrix的QR分解
 
-**3.分类和回归**
+##3.分类和回归
 
 	Spark中组件Mllib的学习23之随机梯度下降（SGD）
 	Spark中组件Mllib的学习24之线性回归1-小数据集
@@ -51,7 +50,7 @@ idea 15.0.4
 	Spark中组件Mllib的学习41之保序回归（Isotonic regression）
 
 
-**4.协同过滤**
+##4.协同过滤
 
 	Spark中组件Mllib的学习2之MovieLensALS学习（集群run-eaxmples运行）
 	Spark中组件Mllib的学习4之examples中的MovieLensALS修改本地运行
@@ -63,7 +62,7 @@ idea 15.0.4
 	Spark中组件Mllib的学习10之修改MovieLens来对movieLen中的100k数据进行预测
 	Spark中组件Mllib的学习11之使用ALS对movieLens中一百万条（1M）数据集进行训练，并对输入的新用户数据进行电影推荐
 
-**5.聚类**
+##5.聚类
 
 	Spark中组件Mllib的学习1之Kmeans错误解决
 	Spark中组件Mllib的学习44之高斯混合聚类GaussianMixture
@@ -72,13 +71,13 @@ idea 15.0.4
 	Spark中组件Mllib的学习47之隐含狄利克雷分布(Latent Dirichlet allocation (LDA)学习
 	Spark中组件Mllib的学习48之流式k均值（Streaming kmeans）
 
-**6.降维**
+##6.降维**
 
 	Spark中组件Mllib的学习49之奇异值分解SVD(Singular value decomposition)
 	Spark中组件Mllib的学习50之主成份分析PCA
 	Spark中组件Mllib的学习51之使用PCA从数据集中得到主向量
 
-**7.特征提取和转换**
+##7.特征提取和转换
 
 	Spark中组件Mllib的学习52之TF-IDF学习
 	Spark中组件Mllib的学习53之HashingTF理解和使用
@@ -96,13 +95,13 @@ idea 15.0.4
 	Spark中组件Mllib的学习64之元素智能乘积ElementwiseProduct
 	Spark中组件Mllib的学习65之使用PCA进行特征转换
 
-**8.频繁项挖掘**
+##8.频繁项挖掘
 
 	Spark中组件Mllib的学习66之FP-growth
 	Spark中组件Mllib的学习67之关联规则AssociationRules
 	Spark中组件Mllib的学习68之PrefixSpan
 
-**9.评估度量**
+##9.评估度量
 
 	Spark中组件Mllib的学习69之对二分类进行评估Binary classification
 	Spark中组件Mllib的学习70之对多类分类结果进行评估Multiclass classification
@@ -110,10 +109,24 @@ idea 15.0.4
 	Spark中组件Mllib的学习72之RankingSystem进行评估
 	Spark中组件Mllib的学习73之回归问题的评估
 
-**10.PMML模型输出**
+##10.PMML模型输出
 
 	Spark中组件Mllib的学习74之预言模型标记语言PMML
 
-**11优化**
+##11优化
 
 	Spark中组件Mllib的学习75之L-BFGS	
+
+##12.Spark组件之Mllib学习篇 ##
+Spark中组件Mllib的学习1之Kmeans错误解决：http://blog.csdn.net/xubo245/article/details/51007690  
+Spark中组件Mllib的学习2之MovieLensALS学习（集群run-eaxmples运行）：http://blog.csdn.net/xubo245/article/details/51264145  
+Spark中组件Mllib的学习3之用户相似度计算：http://blog.csdn.net/xubo245/article/details/51428175  
+Spark中组件Mllib的学习4之examples中的MovieLensALS修改本地运行：http://blog.csdn.net/xubo245/article/details/51429221  
+Spark中组件Mllib的学习5之ALS测试（apache spark）：http://blog.csdn.net/xubo245/article/details/51429365  
+Spark中组件Mllib的学习6之ALS测试（apache spark 含隐式转换）：http://blog.csdn.net/xubo245/article/details/51429391  
+Spark中组件Mllib的学习7之ALS隐式转换训练的model来预测数据：http://blog.csdn.net/xubo245/article/details/51429490  
+Spark中组件Mllib的学习8之ALS训练的model来预测数据：http://blog.csdn.net/xubo245/article/details/51429503  
+Spark中组件Mllib的学习9之ALS训练的model来预测数据的准确率研究：http://blog.csdn.net/xubo245/article/details/51439208  
+Spark中组件Mllib的学习10之修改MovieLens来对movieLen中的100k数据进行预测：http://blog.csdn.net/xubo245/article/details/51439491   
+Spark中组件Mllib的学习11之使用ALS对movieLens中一百万条（1M）数据集进行训练，并对输入的新用户数据进行电影推荐：http://blog.csdn.net/xubo245/article/details/51439920   
+更多请见：https://github.com/xubo245/SparkLearning/tree/master/docs/Spark%20MLlib%E5%AD%A6%E4%B9%A0
