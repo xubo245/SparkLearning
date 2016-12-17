@@ -32,7 +32,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 	#/home/zgg/lib/spark-1.0.1-bin-hadoop2/bin/spark-submit \
 	  spark-submit \
 	  --class alluxio.TimeCount \
-	  --master spark://219.219.220.149:7077 \
+	  --master spark://Master:7077 \
 	  --executor-memory $mem \
 	  SparkSW.jar $input $3
 

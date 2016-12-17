@@ -12,7 +12,7 @@
 		
 		hadoop@Master:~/cloud/testByXubo/sh_spark_xubo/mllib/kmeans/KMeansTest3ByIBM$ ./submitJob.sh 
 		[Stage 0:>                                                          (0 + 2) / 2]16/03/29 17:16:07 ERROR TaskSetManager: Task 1 in stage 0.0 failed 4 times; aborting job
-		Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 0.0 failed 4 times, most recent failure: Lost task 1.3 in stage 0.0 (TID 6, 219.219.220.223): java.lang.NumberFormatException: For input string: "6373"
+		Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 1 in stage 0.0 failed 4 times, most recent failure: Lost task 1.3 in stage 0.0 (TID 6, Mcnode4): java.lang.NumberFormatException: For input string: "6373"
 			at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1250)
 			at java.lang.Double.parseDouble(Double.java:540)
 			at scala.collection.immutable.StringLike$class.toDouble(StringLike.scala:232)
@@ -118,7 +118,7 @@
 		hadoop@Master:~/cloud/testByXubo/sh_spark_xubo/mllib/kmeans/KMeansTest3ByIBM$ ^C
 		hadoop@Master:~/cloud/testByXubo/sh_spark_xubo/mllib/kmeans/KMeansTest3ByIBM$ ./submitJob.sh 
 		[Stage 0:>                                                          (0 + 2) / 2]16/03/29 17:17:15 ERROR TaskSetManager: Task 0 in stage 0.0 failed 4 times; aborting job
-		Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 4 times, most recent failure: Lost task 0.3 in stage 0.0 (TID 6, 219.219.220.223): java.lang.NumberFormatException: For input string: "??Channel"
+		Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 4 times, most recent failure: Lost task 0.3 in stage 0.0 (TID 6, Mcnode4): java.lang.NumberFormatException: For input string: "??Channel"
 			at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1250)
 			at java.lang.Double.parseDouble(Double.java:540)
 			at scala.collection.immutable.StringLike$class.toDouble(StringLike.scala:232)
@@ -229,7 +229,7 @@
 		hadoop@Master:~/cloud/testByXubo/sh_spark_xubo/mllib/kmeans/KMeansTest3ByIBM$ vi submitJob.sh 
 		hadoop@Master:~/cloud/testByXubo/sh_spark_xubo/mllib/kmeans/KMeansTest3ByIBM$ ./submitJob.sh 
 		[Stage 0:>                                                          (0 + 1) / 2]16/03/29 17:19:53 ERROR TaskSetManager: Task 0 in stage 0.0 failed 4 times; aborting job
-		Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 4 times, most recent failure: Lost task 0.3 in stage 0.0 (TID 5, 219.219.220.248): java.lang.NumberFormatException: For input string: "??Channel"
+		Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 0.0 failed 4 times, most recent failure: Lost task 0.3 in stage 0.0 (TID 5, Mcnode2): java.lang.NumberFormatException: For input string: "??Channel"
 			at sun.misc.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1250)
 			at java.lang.Double.parseDouble(Double.java:540)
 			at scala.collection.immutable.StringLike$class.toDouble(StringLike.scala:232)

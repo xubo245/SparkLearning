@@ -93,14 +93,14 @@ Mcnode3：
 ## 2.2.1 copyFromLocal ##
 
 	hadoop@Mcnode1:~/disk2/xubo/data/SparkSW/uniref$ ~/cloud/alluxio-1.3.0/bin/alluxio fs copyFromLocal uniref100.fasta /
-	Failed to cache: Not enough space left on worker Mcnode1/219.219.220.180:29998 to store blockId 33638318104. Please consult http://www.alluxio.org/docs/1.3/en/Debugging-Guide.html for common solutions to address this problem.
+	Failed to cache: Not enough space left on worker Mcnode1/Mcnode1IP:29998 to store blockId 33638318104. Please consult http://www.alluxio.org/docs/1.3/en/Debugging-Guide.html for common solutions to address this problem.
 
 
 ## 2.3 结果： 
 ## 2.3.1 copyFromLocal数据大于alluxio单节点内存 ##
 
 	hadoop@Mcnode1:~/disk2/xubo/data/SparkSW/uniref$ ~/cloud/alluxio-1.3.0/bin/alluxio fs copyFromLocal uniref100.fasta /
-	Failed to cache: Not enough space left on worker Mcnode1/219.219.220.180:29998 to store blockId 33621540888. Please consult http://www.alluxio.org/docs/1.3/en/Debugging-Guide.html for common solutions to address this problem.
+	Failed to cache: Not enough space left on worker Mcnode1/Mcnode1:29998 to store blockId 33621540888. Please consult http://www.alluxio.org/docs/1.3/en/Debugging-Guide.html for common solutions to address this problem.
 
 99%的内存使用：
 
@@ -109,7 +109,7 @@ Mcnode3：
 第二次运行：
 
 	hadoop@Mcnode1:~/disk2/xubo/data/SparkSW/uniref$ ~/cloud/alluxio-1.3.0/bin/alluxio fs copyFromLocal uniref100.fasta /
-	Failed to cache: Not enough space left on worker Mcnode1/219.219.220.180:29998 to store blockId 33638318104. Please consult http://www.alluxio.org/docs/1.3/en/Debugging-Guide.html for common solutions to address this problem.
+	Failed to cache: Not enough space left on worker Mcnode1/Mcnode1:29998 to store blockId 33638318104. Please consult http://www.alluxio.org/docs/1.3/en/Debugging-Guide.html for common solutions to address this problem.
 
 ![](http://i.imgur.com/DpWAot2.png)
 
@@ -135,18 +135,18 @@ fail之后变成0
 
 ## 3.2 代码： 
 
-	val rdd1= sc.textFile("alluxio://219.219.220.149:19998/xubo/project/SparkSW/input/D5Line.fasta")
+	val rdd1= sc.textFile("alluxio://Master:19998/xubo/project/SparkSW/input/D5Line.fasta")
 	rdd1.count
 
 spark-shell：
 
-	scala> val rdd1= sc.textFile("alluxio://219.219.220.149:19998/xubo/project/SparkSW/input/D5Line.fasta")
+	scala> val rdd1= sc.textFile("alluxio://Master:19998/xubo/project/SparkSW/input/D5Line.fasta")
 	rdd1: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[3] at textFile at <console>:21
 	
 	scala> rdd1.count
 	res1: Long = 1252720   
 
-	scala> val rdd1= sc.textFile("alluxio://219.219.220.149:19998/xubo/project/SparkSW/input/D7Line.fasta")
+	scala> val rdd1= sc.textFile("alluxio://Master:19998/xubo/project/SparkSW/input/D7Line.fasta")
 	rdd1: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[5] at textFile at <console>:21
 	
 	scala> rdd1.count

@@ -571,7 +571,7 @@ Spark中组件Mllib的学习
 	    #!/usr/bin/env bash  
 	    spark-submit   \
 	--class  org.apache.spark.mllib.FeatureExtractionAndTransformation.TfIdf20News \
-	--master spark://219.219.220.149:7077 \
+	--master spark://Master:7077 \
 	--executor-memory 4096M \
 	--total-executor-cores 20 SparkLearning.jar /xubo/project/sparkLearning/20news-bydate/20news-bydate-train/* /xubo/project/sparkLearning/20news-bydate/20news-bydate-test/*
 	

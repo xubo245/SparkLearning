@@ -58,7 +58,7 @@ text8数据集下载：http://mattmahoney.net/dc/text8.zip，没有上传到gith
 	    #!/usr/bin/env bash  
 	    spark-submit   \
 	--class  org.apache.spark.mllib.FeatureExtractionAndTransformation.Word2VecSparkWeb \
-	--master spark://219.219.220.149:7077 \
+	--master spark://Master:7077 \
 	--executor-memory 4096M \
 	--total-executor-cores 20 SparkLearning.jar /xubo/project/sparkLearning/text8
 

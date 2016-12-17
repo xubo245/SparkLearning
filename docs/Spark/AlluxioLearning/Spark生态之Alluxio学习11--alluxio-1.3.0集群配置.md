@@ -92,11 +92,11 @@ alluxio fs 等命令测试可以用
 	hadoop@Master:~/cloud/alluxio-1.3.0$ ./bin/alluxio runTests
 	2016-11-09 23:23:10,739 INFO  type (MetricsSystem.java:startSinksFromConfig) - Starting sinks with config: {}.
 	2016-11-09 23:23:10,742 INFO  type (MetricsSystem.java:startSinks) - Sinks have already been started.
-	2016-11-09 23:23:10,843 INFO  type (AbstractClient.java:connect) - Alluxio client (version 1.3.0) is trying to connect with FileSystemMasterClient master @ Master/219.219.220.149:19998
-	2016-11-09 23:23:10,868 INFO  type (AbstractClient.java:connect) - Client registered with FileSystemMasterClient master @ Master/219.219.220.149:19998
+	2016-11-09 23:23:10,843 INFO  type (AbstractClient.java:connect) - Alluxio client (version 1.3.0) is trying to connect with FileSystemMasterClient master @ Master/MasterIP:19998
+	2016-11-09 23:23:10,868 INFO  type (AbstractClient.java:connect) - Client registered with FileSystemMasterClient master @ Master/MasterIP:19998
 	runTest Basic CACHE_PROMOTE MUST_CACHE
-	2016-11-09 23:23:11,088 INFO  type (AbstractClient.java:connect) - Alluxio client (version 1.3.0) is trying to connect with BlockMasterClient master @ Master/219.219.220.149:19998
-	2016-11-09 23:23:11,090 INFO  type (AbstractClient.java:connect) - Client registered with BlockMasterClient master @ Master/219.219.220.149:19998
+	2016-11-09 23:23:11,088 INFO  type (AbstractClient.java:connect) - Alluxio client (version 1.3.0) is trying to connect with BlockMasterClient master @ Master/MasterIP:19998
+	2016-11-09 23:23:11,090 INFO  type (AbstractClient.java:connect) - Client registered with BlockMasterClient master @ Master/MasterIP:19998
 	2016-11-09 23:23:11,209 INFO  type (ThriftClientPool.java:createNewResource) - Created a new thrift client alluxio.thrift.BlockWorkerClientService$Client@8408396
 	2016-11-09 23:23:11,315 INFO  type (NettyChannelPool.java:createNewResource) - Created netty channel to with netty boostrap alluxio.client.block.BlockStoreContext$2@5087f4d0.
 	2016-11-09 23:23:11,406 INFO  type (ThriftClientPool.java:createNewResource) - Created a new thrift client alluxio.thrift.BlockWorkerClientService$Client@62b3a353

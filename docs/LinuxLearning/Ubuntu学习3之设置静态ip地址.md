@@ -17,15 +17,15 @@ Ubuntu学习
 	# interfaces(5) file used by ifup(8) and ifdown(8)
 	auto eth0
 	iface eth0 inet static
-	address 219.219.220.149
-	gateway 219.219.220.1
+	address 192.168.1.149
+	gateway 192.168.1.1
 	netmask 255.255.255.0
 
 （2）设置dns
 
 	hadoop@Master:~$ vi /etc/resolvconf/resolv.conf.d/base
 	
-	nameserver 219.219.223.10
+	nameserver 192.168.223.10
 
 （3）生效
 

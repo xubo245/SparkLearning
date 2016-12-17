@@ -29,13 +29,13 @@ alluxio-0.7.1 启动的时候spark集群直接可以调用，但是alluxio-1.3.0
 # 3.结果： #
    spark-shell可以操作alluxio集群
 	
-	scala>  val rdd1= sc.textFile("hdfs://219.219.220.149:9000//xubo/project/SparkSW/input/D1Line.fasta")
+	scala>  val rdd1= sc.textFile("hdfs://Master:9000//xubo/project/SparkSW/input/D1Line.fasta")
 	rdd1: org.apache.spark.rdd.RDD[String] = MapPartitionsRDD[1] at textFile at <console>:21
 	
 	scala> rdd1.count
 	res0: Long = 78295                                                              
 	
-	scala> rdd1.saveAsTextFile("alluxio://219.219.220.149:19998/D1Line.fasta")
+	scala> rdd1.saveAsTextFile("alluxio://Master:19998/D1Line.fasta")
 	
 
 
