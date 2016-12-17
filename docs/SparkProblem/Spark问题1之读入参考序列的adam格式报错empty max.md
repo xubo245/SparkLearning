@@ -30,7 +30,7 @@
 	hadoop@Master:~/xubo/project/load/loadfastaFromHDFSAdamAndCount$ ./loadGRCH38chr14.sh 
 	start:
 	[Stage 1:=============================>                             (2 + 2) / 4]16/06/08 14:05:52 ERROR TaskSetManager: Task 0 in stage 1.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 12, 219.219.220.131): java.lang.UnsupportedOperationException: empty.max
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 0 in stage 1.0 failed 4 times, most recent failure: Lost task 0.3 in stage 1.0 (TID 12, Mcnode3): java.lang.UnsupportedOperationException: empty.max
 		at scala.collection.TraversableOnce$class.max(TraversableOnce.scala:216)
 		at scala.collection.AbstractTraversable.max(Traversable.scala:105)
 		at org.bdgenomics.adam.converters.FastaConverter$.findContigIndex(FastaConverter.scala:126)

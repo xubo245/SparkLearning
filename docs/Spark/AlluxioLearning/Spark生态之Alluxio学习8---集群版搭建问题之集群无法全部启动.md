@@ -204,7 +204,7 @@
 	Killed 1 processes on Mcnode2
 	Connection to mcnode2 closed.
 	Connecting to Mcnode3 as hadoop...
-	Warning: Permanently added 'mcnode3,219.219.220.131' (ECDSA) to the list of known hosts.
+	Warning: Permanently added 'mcnode3,mcnode3IP' (ECDSA) to the list of known hosts.
 	dirname: missing operand
 	Try 'dirname --help' for more information.
 	Killed 0 processes on Mcnode3
@@ -215,7 +215,7 @@
 	Killed 1 processes on Mcnode4
 	Connection to mcnode4 closed.
 	Connecting to Mcnode5 as hadoop...
-	Warning: Permanently added 'mcnode5,219.219.220.215' (ECDSA) to the list of known hosts.
+	Warning: Permanently added 'mcnode5,mcnode5IP' (ECDSA) to the list of known hosts.
 	dirname: missing operand
 	Try 'dirname --help' for more information.
 	Killed 0 processes on Mcnode5

@@ -96,7 +96,7 @@ localhost为自己的ip
 	2016-05-04 22:19:45,104 INFO   (MasterClient.java:connect) - User registered with the master @ localhost/127.0.0.1:19998; got UserId 4
 	2016-05-04 22:19:45,130 INFO   (CommonUtils.java:printTimeTakenMs) - createFile with fileId 3 took 59 ms.
 	2016-05-04 22:19:45,153 INFO   (WorkerClient.java:connect) - Trying to get local worker host : xubo
-	2016-05-04 22:19:45,166 INFO   (WorkerClient.java:connect) - Connecting local worker @ xubo/219.219.220.222:29998
+	2016-05-04 22:19:45,166 INFO   (WorkerClient.java:connect) - Connecting local worker @ xubo/xuboIP:29998
 	2016-05-04 22:19:45,230 INFO   (BlockOutStream.java:get) - Writing with local stream. tachyonFile: /default_tests_files/BasicFile_CACHE_THROUGH, blockIndex: 0, opType: CACHE_THROUGH
 	2016-05-04 22:19:45,289 INFO   (CommonUtils.java:createBlockPath) - Folder /mnt/ramdisk/tachyonworker/4 was created!
 	2016-05-04 22:19:45,294 INFO   (LocalBlockOutStream.java:<init>) - /mnt/ramdisk/tachyonworker/4/3221225472 was created! tachyonFile: /default_tests_files/BasicFile_CACHE_THROUGH, blockIndex: 0, blockId: 3221225472, blockCapacityByte: 536870912

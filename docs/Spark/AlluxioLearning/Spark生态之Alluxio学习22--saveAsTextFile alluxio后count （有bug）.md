@@ -322,7 +322,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 	input:alluxio://Master:19998/xubo/alluxio/uniref/D8Line.fasta   count:10038012  countTime:28.131s
 	time:1
 	[Stage 0:>                                                        (1 + 16) / 63]16/11/13 00:06:31 ERROR TaskSetManager: Task 43 in stage 0.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 43 in stage 0.0 failed 4 times, most recent failure: Lost task 43.3 in stage 0.0 (TID 22, 219.219.220.131): java.io.IOException: Block 5469372416 is not available in Alluxio
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 43 in stage 0.0 failed 4 times, most recent failure: Lost task 43.3 in stage 0.0 (TID 22, Mcnode3IP): java.io.IOException: Block 5469372416 is not available in Alluxio
 		at alluxio.client.block.AlluxioBlockStore.getInStream(AlluxioBlockStore.java:134)
 		at alluxio.client.file.FileInStream.updateBlockInStream(FileInStream.java:519)
 		at alluxio.client.file.FileInStream.updateStreams(FileInStream.java:426)
@@ -416,7 +416,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 		at java.lang.Thread.run(Thread.java:745)
 	time:2
 	[Stage 0:=>                                                       (2 + 16) / 63]16/11/13 00:06:41 ERROR TaskSetManager: Task 24 in stage 0.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 0.0 failed 4 times, most recent failure: Lost task 24.3 in stage 0.0 (TID 23, 219.219.220.180): java.io.IOException: Block 5721030656 is not available in Alluxio
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 24 in stage 0.0 failed 4 times, most recent failure: Lost task 24.3 in stage 0.0 (TID 23, Mcnode1IP): java.io.IOException: Block 5721030656 is not available in Alluxio
 		at alluxio.client.block.AlluxioBlockStore.getInStream(AlluxioBlockStore.java:134)
 		at alluxio.client.file.FileInStream.updateBlockInStream(FileInStream.java:519)
 		at alluxio.client.file.FileInStream.updateStreams(FileInStream.java:426)
@@ -510,7 +510,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 		at java.lang.Thread.run(Thread.java:745)
 	time:3
 	[Stage 0:>                                                        (1 + 16) / 63]16/11/13 00:06:52 ERROR TaskSetManager: Task 43 in stage 0.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 43 in stage 0.0 failed 4 times, most recent failure: Lost task 43.3 in stage 0.0 (TID 23, 219.219.220.131): java.io.IOException: Block 5469372416 is not available in Alluxio
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 43 in stage 0.0 failed 4 times, most recent failure: Lost task 43.3 in stage 0.0 (TID 23, Mcnode3): java.io.IOException: Block 5469372416 is not available in Alluxio
 		at alluxio.client.block.AlluxioBlockStore.getInStream(AlluxioBlockStore.java:134)
 		at alluxio.client.file.FileInStream.updateBlockInStream(FileInStream.java:519)
 		at alluxio.client.file.FileInStream.updateStreams(FileInStream.java:426)
@@ -604,7 +604,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 		at java.lang.Thread.run(Thread.java:745)
 	time:4
 	[Stage 0:>                                                        (0 + 16) / 63]16/11/13 00:07:02 ERROR TaskSetManager: Task 59 in stage 0.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 59 in stage 0.0 failed 4 times, most recent failure: Lost task 59.3 in stage 0.0 (TID 22, 219.219.220.233): java.io.IOException: Block 5486149632 is not available in Alluxio
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 59 in stage 0.0 failed 4 times, most recent failure: Lost task 59.3 in stage 0.0 (TID 22, Mcnode4IP): java.io.IOException: Block 5486149632 is not available in Alluxio
 		at alluxio.client.block.AlluxioBlockStore.getInStream(AlluxioBlockStore.java:134)
 		at alluxio.client.file.FileInStream.updateBlockInStream(FileInStream.java:519)
 		at alluxio.client.file.FileInStream.updateStreams(FileInStream.java:426)
@@ -698,7 +698,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 		at java.lang.Thread.run(Thread.java:745)
 	time:5
 	[Stage 0:>                                                        (1 + 16) / 63]16/11/13 00:07:13 ERROR TaskSetManager: Task 59 in stage 0.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 59 in stage 0.0 failed 4 times, most recent failure: Lost task 59.3 in stage 0.0 (TID 23, 219.219.220.131): java.io.IOException: Block 5486149632 is not available in Alluxio
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 59 in stage 0.0 failed 4 times, most recent failure: Lost task 59.3 in stage 0.0 (TID 23, Mcnode3): java.io.IOException: Block 5486149632 is not available in Alluxio
 		at alluxio.client.block.AlluxioBlockStore.getInStream(AlluxioBlockStore.java:134)
 		at alluxio.client.file.FileInStream.updateBlockInStream(FileInStream.java:519)
 		at alluxio.client.file.FileInStream.updateStreams(FileInStream.java:426)
@@ -792,7 +792,7 @@ Spark生态之Alluxio学习 版本：alluxio-1.3.0（tachyon），spark-1.5.2,ha
 		at java.lang.Thread.run(Thread.java:745)
 	time:6
 	[Stage 0:=>                                                       (2 + 16) / 63]16/11/13 00:07:24 ERROR TaskSetManager: Task 59 in stage 0.0 failed 4 times; aborting job
-	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 59 in stage 0.0 failed 4 times, most recent failure: Lost task 59.3 in stage 0.0 (TID 23, 219.219.220.131): java.io.IOException: Block 5486149632 is not available in Alluxio
+	Exception in thread "main" org.apache.spark.SparkException: Job aborted due to stage failure: Task 59 in stage 0.0 failed 4 times, most recent failure: Lost task 59.3 in stage 0.0 (TID 23, Mcnode3): java.io.IOException: Block 5486149632 is not available in Alluxio
 		at alluxio.client.block.AlluxioBlockStore.getInStream(AlluxioBlockStore.java:134)
 		at alluxio.client.file.FileInStream.updateBlockInStream(FileInStream.java:519)
 		at alluxio.client.file.FileInStream.updateStreams(FileInStream.java:426)
