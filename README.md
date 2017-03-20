@@ -1,7 +1,7 @@
 
 为了更好的学习和理解spark，也为了记录自己学习过程中遇到的各种问题，方便以后查询，故写了相关博客，也公开了代码和数据，代码基本都可以本地(local)运行。论文部分由于是ppt，故没有放上来。
 
-# 0.总目录： #
+# 0.总目录：
 SparkLearning博客：http://blog.csdn.net/bob601450868/article/category/5730447  
 SparkLearning代码和数据：https://github.com/xubo245/SparkLearning  
 书籍和视频等学习资料推荐：<a href="https://github.com/xubo245/SparkLearning/blob/master/docs/Spark%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99%E6%B1%87%E6%80%BB.md"> Spark学习资料汇总 </a>
