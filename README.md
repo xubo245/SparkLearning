@@ -73,7 +73,7 @@ SparkLearning项目带有数据，下载会比较慢，如果只想下载部分�
 [SparkSourceLearning代码](./src/main/scala/org/apache/spark/sourceCode)
 
 
-##Help 
+## Help 
 If you have any questions or suggestions, please write it in the issue of this project or send an e-mail to me: xubo245@mail.ustc.edu.cn
 
 Wechat: xu601450868  
