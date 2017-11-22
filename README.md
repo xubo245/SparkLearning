@@ -68,6 +68,8 @@ SparkLearning项目带有数据，下载会比较慢，如果只想下载部分�
 [MLLearning文档](./docs/Spark/MLLearning)  
 [MLLearning代码](./src/main/scala/org/apache/spark/ml)
 
+MLlibLearning project: [https://github.com/xubo245/MLlibLearning](https://github.com/xubo245/MLlibLearning)
+
 ## (13). Spark源码学习
 [SparkSourceLearning文档](./docs/SparkSourceLearning)  
 [SparkSourceLearning代码](./src/main/scala/org/apache/spark/sourceCode)
