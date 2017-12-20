@@ -9,9 +9,9 @@ SparkLearning代码和数据：https://github.com/xubo245/SparkLearning
 # 1.环境 
 SparkLearning是在spark上运行的，spark搭建等请见spark官网或其他网站。
 SparkLearning运行环境:  
-jdk1.7
-maven 3.3.9
-Spark-1.5.2  
+jdk1.7  
+maven 3.3.9   
+Spark-1.5.2   
 scala-2.10.4  
 idea 15.04/eclipse-4.3.2    
 spark-assembly-1.5.2-hadoop2.6.0.jar(下载地址: http://pan.baidu.com/s/1hrSxiDI)   
