@@ -8,16 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spark2Learning" />
         <module name="SparkLearning-1.5" />
+        <module name="SparkLearning1" />
         <module name="SparkLearning2" />
         <module name="SparkLearning2.3" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Spark2Learning" target="1.5" />
-      <module name="SparkLearning-1.5" target="1.8.0_112-release" />
-      <module name="SparkLearning1.5" target="1.8.0_112-release" />
-      <module name="SparkLearning2" target="1.5" />
-      <module name="SparkLearning2.3" target="1.5" />
+      <module name="SparkLearning1" target="1.7" />
+      <module name="SparkLearning2" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

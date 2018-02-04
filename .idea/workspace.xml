@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62ae3a19-a23e-4c8b-89e9-0b0b662bc48d" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkLearning2/SparkLearning2.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/Spark2Learning.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/db.lck" afterPath="" />
@@ -183,6 +184,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1_copy_1.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1_copy_2.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1_copy_3.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/target/classes/javaTest.class" afterPath="$PROJECT_DIR$/SparkLearning2/target/classes/javaTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/target/classes/org/apache/spark/rdd/RDDLearning$.class" afterPath="$PROJECT_DIR$/SparkLearning2/target/classes/org/apache/spark/rdd/RDDLearning$.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
@@ -385,11 +387,81 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="true" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="true" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+            <state relative-caret-position="185">
+              <caret line="104" column="54" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkLearningFunSuite.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/utils/learning/SparkLearningFunSuite.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HelloWorld.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/HelloWorld.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestSuite.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkLearning2.iml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning2/SparkLearning2.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning2/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-835">
+              <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataSetLearning.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/sql/learning/DataSetLearning.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning1/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -442,8 +514,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/SparkSQLExamplesFromParquet.scala" />
-        <option value="$PROJECT_DIR$/src/test/scala/test/frsumgroup.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/test/frsumgroup.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/dataFrameLearning.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/DFReadOpt.scala" />
@@ -490,9 +560,11 @@
         <option value="$PROJECT_DIR$/SparkLearning1.5/src/test/scala/org/apache/spark/streaming/testDstream.scala" />
         <option value="$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/ann/ANNSuite.scala" />
         <option value="$PROJECT_DIR$/Spark2Learning/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/SparkLearning1/pom.xml" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala" />
+        <option value="$PROJECT_DIR$/SparkLearning2/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -538,8 +610,8 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="8" />
+    <option name="x" value="8" />
+    <option name="y" value="-8" />
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
@@ -561,7 +633,21 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -576,31 +662,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkLearning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkLearning2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkLearning" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SparkLearning1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -642,59 +704,6 @@
     </option>
   </component>
   <component name="RunManager" selected="ScalaTest.DataSetLearning.Creating Datasets">
-    <configuration default="false" name="PartitionerSparkPackageTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SparkLearning1" />
-      <setting name="path" value="org.apache.spark.rdd.PartitionerSparkPackageTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="PartitionerSparkPackageTest.rdd partition id" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SparkLearning1" />
-      <setting name="path" value="org.apache.spark.rdd.PartitionerSparkPackageTest" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning1" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="rdd partition id" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="MatrixLearning" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="org.apache.spark.mllib.basic.MatrixLearning" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SparkLearning1" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="ANNSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SparkLearning1" />
@@ -725,6 +734,59 @@
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="Creating Datasets" />
       <setting name="testKind" value="Test name" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SparkLearningFunSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SparkLearning2" />
+      <setting name="path" value="org.apache.spark.utils.learning.SparkLearningFunSuite" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning1" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <setting name="useSbt" value="false" />
+      <setting name="useUiWithSbt" value="false" />
+      <classRegexps />
+      <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestSuite" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="TestSuite" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SparkLearning2" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="DataSetLearning" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="SparkLearning2" />
+      <setting name="path" value="org.apache.spark.sql.learning.DataSetLearning" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning1" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
       <setting name="showProgressMessages" value="true" />
       <setting name="useSbt" value="false" />
       <setting name="useUiWithSbt" value="false" />
@@ -1019,19 +1081,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.PartitionerSparkPackageTest" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.PartitionerSparkPackageTest.rdd partition id" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MatrixLearning" />
-      <item index="3" class="java.lang.String" itemvalue="ScalaTest.ANNSuite" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning.Creating Datasets" />
+      <item index="0" class="java.lang.String" itemvalue="ScalaTest.ANNSuite" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning.Creating Datasets" />
+      <item index="2" class="java.lang.String" itemvalue="ScalaTest.SparkLearningFunSuite" />
+      <item index="3" class="java.lang.String" itemvalue="Application.TestSuite" />
+      <item index="4" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning.Creating Datasets" />
-        <item index="1" class="java.lang.String" itemvalue="ScalaTest.ANNSuite" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MatrixLearning" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.PartitionerSparkPackageTest.rdd partition id" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.PartitionerSparkPackageTest" />
+        <item index="1" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TestSuite" />
+        <item index="3" class="java.lang.String" itemvalue="ScalaTest.SparkLearningFunSuite" />
+        <item index="4" class="java.lang.String" itemvalue="ScalaTest.ANNSuite" />
       </list>
     </recent_temporary>
   </component>
@@ -1057,14 +1119,11 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ANNSuite - 2018.02.04 at 21h 56m 00s.xml">
-      <configuration name="ANNSuite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="DataSetLearning_Creating_Datasets - 2018.02.04 at 21h 58m 35s.xml">
+    <history-entry file="DataSetLearning_Creating_Datasets - 2018.02.04 at 22h 17m 51s.xml">
       <configuration name="DataSetLearning.Creating Datasets" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
-    <history-entry file="PartitionerSparkPackageTest - 2018.02.04 at 21h 53m 38s.xml">
-      <configuration name="PartitionerSparkPackageTest" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="DataSetLearning_Creating_Datasets - 2018.02.04 at 22h 21m 37s.xml">
+      <configuration name="DataSetLearning.Creating Datasets" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
     <history-entry file="PartitionerSparkPackageTest_rdd_partition_id - 2018.02.04 at 21h 54m 47s.xml">
       <configuration name="PartitionerSparkPackageTest.rdd partition id" configurationId="ScalaTestRunConfiguration" />
@@ -1087,24 +1146,26 @@
     <history-entry file="RDDTopSuite_投票Suite - 2016.11.28 at 23h 14m 50s.xml">
       <configuration name="RDDTopSuite.投票Suite" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
+    <history-entry file="SparkLearningFunSuite - 2018.02.04 at 22h 10m 10s.xml">
+      <configuration name="SparkLearningFunSuite" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="8" width="1920" height="1040" extended-state="0" />
-    <editor active="true" />
+    <frame x="8" y="-8" width="1920" height="1040" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33670214" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42424244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42424244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34627658" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55106384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34946808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3001066" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1118,8 +1179,8 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55106384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1169,10 +1230,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/rdd/learning/RDDTransformationsLearningSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/rdd/learning/RDDActionLearningSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/breezeFromScalaNLP/BreezeFromScalaNLPSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/BreezeLearningSuite.scala" />
     <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/DecisionTrees/DTSuite.scala" />
     <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/FeatureExtractionAndTransformation/ElementwiseProductSuite.scala" />
     <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/FeatureExtractionAndTransformation/NormalizerFromSparkCodeSuite.scala" />
@@ -1262,27 +1319,10 @@
     <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/examples/WordCountPartitions.scala" />
     <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/ann/ANNSuite.scala" />
     <entry file="file://$PROJECT_DIR$/Spark2Learning/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning2/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="31" lean-forward="false" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1290,7 +1330,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1298,7 +1337,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1306,7 +1344,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1314,7 +1351,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1322,14 +1358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/sql/learning/DataSetLearning.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="24" column="17" lean-forward="false" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -1346,10 +1374,66 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SparkLearning.iml" />
+    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/utils/learning/SparkLearningFunSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/HelloWorld.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning2/SparkLearning2.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning1/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-835">
+          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+        <state relative-caret-position="185">
+          <caret line="104" column="54" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/sql/learning/DataSetLearning.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1407,12 +1491,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>SparkLearning1</last-edited>
+          <last-edited>SparkLearning2</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
