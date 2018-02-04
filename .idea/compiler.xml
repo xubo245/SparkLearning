@@ -7,13 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="SparkLearning1" />
-        <module name="SparkLearning2" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="SparkLearning" target="1.7" />
-      <module name="SparkLearning1" target="1.7" />
-      <module name="SparkLearning2" target="1.7" />
+      <module name="SparkLearning" target="1.5" />
+      <module name="SparkLearning1" target="1.8.0_112-release" />
+      <module name="SparkLearning2" target="1.8.0_112-release" />
     </bytecodeTargetLevel>
   </component>
 </project>
