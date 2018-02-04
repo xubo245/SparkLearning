@@ -9,7 +9,8 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>SparkLearning1.5</module>
+        <module>SparkLearning1</module>
+        <module>SparkLearning2</module>
     </modules>
 
     <properties>
