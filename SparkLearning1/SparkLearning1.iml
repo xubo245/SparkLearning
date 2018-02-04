@@ -12,6 +12,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="scala-sdk-2.10.4" level="application" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-compiler:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-reflect:2.10.4" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.10.4" level="project" />
@@ -201,6 +202,5 @@
     <orderEntry type="library" name="Maven: org.tachyonproject:tachyon-underfs-local:0.7.1" level="project" />
     <orderEntry type="library" name="Maven: net.razorvine:pyrolite:4.4" level="project" />
     <orderEntry type="library" name="Maven: net.sf.py4j:py4j:0.8.2.1" level="project" />
-    <orderEntry type="library" name="scala-sdk-2.10.4" level="application" />
   </component>
 </module>
