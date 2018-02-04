@@ -23,56 +23,56 @@ SparkLearning项目带有数据，下载会比较慢，如果只想下载部分�
 # 3.具体博客目录： 
 ## (1).Spark基本学习篇： 
 [SparkBaseLearning文档](./docs/Spark/SparkBaseLearning)  
-[SparkBaseLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/examples)
+[SparkBaseLearning代码](SparkLearning1/src/main/scala/org/apache/spark/examples)
 
 ## (2).Spark代码篇： 
 [SparkCodeLearning文档](./docs/Spark/SparkCodeLearning)  
-[SparkCodeLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/rdd)
+[SparkCodeLearning代码](SparkLearning1/src/main/scala/org/apache/spark/rdd)
 
 ## (3).Spark组件之Mllib学习篇 
 [MLlibLearning文档](./docs/Spark/MLlibLearning)  
-[MLlibLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/mllib)
+[MLlibLearning代码](SparkLearning1/src/main/scala/org/apache/spark/mllib)
 
 ## (4).Spark组件之SparkSQL学习篇 
 [SparkSQLLearning文档](./docs/Spark/SparkSQLLearning)  
-[SparkSQLLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/sql)
+[SparkSQLLearning代码](SparkLearning1/src/main/scala/org/apache/spark/sql)
 
 ## (5).Spark组件之SparkR学习篇 
 [SparkRLearning文档](./docs/Spark/SparkRLearning)  
-[SparkRLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/R)
+[SparkRLearning代码](SparkLearning1/src/main/scala/org/apache/spark/R)
 
 ## (6).Spark组件之Spark Streaming学习篇 
 [SparkStreamingLearning文档](./docs/Spark/SparkStreamingLearning)  
-[SparkStreamingLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/Streaming)
+[SparkStreamingLearning代码](SparkLearning1/src/main/scala/org/apache/spark/Streaming)
 
 ## (7). Spark组件之GraphX学习篇 
 [GraphXLearning文档](./docs/Spark/GraphXLearning)  
-[GraphXLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/graphx)
+[GraphXLearning代码](SparkLearning1/src/main/scala/org/apache/spark/graphx)
 
 ## (8).Spark-Avro学习篇 
 [SparkAvroLearning文档](./docs/Spark/SparkAvroLearning)  
-[SparkAvroLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/avro)
+[SparkAvroLearning代码](SparkLearning1/src/main/scala/org/apache/spark/avro)
 
 ## (9).Spark生态之Alluxio(Tachyon)学习篇 
 [AlluxioLearning文档](./docs/Spark/AlluxioLearning)  
-[AlluxioLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/tachyon)
+[AlluxioLearning代码](SparkLearning1/src/main/scala/org/apache/spark/tachyon)
  
 ## (10).Spark生态之spark-csv篇： 
 [SparkCsvLearning文档](./docs/Spark/SparkCsvLearning)  
-[SparkCsvLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/sparkCSV)
+[SparkCsvLearning代码](SparkLearning1/src/main/scala/org/apache/spark/sparkCSV)
 
 ## (11).Spark疑问篇 
 [SparkQuestion文档](./docs/Spark/SparkQuestion)
 
 ## (12).MLLearning： 
 [MLLearning文档](./docs/Spark/MLLearning)  
-[MLLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/ml)
+[MLLearning代码](SparkLearning1/src/main/scala/org/apache/spark/ml)
 
 MLlibLearning project: [https://github.com/xubo245/MLlibLearning](https://github.com/xubo245/MLlibLearning)
 
 ## (13). Spark源码学习
 [SparkSourceLearning文档](./docs/SparkSourceLearning)  
-[SparkSourceLearning代码](SparkLearning1.5/src/main/scala/org/apache/spark/sourceCode)
+[SparkSourceLearning代码](SparkLearning1/src/main/scala/org/apache/spark/sourceCode)
 
 
 ## Help 
