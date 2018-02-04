@@ -1,372 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="62ae3a19-a23e-4c8b-89e9-0b0b662bc48d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkLearning2/SparkLearning2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/Spark2Learning.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/db.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/dbex.lck" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/log/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/log/log.ctrl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/log/log1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/log/logmirror.ctrl" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/README_DO_NOT_TOUCH_FILES.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c10.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c101.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c111.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c121.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c130.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c141.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c150.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c161.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c171.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c180.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c191.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c1a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c1b1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c1c0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c1d1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c1e0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c1f1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c20.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c200.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c211.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c221.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c230.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c241.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c251.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c260.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c271.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c281.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c290.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c2a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c2b1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c2c1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c2d0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c2e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c2f0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c300.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c31.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c311.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c321.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c331.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c340.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c351.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c361.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c371.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c380.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c391.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c3a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c3b1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c3c0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c3d1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c3e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c3f1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c400.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c41.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c411.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c421.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c430.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c441.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c451.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c461.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c470.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c481.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c490.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c4a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c4b0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c4c1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c4d1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c4e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c4f0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c501.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c51.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c510.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c521.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c530.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c541.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c550.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c561.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c570.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c581.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c590.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c5a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c5b0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c5c1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c5d0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c5e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c5f0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c60.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c601.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c610.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c621.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c630.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c641.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c650.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c661.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c670.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c681.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c690.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c6a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c6b0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c6c1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c6d0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c6e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c6f0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c701.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c71.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c711.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c721.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c731.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c741.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c751.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c761.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c771.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c781.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c791.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c7a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c7b1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c7c1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c7d1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c7e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c7f1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c801.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c81.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c811.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c821.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c831.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c840.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c851.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c860.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c871.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c880.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c891.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c8a0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c8b1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c8c1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c8d1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c8e1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c8f1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c90.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c901.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c911.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c920.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c931.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c940.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c951.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c960.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c971.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c981.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c990.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c9a1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c9b1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c9c0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c9d1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c9e0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/c9f1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/ca01.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/ca1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/ca11.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/ca21.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/cb1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/cc0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/cd1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/ce1.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/seg0/cf0.dat" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/metastore_db/service.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/.kv1.txt.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/.kv1_copy_1.txt.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/.kv1_copy_2.txt.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/.kv1_copy_3.txt.crc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1_copy_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1_copy_2.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/SparkLearning2/spark-warehouse/src/kv1_copy_3.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/target/classes/javaTest.class" afterPath="$PROJECT_DIR$/SparkLearning2/target/classes/javaTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/target/classes/org/apache/spark/rdd/RDDLearning$.class" afterPath="$PROJECT_DIR$/SparkLearning2/target/classes/org/apache/spark/rdd/RDDLearning$.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_clearspring_analytics_stream_2_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_clearspring_analytics_stream_2_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_6_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_6_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_6_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_6_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_paranamer_2_6_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_6_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_scala_2_11_2_6_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_guava_guava_14_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_inject_guice_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_0_3_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_0_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_jolbox_bonecp_0_8_0_RELEASE.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_ning_compress_lzf_1_0_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_ning_compress_lzf_1_0_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_twitter_chill_2_11_0_8_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_twitter_chill_2_11_0_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_twitter_chill_java_0_8_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_twitter_chill_java_0_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_twitter_parquet_hadoop_bundle_1_6_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_twitter_parquet_hadoop_bundle_1_6_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_univocity_univocity_parsers_2_1_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__com_univocity_univocity_parsers_2_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_configuration_commons_configuration_1_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_digester_commons_digester_1_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_logging_commons_logging_1_1_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_net_commons_net_2_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_core_3_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_graphite_3_1_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_graphite_3_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_json_3_1_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_json_3_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_1_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_dropwizard_metrics_metrics_jvm_3_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_netty_netty_3_8_0_Final.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_netty_netty_3_8_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_netty_netty_all_4_0_29_Final.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__io_netty_netty_all_4_0_29_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_jdo_jdo_api_3_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_jdo_jdo_api_3_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javolution_javolution_5_5_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__javolution_javolution_5_5_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__joda_time_joda_time_2_9_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__log4j_apache_log4j_extras_1_2_17.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__log4j_apache_log4j_extras_1_2_17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_hydromatic_eigenbase_properties_1_1_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_hydromatic_eigenbase_properties_1_1_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_7_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_java_dev_jets3t_jets3t_0_7_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_razorvine_pyrolite_4_9.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_razorvine_pyrolite_4_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_sf_opencsv_opencsv_2_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_sf_py4j_py4j_0_10_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__net_sf_py4j_py4j_0_10_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_ST4_4_0_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_ST4_4_0_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5_3.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_5_3.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_antlr_runtime_3_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_antlr_stringtemplate_3_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_1_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_ipc_1_7_7.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_ipc_1_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_ipc_tests_1_7_7.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_ipc_tests_1_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_mapred_hadoop2_1_7_7.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_avro_avro_mapred_hadoop2_1_7_7.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_calcite_calcite_avatica_1_2_0_incubating.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_calcite_calcite_avatica_1_2_0_incubating.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_calcite_calcite_core_1_2_0_incubating.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_calcite_calcite_core_1_2_0_incubating.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_calcite_calcite_linq4j_1_2_0_incubating.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_calcite_calcite_linq4j_1_2_0_incubating.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_math3_3_4_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_math3_3_4_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_math_2_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_commons_commons_math_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_curator_curator_client_2_4_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_curator_curator_client_2_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_curator_curator_framework_2_4_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_curator_curator_framework_2_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_4_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_derby_derby_10_10_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_derby_derby_10_10_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_2_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_2_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_ivy_ivy_2_4_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_ivy_ivy_2_4_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_mesos_mesos_shaded_protobuf_0_21_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_mesos_mesos_shaded_protobuf_0_21_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_column_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_column_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_common_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_common_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_encoding_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_encoding_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_format_2_3_0_incubating.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_format_2_3_0_incubating.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_generator_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_generator_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_hadoop_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_hadoop_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_jackson_1_7_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_parquet_parquet_jackson_1_7_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_catalyst_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_core_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_core_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_hive_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_hive_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_launcher_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_network_common_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_network_shuffle_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_sketch_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_sql_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_tags_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_11_2_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_spark_spark_unsafe_2_11_2_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_thrift_libfb303_0_9_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_thrift_libfb303_0_9_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_thrift_libthrift_0_9_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_4_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_xbean_xbean_asm5_shaded_4_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_2_7_6.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_janino_commons_compiler_2_7_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_janino_janino_2_7_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_codehaus_janino_janino_2_7_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_datanucleus_datanucleus_api_jdo_3_2_6.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_datanucleus_datanucleus_api_jdo_3_2_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_datanucleus_datanucleus_core_3_2_10.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_datanucleus_datanucleus_core_3_2_10.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_datanucleus_datanucleus_rdbms_3_2_9.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_datanucleus_datanucleus_rdbms_3_2_9.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_4_0_b34.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_external_javax_inject_2_4_0_b34.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_4_0_b34.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_4_0_b34.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_4_0_b34.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_bundles_repackaged_jersey_guava_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_22_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_iq80_snappy_snappy_0_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_iq80_snappy_snappy_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_javassist_javassist_3_18_1_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_jodd_jodd_core_3_5_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_jodd_jodd_core_3_5_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json4s_json4s_ast_2_11_3_2_11.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json4s_json4s_ast_2_11_3_2_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json4s_json4s_core_2_11_3_2_11.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json4s_json4s_core_2_11_3_2_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json4s_json4s_jackson_2_11_3_2_11.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json4s_json4s_jackson_2_11_3_2_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json_json_20090211.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_json_json_20090211.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_roaringbitmap_RoaringBitmap_0_5_11.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_roaringbitmap_RoaringBitmap_0_5_11.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_modules_scala_parser_combinators_2_11_1_0_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_modules_scala_xml_2_11_1_0_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_actors_2_11_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_actors_2_11_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_11_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_compiler_2_11_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_library_2_11_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scala_reflect_2_11_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scalap_2_11_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scala_lang_scalap_2_11_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scalatest_scalatest_2_11_2_2_6.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_scalatest_scalatest_2_11_2_2_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_16.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_16.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_16.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_16.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_spark_project_hive_hive_exec_1_2_1_spark2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_spark_project_hive_hive_exec_1_2_1_spark2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_spark_project_hive_hive_metastore_1_2_1_spark2.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_spark_project_hive_hive_metastore_1_2_1_spark2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_spark_project_spark_unused_1_0_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_spark_project_spark_unused_1_0_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__oro_oro_2_0_8.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__stax_stax_api_1_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/.idea/workspace.xml" afterPath="$PROJECT_DIR$/SparkLearning2/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/pom.xml" afterPath="$PROJECT_DIR$/SparkLearning2/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/rdd/RDDLearning.scala" afterPath="$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/rdd/RDDLearning.scala" />
+    <list default="true" id="d0e0fe84-293a-4fa8-b66a-003e91d6a891" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
-    <ignored path="SparkLearning.iws" />
-    <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
-    <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/.idea/" />
-    <ignored path="$PROJECT_DIR$/SparkLearning1.5/target/" />
-    <ignored path="$PROJECT_DIR$/Spark2Learning/target/" />
-    <ignored path="$PROJECT_DIR$/SparkLearning2/target/" />
     <ignored path="$PROJECT_DIR$/SparkLearning1/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/SparkLearning2/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -374,49 +22,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="hideWarnings" value="true" />
-    <option name="HIDE_WARNINGS" value="true" />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-  <component name="FavoritesManager">
-    <favorites_list name="SparkLearning" />
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="true" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="104" column="54" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SparkLearningFunSuite.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/utils/learning/SparkLearningFunSuite.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HelloWorld.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/HelloWorld.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf>
       <file leaf-file-name="TestSuite.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -427,41 +35,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SparkLearning2.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparkLearning2/SparkLearning2.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparkLearning2/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-835">
-              <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DataSetLearning.scala" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DataSetLearning.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/sql/learning/DataSetLearning.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+            <state relative-caret-position="153">
+              <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SparkLearning1/pom.xml">
+      <file leaf-file-name="HdfsWordCount.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/HdfsWordCount.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="368">
+              <caret line="54" column="15" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WindowsWordCount.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/WindowsWordCount.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
-              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
+              <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StreamingExamples.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/StreamingExamples.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NetworkWordCount.scala" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/NetworkWordCount.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="198">
+              <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SparkRDD1.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/examples/SparkRDD1.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -469,104 +97,8 @@
       </file>
     </leaf>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>streaming</find>
-      <find>Synchronize</find>
-      <find>MLlibTestSparkContext</find>
-      <find>xingyun</find>
-      <find>fil</find>
-      <find>file</find>
-      <find>compile</find>
-      <find>mllib</find>
-      <find>1.8</find>
-      <find>fi</find>
-      <find>file/d</find>
-      <find>file/</find>
-      <find>SparkLearning1.</find>
-      <find>SparkLearning1</find>
-      <find>1</find>
-      <find>1.5</find>
-      <find>S1.5</find>
-      <find>Sp1.5</find>
-      <find>Spa1.5</find>
-      <find>Spark1.5</find>
-      <find>SparkL1.5</find>
-      <find>SparkLear1.5</find>
-      <find>SparkLearni1.5</find>
-      <find>SparkLearning1.5</find>
-    </findStrings>
-    <replaceStrings>
-      <replace>SparkLearning1</replace>
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/Spark2Learning</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/SparkLearning2" />
-  </component>
-  <component name="GradleLocalSettings">
-    <option name="externalProjectsViewState">
-      <projects_view />
-    </option>
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/test/frsumgroup.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/dataFrameLearning.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/DFReadOpt.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/DataFrame/testImport.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/recommend/MovieLensALS.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/rdd/learning/AccumulatorSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/sql/learning/SparkSQLExamplesFromJson.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/graphx/learning/CollectingNeighbors.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/graphx/learning/GraphGeneratorsAndTopK.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/graphx/learning/GraphGeneratorsAndTopKBackup.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/ann/ANNSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/Ensembles/EnsemblesSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/spark/ml/Example/ExampleETP.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/spark/ml/Example/PipelineLearning.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/apache/spark/ml/Example/test.java" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/Examples/EstimatorTransformerAndParam.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/BinarizerSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/CountVectorizerSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/FeatureTransformersSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/modelSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/MoreSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/n_gramSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/StopWordsRemoverSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/TFIDFSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/FeatureExtractors/Word2VecSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/LinearMethods/LinearMethodsSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/MultilayerPerceptronClassifier/testSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/test/TestMl.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/basic/createRDDSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/BreezeLearningSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/MarticsRandTest.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/breezeFromScalaNLP/breezeFromMllibSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/breezeFromScalaNLP/BreezeFromScalaNLPSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/testLinalg/VectorsLearning.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/rdd/learning/modelSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/rdd/learning/RDDActionLearningSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/rdd/learning/RDDTopSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/rdd/learning/RDDTransformationsLearningSuite.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/org/apache/spark/ml/DecisionTrees/DTSuite.scala" />
-        <option value="$PROJECT_DIR$/SparkLearning1.5/target/classes/org/apache/spark/ml/Example/test.class" />
-        <option value="$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sparkCSV/learning/readCsvBySparkSQLLoadAndRead.scala" />
-        <option value="$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/examples/SparkRDD1.scala" />
-        <option value="$PROJECT_DIR$/SparkLearning1.5/pom.xml" />
-        <option value="$PROJECT_DIR$/SparkLearning1.5/src/test/scala/org/apache/spark/streaming/testDstream.scala" />
-        <option value="$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/ann/ANNSuite.scala" />
-        <option value="$PROJECT_DIR$/Spark2Learning/pom.xml" />
-        <option value="$PROJECT_DIR$/SparkLearning1/pom.xml" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala" />
-        <option value="$PROJECT_DIR$/SparkLearning2/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-      </list>
-    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -581,50 +113,20 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="SparkLearning" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-      </PATH>
-      <PATH>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="SparkLearning" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Lifecycle" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
-        </PATH_ELEMENT>
-      </PATH>
-    </treeState>
-  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-8" />
+    <option name="y" value="8" />
     <option name="width" value="1920" />
     <option name="height" value="1040" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
-      <showMembers ProjectPane="true" />
+      <showMembers />
       <showModules />
       <showLibraryContents />
-      <hideEmptyPackages ProjectPane="false" />
+      <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
       <autoscrollFromSource />
@@ -633,7 +135,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -642,54 +146,519 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sql" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataSetLearning.scala" />
+              <option name="myItemType" value="org.jetbrains.plugins.scala.components.ScalaDefsProjectViewProvider$ScalaFileTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Streaming" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="learning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spark" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examples" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apache" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SparkLearning1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="SparkLearning1.5">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="DataSetLearning&#9;null&#9;null&#10;ANN&#9;null&#9;null&#10;datasource&#9;PSI&#9;JAVA://javax.sql.DataSource&#10;Kryo&#9;null&#9;null&#10;SparkFun&#9;null&#9;null&#10;partition&#9;FILE&#9;file://E:/all/git/SparkLearning/src/main/scala/org/apache/spark/sourceCode/partitionerLearning/PartitionerTest.scala&#10;csv&#9;null&#9;null&#10;Avro&#9;null&#9;null" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/file" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="org.apache.spark" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\all\git\SparkLearning\src\main\scala\org\apache\spark\rdd\learning" />
-      <recent name="C:\all\idea\SparkLearning\src\test\scala\test" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="org.apache.spark.rdd.learning" />
-      <recent name="org.apache.spark.rdd" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/SparkLearning1.5/src/test" />
-      <recent name="$PROJECT_DIR$/SparkLearning1.5/src" />
-      <recent name="C:\all\idea\SparkLearning\src\main\scala\org\apache\spark\sql\learning\DataFrame" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -703,66 +672,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="ScalaTest.DataSetLearning.Creating Datasets">
-    <configuration default="false" name="ANNSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SparkLearning1" />
-      <setting name="path" value="org.apache.spark.ml.ann.ANNSuite" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning1" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="DataSetLearning.Creating Datasets" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SparkLearning2" />
-      <setting name="path" value="org.apache.spark.sql.learning.DataSetLearning" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning2" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="Creating Datasets" />
-      <setting name="testKind" value="Test name" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="SparkLearningFunSuite" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="SparkLearning2" />
-      <setting name="path" value="org.apache.spark.utils.learning.SparkLearningFunSuite" />
-      <setting name="package" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning1" />
-      <setting name="searchForTest" value="Across module dependencies" />
-      <setting name="testName" value="" />
-      <setting name="testKind" value="Class" />
-      <setting name="showProgressMessages" value="true" />
-      <setting name="useSbt" value="false" />
-      <setting name="useUiWithSbt" value="false" />
-      <classRegexps />
-      <testRegexps />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.SparkRDD1">
     <configuration default="false" name="TestSuite" type="Application" factoryName="Application" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="TestSuite" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -777,13 +688,12 @@
       <method />
     </configuration>
     <configuration default="false" name="DataSetLearning" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="SparkLearning2" />
       <setting name="path" value="org.apache.spark.sql.learning.DataSetLearning" />
       <setting name="package" value="" />
       <setting name="vmparams" value="" />
       <setting name="params" value="" />
-      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning1" />
+      <setting name="workingDirectory" value="file://$PROJECT_DIR$/SparkLearning2" />
       <setting name="searchForTest" value="Across module dependencies" />
       <setting name="testName" value="" />
       <setting name="testKind" value="Class" />
@@ -792,6 +702,20 @@
       <setting name="useUiWithSbt" value="false" />
       <classRegexps />
       <testRegexps />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SparkRDD1" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="org.apache.spark.examples.SparkRDD1" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SparkLearning1" />
       <envs />
       <method />
     </configuration>
@@ -807,7 +731,6 @@
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -822,7 +745,6 @@
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -843,12 +765,10 @@
       <method />
     </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR Application">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="SCRATCH_FILE_ID" value="0" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
@@ -864,7 +784,6 @@
       <method />
     </configuration>
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -872,12 +791,11 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SparkLearning" />
+      <module name="SparkLearning1" />
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="filePath" />
       <option name="vmParameters" />
       <option name="alternativeJrePath" />
@@ -886,28 +804,6 @@
       <option name="workingDirectory" />
       <option name="isAlternativeJrePathEnabled" value="false" />
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
       <method />
     </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -921,7 +817,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SparkLearning" />
+      <module name="SparkLearning1" />
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -937,7 +833,6 @@
       <method />
     </configuration>
     <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <setting name="path" value="" />
       <setting name="package" value="" />
@@ -956,7 +851,6 @@
       <method />
     </configuration>
     <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <setting name="path" value="" />
       <setting name="package" value="" />
@@ -975,7 +869,6 @@
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1011,7 +904,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SparkLearning" />
+      <module name="SparkLearning1" />
       <method />
     </configuration>
     <configuration default="true" type="executeSpecs" factoryName="Gauge Execution">
@@ -1036,7 +929,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SparkLearning" />
+      <module name="SparkLearning1" />
       <option name="SCRIPT_NAME" value="" />
       <option name="CLASS_NAME" value="" />
       <option name="METHOD_NAME" value="" />
@@ -1055,14 +948,13 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SparkLearning" />
+      <module name="SparkLearning1" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;.&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
     <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
       <setting name="path" value="" />
       <setting name="package" value="" />
@@ -1080,22 +972,21 @@
       <envs />
       <method />
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="ScalaTest.ANNSuite" />
-      <item index="1" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning.Creating Datasets" />
-      <item index="2" class="java.lang.String" itemvalue="ScalaTest.SparkLearningFunSuite" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TestSuite" />
-      <item index="4" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.TestSuite" />
+      <item index="1" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SparkRDD1" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning.Creating Datasets" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.SparkRDD1" />
         <item index="1" class="java.lang.String" itemvalue="ScalaTest.DataSetLearning" />
         <item index="2" class="java.lang.String" itemvalue="Application.TestSuite" />
-        <item index="3" class="java.lang.String" itemvalue="ScalaTest.SparkLearningFunSuite" />
-        <item index="4" class="java.lang.String" itemvalue="ScalaTest.ANNSuite" />
       </list>
     </recent_temporary>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
   </component>
   <component name="SbtLocalSettings">
     <option name="externalProjectsViewState">
@@ -1105,124 +996,58 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="62ae3a19-a23e-4c8b-89e9-0b0b662bc48d" name="Default" comment="" />
-      <created>1475635648137</created>
+      <changelist id="d0e0fe84-293a-4fa8-b66a-003e91d6a891" name="Default" comment="" />
+      <created>1517754803565</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1475635648137</updated>
+      <updated>1517754803565</updated>
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DataSetLearning_Creating_Datasets - 2018.02.04 at 22h 17m 51s.xml">
-      <configuration name="DataSetLearning.Creating Datasets" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="DataSetLearning_Creating_Datasets - 2018.02.04 at 22h 21m 37s.xml">
-      <configuration name="DataSetLearning.Creating Datasets" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="PartitionerSparkPackageTest_rdd_partition_id - 2018.02.04 at 21h 54m 47s.xml">
-      <configuration name="PartitionerSparkPackageTest.rdd partition id" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="RDDTopSuite_top_Suite - 2016.11.28 at 23h 15m 20s.xml">
-      <configuration name="RDDTopSuite.top Suite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="RDDTopSuite_top_Suite - 2016.11.28 at 23h 15m 36s.xml">
-      <configuration name="RDDTopSuite.top Suite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="RDDTopSuite_top_Suite - 2016.11.28 at 23h 35m 52s.xml">
-      <configuration name="RDDTopSuite.top Suite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="RDDTopSuite_top_Suite - 2016.11.28 at 23h 36m 09s.xml">
-      <configuration name="RDDTopSuite.top Suite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="RDDTopSuite_top_Suite - 2016.11.28 at 23h 36m 26s.xml">
-      <configuration name="RDDTopSuite.top Suite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="RDDTopSuite_投票Suite - 2016.11.28 at 23h 14m 50s.xml">
-      <configuration name="RDDTopSuite.投票Suite" configurationId="ScalaTestRunConfiguration" />
-    </history-entry>
-    <history-entry file="SparkLearningFunSuite - 2018.02.04 at 22h 10m 10s.xml">
-      <configuration name="SparkLearningFunSuite" configurationId="ScalaTestRunConfiguration" />
+    <history-entry file="DataSetLearning - 2018.02.04 at 22h 36m 05s.xml">
+      <configuration name="DataSetLearning" configurationId="ScalaTestRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="8" y="-8" width="1920" height="1040" extended-state="0" />
+    <frame x="-8" y="8" width="1920" height="1040" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33670214" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42424244" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34946808" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3001066" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Tool Output" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="ANTLR Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35947713" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Salesforce" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55106384" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <ignored-roots>
-      <path value="$PROJECT_DIR$/docs" />
-    </ignored-roots>
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sourceCode/partitionerLearning/PartitionerTest.scala</url>
-          <line>49</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sourceCode/partitionerLearning/PartitionerTest.scala</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="scala-line">
-          <url>file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sourceCode/partitionerLearning/PartitionerTest.scala</url>
-          <line>47</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1230,166 +1055,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/DecisionTrees/DTSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/FeatureExtractionAndTransformation/ElementwiseProductSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/FeatureExtractionAndTransformation/NormalizerFromSparkCodeSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/basic/BlockMatrixSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/clustering/LDALearning/LDASuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/basic/breezeLearning/testLinalg/VectorsLearning.scala" />
-    <entry file="file://$PROJECT_DIR$/docs/Spark/MLlibLearning/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="119">
-            <caret line="16" column="34" lean-forward="false" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/Spark/MLlibLearning/Spark中组件Mllib的学习100之模版.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="224">
-            <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/Spark/MLlibLearning/3分类和回归/Spark中组件Mllib的学习23之随机梯度下降（SGD）.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="329">
-            <caret line="163" column="47" lean-forward="true" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/docs/SparkSourceLearning/spark源码解读4之SortByKey.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="370">
-            <caret line="175" column="32" lean-forward="false" selection-start-line="175" selection-start-column="32" selection-end-line="175" selection-end-column="32" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/DimensionalityReduction/PCAFromSparkCodeSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/mllib/FeatureExtractionAndTransformation/StandardScalerFromSparkCodeSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sparkCSV/learning/readCsvBySparkSQLLoadAndRead.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sparkCSV/learning/readCsvBySparkSQLLoadWithCompressedOutput.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sql/learning/SparkSQLExamplesFromJson.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/graphx/learning/ConnectedComponents.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/sparkCSV/learning/readCsvBySparkSQLLoad.scala" />
-    <entry file="file://$PROJECT_DIR$/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/target/classes/org/apache/spark/ml/Example/test.class" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/java/org/apache/spark/ml/Example/PipelineLearning.java" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/java/org/apache/spark/ml/Example/test.java" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/examples/SparkRDD1.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/SparkLearning1.5.iml" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/target/scala-2.10/classes/org/apache/spark/mllib/book/book1/CS04/bookname" />
-    <entry file="jar:///usr/java/jdk1.8.0_131/src.zip!/javax/sql/DataSource.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="76" column="27" lean-forward="false" selection-start-line="76" selection-start-column="17" selection-end-line="76" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/Examples/EstimatorTransformerAndParam.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/avro/learning/AvroWritePartitioned.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/util/SparkLearningFunSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/test/scala/org/apache/spark/streaming/testDstream.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/bdg/adam/learning/kmerSaveAsFile.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/examples/WordCountPartitions.scala" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning1.5/src/main/scala/org/apache/spark/ml/ann/ANNSuite.scala" />
-    <entry file="file://$PROJECT_DIR$/Spark2Learning/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/rdd/PartitionerSparkPackageTest.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="3" lean-forward="false" selection-start-line="18" selection-start-column="3" selection-end-line="18" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/mllib/classification/DecisionTrees1ByGiniClassification.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/mllib/classification/GBTs2Regression.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/mllib/basic/MatrixLearning.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="10" column="49" lean-forward="false" selection-start-line="10" selection-start-column="49" selection-end-line="10" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/ml/ann/ANNSuite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="39">
-            <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning.iml" />
-    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/utils/learning/SparkLearningFunSuite.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="30" column="41" lean-forward="false" selection-start-line="30" selection-start-column="41" selection-end-line="30" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/HelloWorld.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/TestSuite.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1398,136 +1063,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning2/SparkLearning2.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="63" lean-forward="false" selection-start-line="23" selection-start-column="63" selection-end-line="23" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning1/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SparkLearning2/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-835">
-          <caret line="23" column="43" lean-forward="false" selection-start-line="23" selection-start-column="43" selection-end-line="23" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="104" column="54" lean-forward="false" selection-start-line="104" selection-start-column="54" selection-end-line="104" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SparkLearning2/src/main/scala/org/apache/spark/sql/learning/DataSetLearning.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="31" column="22" lean-forward="false" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+        <state relative-caret-position="153">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>No facets are configured</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>scala-sdk-2.10.4</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>SparkLearning2</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Maven: aopalliance:aopalliance:1.0</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
-  </component>
-  <component name="mavenExecuteGoalHistory">
-    <option value="" />
+    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/HdfsWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="54" column="15" lean-forward="false" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/WindowsWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="7" lean-forward="false" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/StreamingExamples.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="24" column="7" lean-forward="false" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/Streaming/learning/NetworkWordCount.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SparkLearning1/src/main/scala/org/apache/spark/examples/SparkRDD1.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
