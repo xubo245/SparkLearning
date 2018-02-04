@@ -1,0 +1,205 @@
+2018-02-04 21:32:39 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-02-04 21:32:41 INFO  Slf4jLogger:80 - Slf4jLogger started
+2018-02-04 21:32:41 INFO  Remoting:74 - Starting remoting
+2018-02-04 21:32:41 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.229.51.168:51196]
+2018-02-04 21:32:41 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:32:42 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:33610
+2018-02-04 21:32:42 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:32:42 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2018-02-04 21:32:44 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2018-02-04 21:32:44 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2018-02-04 21:33:01 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2018-02-04 21:33:56 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-02-04 21:33:58 INFO  Slf4jLogger:80 - Slf4jLogger started
+2018-02-04 21:33:58 INFO  Remoting:74 - Starting remoting
+2018-02-04 21:33:58 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.229.51.168:38380]
+2018-02-04 21:33:58 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:33:59 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:39476
+2018-02-04 21:33:59 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:33:59 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2018-02-04 21:34:01 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2018-02-04 21:34:01 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2018-02-04 21:34:17 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2018-02-04 21:34:17 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2018-02-04 21:34:17 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Remote daemon shut down; proceeding with flushing remote transports.
+2018-02-04 21:54:42 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-02-04 21:54:43 INFO  Slf4jLogger:80 - Slf4jLogger started
+2018-02-04 21:54:43 INFO  Remoting:74 - Starting remoting
+2018-02-04 21:54:44 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.229.51.168:38178]
+2018-02-04 21:54:44 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:54:44 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:36587
+2018-02-04 21:54:44 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:54:44 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2018-02-04 21:54:47 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2018-02-04 21:54:47 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2018-02-04 21:55:40 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2018-02-04 21:55:41 INFO  Slf4jLogger:80 - Slf4jLogger started
+2018-02-04 21:55:41 INFO  Remoting:74 - Starting remoting
+2018-02-04 21:55:41 INFO  Remoting:74 - Remoting started; listening on addresses :[akka.tcp://sparkDriver@10.229.51.168:34964]
+2018-02-04 21:55:42 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:55:42 INFO  AbstractConnector:338 - Started SocketConnector@0.0.0.0:40594
+2018-02-04 21:55:42 INFO  Server:272 - jetty-8.y.z-SNAPSHOT
+2018-02-04 21:55:42 INFO  AbstractConnector:338 - Started SelectChannelConnector@0.0.0.0:4040
+2018-02-04 21:55:45 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeSystemBLAS
+2018-02-04 21:55:45 WARN  BLAS:61 - Failed to load implementation from: com.github.fommil.netlib.NativeRefBLAS
+2018-02-04 21:55:45 INFO  StrongWolfeLineSearch:11 - Line search t: 13.49656971241905 fval: 0.12521996382482012 rhs: 0.12536862236056964 cdd: 3.290486804001127E-5
+2018-02-04 21:55:45 INFO  LBFGS:11 - Step Size: 13.50
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.125220 (rel: 0.00119) 0.00812341
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.125022 (rel: 0.00158) 0.00421273
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.124798 (rel: 0.00180) 0.00383678
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.123991 (rel: 0.00647) 0.00930990
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.122023 (rel: 0.0159) 0.0156367
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 2.250
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.0698690 (rel: 0.427) 0.0240167
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.000391185 (rel: 0.994) 0.00304913
+2018-02-04 21:55:46 INFO  StrongWolfeLineSearch:11 - Line search t: 0.3825255213280344 fval: 1.725727053899936E-4 rhs: 3.9102617590957634E-4 cdd: 4.637217808678238E-4
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 0.3825
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.000172573 (rel: 0.559) 0.000848910
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 0.000128519 (rel: 0.255) 0.000607409
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 7.10850e-05 (rel: 0.447) 0.000287266
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 5.08250e-05 (rel: 0.285) 0.000173482
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 3.77630e-05 (rel: 0.257) 0.000135537
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 2.11850e-05 (rel: 0.439) 8.35645e-05
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 9.87808e-06 (rel: 0.534) 3.66865e-05
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 5.05421e-06 (rel: 0.488) 1.80920e-05
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 2.57079e-06 (rel: 0.491) 9.07407e-06
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 1.32317e-06 (rel: 0.485) 4.68130e-06
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 6.75829e-07 (rel: 0.489) 2.40302e-06
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 3.43043e-07 (rel: 0.492) 1.21675e-06
+2018-02-04 21:55:46 INFO  LBFGS:11 - Step Size: 1.000
+2018-02-04 21:55:46 INFO  LBFGS:11 - Val and Grad Norm: 1.74208e-07 (rel: 0.492) 6.14286e-07
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static/sql,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/execution,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/SQL,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/metrics/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/kill,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/api,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/static,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/threadDump,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/executors,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/environment,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/rdd,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/storage,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/pool,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/stage,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/stages,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/job,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs/json,null}
+2018-02-04 21:55:59 INFO  ContextHandler:843 - stopped o.s.j.s.ServletContextHandler{/jobs,null}
+2018-02-04 21:56:00 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Shutting down remote daemon.
+2018-02-04 21:56:00 INFO  RemoteActorRefProvider$RemotingTerminator:74 - Remote daemon shut down; proceeding with flushing remote transports.
