@@ -6,13 +6,40 @@
 
     <groupId>org.apache.spark</groupId>
     <artifactId>SparkLearning</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>SparkLearning1.5</module>
+    </modules>
 
     <properties>
         <scala.version>2.10.4</scala.version>
         <scala.binary.version>2.10</scala.binary.version>
+        <adam.version>0.18.2</adam.version>
+        <spark1.version>1.5.2</spark1.version>
+        <CodeCacheSize>512m</CodeCacheSize>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-compiler</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-reflect</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-library</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.scala-lang</groupId>
+            <artifactId>scala-actors</artifactId>
+            <version>${scala.version}</version>
+        </dependency>
         <dependency>
             <groupId>com.github.scopt</groupId>
             <artifactId>scopt_${scala.binary.version}</artifactId>
@@ -44,19 +71,19 @@
         <dependency>
             <groupId>org.bdgenomics.adam</groupId>
             <artifactId>adam-core_2.10</artifactId>
-            <version>0.18.2</version>
+            <version>${adam.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.bdgenomics.adam/adam-cli_2.10 -->
         <dependency>
             <groupId>org.bdgenomics.adam</groupId>
             <artifactId>adam-cli_2.10</artifactId>
-            <version>0.18.2</version>
+            <version>${adam.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/org.bdgenomics.adam/adam-apis_2.10 -->
         <dependency>
             <groupId>org.bdgenomics.adam</groupId>
             <artifactId>adam-apis_2.10</artifactId>
-            <version>0.18.2</version>
+            <version>${adam.version}</version>
         </dependency>
         <!-- https://mvnrepository.com/artifact/com.databricks/spark-avro_2.10 -->
         <dependency>
@@ -75,19 +102,24 @@
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-mllib_2.10</artifactId>
-            <version>1.5.2</version>
+            <version>${spark1.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-mllib_2.10</artifactId>
+            <version>${spark1.version}</version>
             <type>test-jar</type>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-streaming_2.10</artifactId>
-            <version>1.5.2</version>
+            <version>${spark1.version}</version>
             <type>test-jar</type>
         </dependency>
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-core_2.10</artifactId>
-            <version>1.5.2</version>
+            <version>${spark1.version}</version>
             <type>test-jar</type>
         </dependency>
 
@@ -100,4 +132,22 @@
         <!--<scope>test</scope>-->
         <!--</dependency>-->
     </dependencies>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.7.0</version>
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <skipMain>true</skipMain> <!-- skip compile -->
+                        <skip>true</skip> <!-- skip testCompile -->
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>

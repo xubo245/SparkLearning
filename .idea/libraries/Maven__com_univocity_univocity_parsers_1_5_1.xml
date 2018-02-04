@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.univocity:univocity-parsers:1.5.1">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1.jar!/" />
+      <root url="jar:///david/spark15/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-javadoc.jar!/" />
+      <root url="jar:///david/spark15/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar!/" />
+      <root url="jar:///david/spark15/com/univocity/univocity-parsers/1.5.1/univocity-parsers-1.5.1-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

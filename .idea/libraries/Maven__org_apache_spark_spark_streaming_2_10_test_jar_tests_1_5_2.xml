@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.apache.spark:spark-streaming_2.10:test-jar:tests:1.5.2">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming_2.10/1.5.2/spark-streaming_2.10-1.5.2-tests.jar!/" />
+      <root url="jar:///david/spark15/org/apache/spark/spark-streaming_2.10/1.5.2/spark-streaming_2.10-1.5.2-tests.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming_2.10/1.5.2/spark-streaming_2.10-1.5.2-test-javadoc.jar!/" />
+      <root url="jar:///david/spark15/org/apache/spark/spark-streaming_2.10/1.5.2/spark-streaming_2.10-1.5.2-test-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/org/apache/spark/spark-streaming_2.10/1.5.2/spark-streaming_2.10-1.5.2-test-sources.jar!/" />
+      <root url="jar:///david/spark15/org/apache/spark/spark-streaming_2.10/1.5.2/spark-streaming_2.10-1.5.2-test-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

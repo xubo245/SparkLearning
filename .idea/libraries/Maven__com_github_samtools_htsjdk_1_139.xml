@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.github.samtools:htsjdk:1.139">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.m2/repository/com/github/samtools/htsjdk/1.139/htsjdk-1.139.jar!/" />
+      <root url="jar:///david/spark15/com/github/samtools/htsjdk/1.139/htsjdk-1.139.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/com/github/samtools/htsjdk/1.139/htsjdk-1.139-javadoc.jar!/" />
+      <root url="jar:///david/spark15/com/github/samtools/htsjdk/1.139/htsjdk-1.139-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/com/github/samtools/htsjdk/1.139/htsjdk-1.139-sources.jar!/" />
+      <root url="jar:///david/spark15/com/github/samtools/htsjdk/1.139/htsjdk-1.139-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

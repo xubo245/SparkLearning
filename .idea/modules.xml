@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/SparkLearning.iml" filepath="$PROJECT_DIR$/SparkLearning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SparkLearning1.5/SparkLearning1.5.iml" filepath="$PROJECT_DIR$/SparkLearning1.5/SparkLearning1.5.iml" />
     </modules>
   </component>
 </project>
