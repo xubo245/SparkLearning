@@ -1,0 +1,1308 @@
+Authenticating with public key "imported-openssh-key"
+     ©°©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©´
+     ©¦                        ? MobaXterm 10.5 ?                          ©¦
+     ©¦            (SSH client, X-server and networking tools)             ©¦
+     ©¦                                                                    ©¦
+     ©¦ ? SSH session to root@49.4.69.6                                    ©¦
+     ©¦   ? SSH compression : ?                                            ©¦
+     ©¦   ? SSH-browser     : ?                                            ©¦
+     ©¦   ? X11-forwarding  : ?  (disabled or not supported by server)     ©¦
+     ©¦   ? DISPLAY         : 10.229.32.110:0.0                            ©¦
+     ©¦                                                                    ©¦
+     ©¦ ? For more info, ctrl+click on help or visit our website           ©¦
+     ©¸©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¤©¼
+
+
+Authorized users only. All activities may be monitored and reported.
+Last login: Sat Mar  3 13:08:22 2018 from 119.145.15.121
+  ######################################################################
+  #                              Notice                                #
+  #                                                                    #
+  #  1. Please DO NOT upgrade the kernel, as the kernel upgrade would  #
+  #   damage the original operating system.                            #
+  #                                                                    #
+  #  2. Please create unique passwords that use a combination of words,#
+  #   numbers, symbols, and both upper-case and lower-case letters.    #
+  #   Avoid using simple adjacent keyboard combinations such as        #
+  #   "Qwert!234","Qaz2wsx",etc.                                       #
+  #                                                                    #
+  #  3. Unless necessary, please DO NOT open or use high-risk ports,   #
+  #   such as Telnet-23, FTP-20/21, NTP-123(UDP), RDP-3389,            #
+  #   SSH/SFTP-22, Mysql-3306, SQL-1433,etc.                           #
+  #                                                                    #
+  #                                                                    #
+  #                     Any questions please contact 4000-955-988      #
+  ######################################################################
+[root@sparkonk8s-46929-p4jdl ~]# mvn -DskipTests clean package
+
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 0.069 s
+[INFO] Finished at: 2018-03-03T13:29:52+00:00
+[INFO] Final Memory: 5M/101M
+[INFO] ------------------------------------------------------------------------
+[ERROR] The goal you specified requires a project to execute but there is no POM in this directory (/root). Please verify you invoked Maven from the correct directory. -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MissingProjectException
+[root@sparkonk8s-46929-p4jdl ~]#
+[root@sparkonk8s-46929-p4jdl ~]# cd spark/
+[root@sparkonk8s-46929-p4jdl spark]# mvn -DskipTests clean package
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO]
+[INFO] Spark Project Parent POM
+[INFO] Spark Project Tags
+[INFO] Spark Project Sketch
+[INFO] Spark Project Local DB
+[INFO] Spark Project Networking
+[INFO] Spark Project Shuffle Streaming Service
+[INFO] Spark Project Unsafe
+[INFO] Spark Project Launcher
+[INFO] Spark Project Core
+[INFO] Spark Project ML Local Library
+[INFO] Spark Project GraphX
+[INFO] Spark Project Streaming
+[INFO] Spark Project Catalyst
+[INFO] Spark Project SQL
+[INFO] Spark Project ML Library
+[INFO] Spark Project Tools
+[INFO] Spark Project Hive
+[INFO] Spark Project REPL
+[INFO] Spark Project Assembly
+[INFO] Spark Integration for Kafka 0.10
+[INFO] Kafka 0.10 Source for Structured Streaming
+[INFO] Spark Project Examples
+[INFO] Spark Integration for Kafka 0.10 Assembly
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Parent POM 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-parent_2.11 ---
+[INFO] Deleting /root/spark/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-parent_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-parent_2.11 ---
+[INFO] Add Source directory: /root/spark/src/main/scala
+[INFO] Add Test Source directory: /root/spark/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-parent_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-parent_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-parent_2.11 ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-parent_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-parent_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-parent_2.11 ---
+[INFO] No sources to compile
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-parent_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-parent_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-parent_2.11 ---
+[INFO] Building jar: /root/spark/target/spark-parent_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-parent_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-parent_2.11 ---
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-parent_2.11 ---
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-parent_2.11 ---
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Tags 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-tags_2.11 ---
+[INFO] Deleting /root/spark/common/tags/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-tags_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-tags_2.11 ---
+[INFO] Add Source directory: /root/spark/common/tags/src/main/scala
+[INFO] Add Test Source directory: /root/spark/common/tags/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-tags_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-tags_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-tags_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/tags/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-tags_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-tags_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 2 Scala sources and 6 Java sources to /root/spark/common/tags/target/scala-2.11/classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/InterfaceStability : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/InterfaceStability$Unstable : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/InterfaceStability$Stable : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/InterfaceStability$Evolving : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/AlphaComponent : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/Private : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/DeveloperApi : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/annotation/Experimental : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:04 PM [1.020s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-tags_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/common/tags/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-tags_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/tags/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-tags_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-tags_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-tags_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 3 Java sources to /root/spark/common/tags/target/scala-2.11/test-classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/tags/DockerTest : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/tags/ExtendedHiveTest : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/tags/ExtendedYarnTest : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:05 PM [0.702s]
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-tags_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-tags_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-tags_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-tags_2.11 ---
+[INFO] Building jar: /root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-tags_2.11 ---
+[INFO] Building jar: /root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-tags_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-tags_2.11 ---
+[INFO] Excluding org.scala-lang:scala-library:jar:2.11.8 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar with /root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/common/tags/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-tags_2.11 ---
+[INFO] Building jar: /root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-tags_2.11 ---
+[INFO] Building jar: /root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Sketch 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-sketch_2.11 ---
+[INFO] Deleting /root/spark/common/sketch/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-sketch_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-sketch_2.11 ---
+[INFO] Add Source directory: /root/spark/common/sketch/src/main/scala
+[INFO] Add Test Source directory: /root/spark/common/sketch/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-sketch_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-sketch_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-sketch_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/sketch/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-sketch_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-sketch_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 9 Java sources to /root/spark/common/sketch/target/scala-2.11/classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/Platform : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/IncompatibleMergeException : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/BloomFilterImpl : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/Utils : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/BloomFilter : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/BloomFilter$Version : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/CountMinSketch$Version : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/CountMinSketch : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/BitArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/CountMinSketchImpl : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/sketch/Murmur3_x86_32 : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:06 PM [1.148s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-sketch_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/common/sketch/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-sketch_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/sketch/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-sketch_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-sketch_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-sketch_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 3 Scala sources to /root/spark/common/sketch/target/scala-2.11/test-classes...
+[info] Compile success at Mar 3, 2018 1:30:07 PM [0.936s]
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-sketch_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-sketch_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-sketch_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-sketch_2.11 ---
+[INFO] Building jar: /root/spark/common/sketch/target/spark-sketch_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-sketch_2.11 ---
+[INFO] Building jar: /root/spark/common/sketch/target/spark-sketch_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-sketch_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-sketch_2.11 ---
+[INFO] Excluding org.apache.spark:spark-tags_2.11:jar:2.3.1-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.scala-lang:scala-library:jar:2.11.8 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/common/sketch/target/spark-sketch_2.11-2.3.1-SNAPSHOT.jar with /root/spark/common/sketch/target/spark-sketch_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/common/sketch/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-sketch_2.11 ---
+[INFO] Building jar: /root/spark/common/sketch/target/spark-sketch_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-sketch_2.11 ---
+[INFO] Building jar: /root/spark/common/sketch/target/spark-sketch_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Local DB 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-kvstore_2.11 ---
+[INFO] Deleting /root/spark/common/kvstore/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-kvstore_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-kvstore_2.11 ---
+[INFO] Add Source directory: /root/spark/common/kvstore/src/main/scala
+[INFO] Add Test Source directory: /root/spark/common/kvstore/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-kvstore_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-kvstore_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-kvstore_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/kvstore/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-kvstore_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-kvstore_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 12 Java sources to /root/spark/common/kvstore/target/scala-2.11/classes...
+[warn] /root/spark/common/kvstore/src/main/java/org/apache/spark/util/kvstore/LevelDB.java:237: warning: [rawtypes] found raw type: LevelDBIterator
+[warn]   void closeIterator(LevelDBIterator it) throws IOException {
+[warn]                      ^
+[warn]   missing type arguments for generic class LevelDBIterator<T>
+[warn]   where T is a type-variable:
+[warn]     T extends Object declared in class LevelDBIterator
+[warn] 1 warning
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayWrappers$ComparableLongArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayWrappers$ComparableIntArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayWrappers$ComparableByteArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayWrappers$ComparableObjectArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayWrappers : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBIterator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVIndex : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVStoreIterator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVStoreSerializer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/UnsupportedStoreVersionException : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVStore : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVStoreView : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDB : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDB$PrefixCache : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDB$TypeAliases : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDB$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfo : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfo$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfo$Index : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVTypeInfo$FieldAccessor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVTypeInfo$MethodAccessor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVTypeInfo$Accessor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/KVTypeInfo : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryStore$InMemoryView : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryStore$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryStore$InstanceList : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryStore : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryStore$InMemoryIterator : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:09 PM [1.353s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-kvstore_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/common/kvstore/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-kvstore_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-kvstore_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-kvstore_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar:/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-kvstore_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 10 Java sources to /root/spark/common/kvstore/target/scala-2.11/test-classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayKeyIndexType : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBSuite$IntKeyType : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/CustomType1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBIteratorSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/DBIteratorSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/DBIteratorSuite$BaseComparator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/ArrayWrappersSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite$IllegalIndexName : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite$NoNaturalIndex2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite$NoNaturalIndex : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite$EmptyIndexName : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite$IllegalIndexMethod : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBTypeInfoSuite$DuplicateIndex : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBBenchmark$SimpleType : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBBenchmark$IndexedType : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/LevelDBBenchmark : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryIteratorSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/util/kvstore/InMemoryStoreSuite : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:11 PM [1.415s]
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-kvstore_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-kvstore_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-kvstore_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-kvstore_2.11 ---
+[INFO] Building jar: /root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-kvstore_2.11 ---
+[INFO] Building jar: /root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-kvstore_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-kvstore_2.11 ---
+[INFO] Excluding org.apache.spark:spark-tags_2.11:jar:2.3.1-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.scala-lang:scala-library:jar:2.11.8 from the shaded jar.
+[INFO] Excluding org.fusesource.leveldbjni:leveldbjni-all:jar:1.8 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-core:jar:2.6.7 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-databind:jar:2.6.7.1 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-annotations:jar:2.6.7 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT.jar with /root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/common/kvstore/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-kvstore_2.11 ---
+[INFO] Building jar: /root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-kvstore_2.11 ---
+[INFO] Building jar: /root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Networking 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-network-common_2.11 ---
+[INFO] Deleting /root/spark/common/network-common/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-network-common_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-network-common_2.11 ---
+[INFO] Add Source directory: /root/spark/common/network-common/src/main/scala
+[INFO] Add Test Source directory: /root/spark/common/network-common/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-network-common_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-network-common_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-network-common_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/network-common/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-network-common_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-network-common_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 75 Java sources to /root/spark/common/network-common/target/scala-2.11/classes...
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/server/TransportServer.java:149: warning: [deprecation] group() in AbstractBootstrap has been deprecated
+[warn]     if (bootstrap != null && bootstrap.group() != null) {
+[warn]                                       ^
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/server/TransportServer.java:150: warning: [deprecation] group() in AbstractBootstrap has been deprecated
+[warn]       bootstrap.group().shutdownGracefully();
+[warn]                ^
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/server/TransportServer.java:152: warning: [deprecation] childGroup() in ServerBootstrap has been deprecated
+[warn]     if (bootstrap != null && bootstrap.childGroup() != null) {
+[warn]                                       ^
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/server/TransportServer.java:153: warning: [deprecation] childGroup() in ServerBootstrap has been deprecated
+[warn]       bootstrap.childGroup().shutdownGracefully();
+[warn]                ^
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/util/NettyUtils.java:112: warning: [deprecation] PooledByteBufAllocator(boolean,int,int,int,int,int,int,int) in PooledByteBufAllocator has been deprecated
+[warn]     return new PooledByteBufAllocator(
+[warn]            ^
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/crypto/TransportCipher.java:270: warning: [deprecation] transfered() in FileRegion has been deprecated
+[warn]         region.transferTo(byteRawChannel, region.transfered());
+[warn]                                                 ^
+[warn] /root/spark/common/network-common/src/main/java/org/apache/spark/network/sasl/SaslEncryption.java:300: warning: [deprecation] transfered() in FileRegion has been deprecated
+[warn]         region.transferTo(byteChannel, region.transfered());
+[warn]                                              ^
+[warn] 7 warnings
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/ChunkFetchSuccess : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslEncryption : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslEncryption$DecryptionHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslEncryption$EncryptionHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslEncryption$EncryptedMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/StreamResponse : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/MessageWithHeader : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/RpcResponseCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslEncryptionBackend : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/RpcResponse : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/ConfigProvider : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/MessageHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/ChunkFetchFailure : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/StreamFailure : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/ChunkReceivedCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Message : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Message$Type : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/ByteUnit : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/TransportCipher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/TransportCipher$EncryptionHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/TransportCipher$EncryptedMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/TransportCipher$DecryptionHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/ResponseMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/TransportServer$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/TransportServer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/JavaUtils : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslClient$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslClient : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslClient$ClientCallbackHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/AbstractResponseMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/MapConfigProvider : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/NoOpRpcHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/AbstractFileRegion : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SecretKeyHolder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/ByteArrayReadableChannel : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/StreamChunkId : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/buffer/NettyManagedBuffer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/ServerResponse : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslServerBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/TransportConf : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthClientBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/TransportServerBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/OneForOneStreamManager$StreamState : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/OneForOneStreamManager : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/MessageDecoder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/MessageDecoder$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportResponseHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/StreamCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/RpcHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/RpcHandler$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/RpcHandler$OneWayRpcCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/OneWayMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/CryptoUtils : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthRpcHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/StreamInterceptor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/NettyUtils$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/NettyUtils : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportClient$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportClient : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/AbstractMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/IOMode : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/StreamRequest : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthServerBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/buffer/FileSegmentManagedBuffer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/RpcFailure : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TransportContext : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslClientBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Encoders$StringArrays : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Encoders$Strings : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Encoders : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Encoders$ByteArrays : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/TransportChannelHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/TransportRequestHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/TransportRequestHandler$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/buffer/ManagedBuffer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/MessageEncoder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/RequestMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportClientBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/TransportFrameDecoder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/TransportFrameDecoder$Interceptor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/StreamManager : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportClientFactory : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportClientFactory$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/TransportClientFactory$ClientPool : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslServer$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslServer$DigestCallbackHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslServer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/LevelDBProvider$LevelDBLogger : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/LevelDBProvider$StoreVersion : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/LevelDBProvider : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/LevelDBProvider$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/client/ChunkFetchFailureException : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslRpcHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/ChunkFetchRequest : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/RpcRequest : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthEngine : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/Encodable : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/LimitedInputStream : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/buffer/NioManagedBuffer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/ClientChallenge : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/NettyMemoryMetrics : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/ByteArrayWritableChannel : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:15 PM [3.465s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-network-common_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/common/network-common/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-network-common_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-network-common_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-network-common_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar:/root/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar:/root/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-network-common_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 19 Java sources to /root/spark/common/network-common/target/scala-2.11/test-classes...
+[warn] /root/spark/common/network-common/src/test/java/org/apache/spark/network/ProtocolSuite.java:119: warning: [deprecation] transfered() in FileRegion has been deprecated
+[warn]       while (in.transfered() < in.count()) {
+[warn]                ^
+[warn] /root/spark/common/network-common/src/test/java/org/apache/spark/network/ProtocolSuite.java:120: warning: [deprecation] transfered() in FileRegion has been deprecated
+[warn]         in.transferTo(channel, in.transfered());
+[warn]                                  ^
+[warn] 2 warnings
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TransportClientFactorySuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TransportClientFactorySuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/StreamSuite$TestCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/StreamSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/StreamSuite$StreamTask : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/StreamSuite$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/StreamSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TestUtils : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/server/OneForOneStreamManagerSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TransportRequestHandlerSuite$ExtendedChannelPromise : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TransportRequestHandlerSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslSuite$EncryptionDisablerBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslSuite$EncryptionCheckerBootstrap : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SparkSaslSuite$SaslTestCtx : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthEngineSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TestManagedBuffer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ProtocolSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ProtocolSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ProtocolSuite$FileRegionEncoder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RpcIntegrationSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RpcIntegrationSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RpcIntegrationSuite$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RpcIntegrationSuite$RpcResult : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/TransportFrameDecoderSuite$MockInterceptor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/TransportFrameDecoderSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthMessagesSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/TransportResponseHandlerSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/NettyMemoryMetricsSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ChunkFetchIntegrationSuite$3 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ChunkFetchIntegrationSuite$FetchResult : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ChunkFetchIntegrationSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ChunkFetchIntegrationSuite$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/ChunkFetchIntegrationSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthIntegrationSuite$AuthTestCtx : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthIntegrationSuite$AuthTestCtx$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/crypto/AuthIntegrationSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/MessageWithHeaderSuite$TestFileRegion : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/protocol/MessageWithHeaderSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite$5 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite$4 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite$3 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/RequestTimeoutIntegrationSuite$TestCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/util/CryptoUtilsSuite : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:18 PM [2.916s]
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-network-common_2.11 ---
+[INFO] Building jar: /root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-network-common_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-network-common_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-network-common_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-network-common_2.11 ---
+[INFO] Building jar: /root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-network-common_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-network-common_2.11 ---
+[INFO] Excluding io.netty:netty-all:jar:4.1.17.Final from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-lang3:jar:3.5 from the shaded jar.
+[INFO] Excluding org.fusesource.leveldbjni:leveldbjni-all:jar:1.8 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-databind:jar:2.6.7.1 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-core:jar:2.6.7 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-annotations:jar:2.6.7 from the shaded jar.
+[INFO] Excluding io.dropwizard.metrics:metrics-core:jar:3.1.5 from the shaded jar.
+[INFO] Excluding com.google.code.findbugs:jsr305:jar:1.3.9 from the shaded jar.
+[INFO] Including com.google.guava:guava:jar:14.0.1 in the shaded jar.
+[INFO] Excluding org.apache.commons:commons-crypto:jar:1.0.0 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT.jar with /root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/common/network-common/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-network-common_2.11 ---
+[INFO] Building jar: /root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-network-common_2.11 ---
+[INFO] Building jar: /root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Shuffle Streaming Service 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-network-shuffle_2.11 ---
+[INFO] Deleting /root/spark/common/network-shuffle/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-network-shuffle_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-network-shuffle_2.11 ---
+[INFO] Add Source directory: /root/spark/common/network-shuffle/src/main/scala
+[INFO] Add Test Source directory: /root/spark/common/network-shuffle/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-network-shuffle_2.11 ---
+[INFO] Dependencies classpath:
+/root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-network-shuffle_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-network-shuffle_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/network-shuffle/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-network-shuffle_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-network-shuffle_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 20 Java sources to /root/spark/common/network-shuffle/target/scala-2.11/classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/RegisterExecutor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/ExecutorShuffleInfo : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/mesos/ShuffleServiceHeartbeat : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockResolver$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockResolver : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockResolver$AppExecId : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockResolver$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ShuffleIndexInformation : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/StreamHandle : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/UploadBlock : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ShuffleIndexRecord : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/mesos/RegisterDriver : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleClient : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/BlockTransferMessage$Type : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/BlockTransferMessage : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/BlockTransferMessage$Decoder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ShuffleClient : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/BlockFetchingListener : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/TempFileManager : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/ShuffleSecretManager : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/protocol/OpenBlocks : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient$Heartbeater : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/mesos/MesosExternalShuffleClient$RegisterDriverCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/RetryingBlockFetcher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/RetryingBlockFetcher$BlockFetchStarter : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/RetryingBlockFetcher$RetryingBlockFetchListener : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/RetryingBlockFetcher$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/OneForOneBlockFetcher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/OneForOneBlockFetcher$DownloadCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/OneForOneBlockFetcher$ChunkCallback : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/OneForOneBlockFetcher$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockHandler$ManagedBufferIterator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockHandler$ShuffleMetrics : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockHandler$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockHandler : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:21 PM [1.405s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-network-shuffle_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/common/network-shuffle/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-network-shuffle_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-network-shuffle_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-network-shuffle_2.11 ---
+[INFO] Dependencies classpath:
+/root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar:/root/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-network-shuffle_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 11 Java sources to /root/spark/common/network-shuffle/target/scala-2.11/test-classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/TestShuffleDataContext : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/RetryingBlockFetcherSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/BlockTransferMessagesSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslIntegrationSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslIntegrationSuite$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslIntegrationSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/SaslIntegrationSuite$TestRpcHandler : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleIntegrationSuite$FetchResult : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleIntegrationSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleIntegrationSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockHandlerSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/OneForOneBlockFetcherSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleCleanupSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleBlockResolverSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleSecuritySuite$TestSecretKeyHolder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/shuffle/ExternalShuffleSecuritySuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/network/sasl/ShuffleSecretManagerSuite : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:23 PM [1.910s]
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-network-shuffle_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-network-shuffle_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-network-shuffle_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-network-shuffle_2.11 ---
+[INFO] Building jar: /root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-network-shuffle_2.11 ---
+[INFO] Building jar: /root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-network-shuffle_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-network-shuffle_2.11 ---
+[INFO] Excluding org.apache.spark:spark-network-common_2.11:jar:2.3.1-SNAPSHOT from the shaded jar.
+[INFO] Excluding io.netty:netty-all:jar:4.1.17.Final from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-lang3:jar:3.5 from the shaded jar.
+[INFO] Excluding org.fusesource.leveldbjni:leveldbjni-all:jar:1.8 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-databind:jar:2.6.7.1 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-core:jar:2.6.7 from the shaded jar.
+[INFO] Excluding com.fasterxml.jackson.core:jackson-annotations:jar:2.6.7 from the shaded jar.
+[INFO] Excluding com.google.code.findbugs:jsr305:jar:1.3.9 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-crypto:jar:1.0.0 from the shaded jar.
+[INFO] Excluding io.dropwizard.metrics:metrics-core:jar:3.1.5 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT.jar with /root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/common/network-shuffle/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-network-shuffle_2.11 ---
+[INFO] Building jar: /root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-network-shuffle_2.11 ---
+[INFO] Building jar: /root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Unsafe 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-unsafe_2.11 ---
+[INFO] Deleting /root/spark/common/unsafe/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-unsafe_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-unsafe_2.11 ---
+[INFO] Add Source directory: /root/spark/common/unsafe/src/main/scala
+[INFO] Add Test Source directory: /root/spark/common/unsafe/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-unsafe_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/com/twitter/chill_2.11/0.8.4/chill_2.11-0.8.4.jar:/root/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/com/twitter/chill-java/0.8.4/chill-java-0.8.4.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-unsafe_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-unsafe_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/unsafe/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-unsafe_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-unsafe_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 16 Java sources to /root/spark/common/unsafe/target/scala-2.11/classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/Platform : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/ByteArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/array/LongArray : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/bitset/BitSetMethods : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/memory/MemoryBlock : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/memory/MemoryAllocator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/sql/catalyst/expressions/HiveHasher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/CalendarInterval : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/KVIterator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/UTF8String : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/UTF8String$IntWrapper : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/UTF8String$LongWrapper : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/memory/HeapMemoryAllocator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/memory/MemoryLocation : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/memory/UnsafeMemoryAllocator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/UnsafeAlignedOffset : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/array/ByteArrayMethods : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/hash/Murmur3_x86_32 : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:25 PM [1.229s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-unsafe_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/common/unsafe/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-unsafe_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/common/unsafe/src/test/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-unsafe_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-unsafe_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/com/twitter/chill-java/0.8.4/chill-java-0.8.4.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/com/twitter/chill_2.11/0.8.4/chill_2.11-0.8.4.jar:/root/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/root/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/root/.m2/repository/org/scalacheck/scalacheck_2.11/1.13.5/scalacheck_2.11-1.13.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar:/root/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-unsafe_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 1 Scala source and 5 Java sources to /root/spark/common/unsafe/target/scala-2.11/test-classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/CalendarIntervalSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/types/UTF8StringSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/PlatformUtilSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/hash/Murmur3_x86_32Suite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/unsafe/array/LongArraySuite : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:28 PM [3.792s]
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-unsafe_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-unsafe_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-unsafe_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-unsafe_2.11 ---
+[INFO] Building jar: /root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-unsafe_2.11 ---
+[INFO] Building jar: /root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-unsafe_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-unsafe_2.11 ---
+[INFO] Excluding org.apache.spark:spark-tags_2.11:jar:2.3.1-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.scala-lang:scala-library:jar:2.11.8 from the shaded jar.
+[INFO] Excluding com.twitter:chill_2.11:jar:0.8.4 from the shaded jar.
+[INFO] Excluding com.twitter:chill-java:jar:0.8.4 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:kryo-shaded:jar:3.0.3 from the shaded jar.
+[INFO] Excluding com.esotericsoftware:minlog:jar:1.3.0 from the shaded jar.
+[INFO] Excluding com.google.code.findbugs:jsr305:jar:1.3.9 from the shaded jar.
+[INFO] Excluding org.objenesis:objenesis:jar:2.1 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT.jar with /root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/common/unsafe/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-unsafe_2.11 ---
+[INFO] Building jar: /root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-unsafe_2.11 ---
+[INFO] Building jar: /root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Launcher 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-launcher_2.11 ---
+[INFO] Deleting /root/spark/launcher/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-launcher_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-launcher_2.11 ---
+[INFO] Add Source directory: /root/spark/launcher/src/main/scala
+[INFO] Add Test Source directory: /root/spark/launcher/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-launcher_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/root/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/root/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/root/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/root/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/root/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/root/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/root/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:/root/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/root/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/root/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar:/root/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.6.5/hadoop-yarn-api-2.6.5.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/root/.m2/repository/io/netty/netty/3.9.9.Final/netty-3.9.9.Final.jar:/root/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/root/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.6.5/hadoop-yarn-client-2.6.5.jar:/root/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/root/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.6.5/hadoop-yarn-common-2.6.5.jar:/root/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-launcher_2.11 ---
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-launcher_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /root/spark/launcher/src/main/resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-launcher_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-launcher_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 20 Java sources to /root/spark/launcher/target/scala-2.11/classes...
+[warn] /root/spark/launcher/src/main/java/org/apache/spark/launcher/AbstractLauncher.java:31: warning: [rawtypes] found raw type: AbstractLauncher
+[warn] public abstract class AbstractLauncher<T extends AbstractLauncher> {
+[warn]                                                  ^
+[warn]   missing type arguments for generic class AbstractLauncher<T>
+[warn]   where T is a type-variable:
+[warn]     T extends AbstractLauncher declared in class AbstractLauncher
+[warn] 1 warning
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/Main$MainClassOptionParser : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/Main$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/Main : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/AbstractCommandBuilder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/NamedThreadFactory : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/OutputRedirector : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/InProcessLauncher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/AbstractLauncher$ArgumentValidator : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/AbstractLauncher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServer$ServerConnection : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServer$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServer : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkLauncher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/ChildProcAppHandle : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherConnection : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/AbstractAppHandle : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/CommandBuilderUtils$JavaVendor : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/CommandBuilderUtils : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/FilteredObjectInputStream : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/InProcessAppHandle : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitCommandBuilder : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitCommandBuilder$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitCommandBuilder$OptionParser : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitOptionParser : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkAppHandle$Listener : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkAppHandle : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkAppHandle$State : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherProtocol$Message : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherProtocol$SetAppId : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherProtocol$Hello : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherProtocol$SetState : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherProtocol : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherProtocol$Stop : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkClassCommandBuilder : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:33 PM [1.801s]
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (create-tmp-dir) @ spark-launcher_2.11 ---
+[INFO] Executing tasks
+
+main:
+    [mkdir] Created dir: /root/spark/launcher/target/tmp
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:testResources (default-testResources) @ spark-launcher_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 2 resources
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:testCompile (default-testCompile) @ spark-launcher_2.11 ---
+[INFO] Not compiling test sources
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (generate-test-classpath) @ spark-launcher_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/org/scalatest/scalatest_2.11/3.0.3/scalatest_2.11-3.0.3.jar:/root/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/root/.m2/repository/com/novocode/junit-interface/0.11/junit-interface-0.11.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT-tests.jar:/root/.m2/repository/org/scalactic/scalactic_2.11/3.0.3/scalactic_2.11-3.0.3.jar:/root/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/root/.m2/repository/org/mockito/mockito-core/1.10.19/mockito-core-1.10.19.jar:/root/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/root/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/root/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/root/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.5/hadoop-hdfs-2.6.5.jar:/root/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar:/root/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.5/hadoop-mapreduce-client-shuffle-2.6.5.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/root/.m2/repository/org/scala-sbt/test-interface/1.0/test-interface-1.0.jar:/root/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.5/hadoop-mapreduce-client-core-2.6.5.jar:/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.4/httpclient-4.5.4.jar:/root/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/root/.m2/repository/io/netty/netty/3.9.9.Final/netty-3.9.9.Final.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/root/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/root/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/root/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2.jar:/root/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.5/hadoop-mapreduce-client-common-2.6.5.jar:/root/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.jar:/root/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.5/hadoop-mapreduce-client-jobclient-2.6.5.jar:/root/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/root/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/root/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/root/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/root/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/root/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:/root/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/root/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:/root/.m2/repository/org/apache/hadoop/hadoop-client/2.6.5/hadoop-client-2.6.5.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/root/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/root/.m2/repository/com/google/guava/guava/14.0.1/guava-14.0.1.jar:/root/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/root/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar:/root/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.6.5/hadoop-yarn-api-2.6.5.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.8/httpcore-4.4.8.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/org/apache/hadoop/hadoop-common/2.6.5/hadoop-common-2.6.5.jar:/root/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/root/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/root/.m2/repository/junit/junit/4.12/junit-4.12.jar:/root/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.6.5/hadoop-yarn-client-2.6.5.jar:/root/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.5/hadoop-mapreduce-client-app-2.6.5.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-server-common/2.6.5/hadoop-yarn-server-common-2.6.5.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.6.5/hadoop-yarn-common-2.6.5.jar:/root/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/root/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.5/hadoop-annotations-2.6.5.jar:/root/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:testCompile (scala-test-compile-first) @ spark-launcher_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 7 Java sources to /root/spark/launcher/target/scala-2.11/test-classes...
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/ChildProcAppHandleSuite$TestSparkLauncher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/ChildProcAppHandleSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/ChildProcAppHandleSuite$LogAppender : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/BaseSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitOptionParserSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitOptionParserSuite$DummyParser : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitOptionParserSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServerSuite$2 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServerSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServerSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServerSuite$TestClient : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/LauncherServerSuite$EvilPayload : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/InProcessLauncherSuite$TestInProcessLauncher : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/InProcessLauncherSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/InProcessLauncherSuite$1 : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/SparkSubmitCommandBuilderSuite : Unsupported major.minor version 52.0
+[warn] Error reading API from class file : java.lang.UnsupportedClassVersionError: org/apache/spark/launcher/CommandBuilderUtilsSuite : Unsupported major.minor version 52.0
+[info] Compile success at Mar 3, 2018 1:30:36 PM [1.522s]
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (default-test) @ spark-launcher_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-surefire-plugin:2.20.1:test (test) @ spark-launcher_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- scalatest-maven-plugin:1.0:test (test) @ spark-launcher_2.11 ---
+[INFO] Tests are skipped.
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:test-jar (prepare-test-jar) @ spark-launcher_2.11 ---
+[INFO] Building jar: /root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT-tests.jar
+[INFO]
+[INFO] --- maven-jar-plugin:3.0.2:jar (default-jar) @ spark-launcher_2.11 ---
+[INFO] Building jar: /root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT.jar
+[INFO]
+[INFO] --- maven-site-plugin:3.5.1:attach-descriptor (attach-descriptor) @ spark-launcher_2.11 ---
+[INFO]
+[INFO] --- maven-shade-plugin:3.1.0:shade (default) @ spark-launcher_2.11 ---
+[INFO] Excluding org.apache.spark:spark-tags_2.11:jar:2.3.1-SNAPSHOT from the shaded jar.
+[INFO] Excluding org.scala-lang:scala-library:jar:2.11.8 from the shaded jar.
+[INFO] Excluding commons-cli:commons-cli:jar:1.2 from the shaded jar.
+[INFO] Excluding commons-codec:commons-codec:jar:1.10 from the shaded jar.
+[INFO] Excluding commons-io:commons-io:jar:2.4 from the shaded jar.
+[INFO] Excluding commons-lang:commons-lang:jar:2.6 from the shaded jar.
+[INFO] Excluding org.codehaus.jackson:jackson-core-asl:jar:1.9.13 from the shaded jar.
+[INFO] Excluding org.apache.avro:avro:jar:1.7.7 from the shaded jar.
+[INFO] Excluding com.thoughtworks.paranamer:paranamer:jar:2.8 from the shaded jar.
+[INFO] Excluding org.xerial.snappy:snappy-java:jar:1.1.2.6 from the shaded jar.
+[INFO] Excluding com.google.protobuf:protobuf-java:jar:2.5.0 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-framework:jar:2.6.0 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-client:jar:2.6.0 from the shaded jar.
+[INFO] Excluding org.apache.curator:curator-recipes:jar:2.6.0 from the shaded jar.
+[INFO] Excluding org.apache.zookeeper:zookeeper:jar:3.4.6 from the shaded jar.
+[INFO] Excluding org.apache.commons:commons-compress:jar:1.4.1 from the shaded jar.
+[INFO] Excluding org.tukaani:xz:jar:1.0 from the shaded jar.
+[INFO] Excluding org.mortbay.jetty:jetty-util:jar:6.1.26 from the shaded jar.
+[INFO] Excluding io.netty:netty:jar:3.9.9.Final from the shaded jar.
+[INFO] Excluding org.apache.hadoop:hadoop-yarn-client:jar:2.6.5 from the shaded jar.
+[INFO] Excluding org.apache.hadoop:hadoop-yarn-api:jar:2.6.5 from the shaded jar.
+[INFO] Excluding org.apache.hadoop:hadoop-yarn-common:jar:2.6.5 from the shaded jar.
+[INFO] Excluding javax.xml.bind:jaxb-api:jar:2.2.2 from the shaded jar.
+[INFO] Excluding javax.xml.stream:stax-api:jar:1.0-2 from the shaded jar.
+[INFO] Excluding javax.activation:activation:jar:1.1 from the shaded jar.
+[INFO] Excluding org.codehaus.jackson:jackson-jaxrs:jar:1.9.13 from the shaded jar.
+[INFO] Excluding org.codehaus.jackson:jackson-xc:jar:1.9.13 from the shaded jar.
+[INFO] Including org.spark-project.spark:unused:jar:1.0.0 in the shaded jar.
+[INFO] Replacing original artifact with shaded artifact.
+[INFO] Replacing /root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT.jar with /root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT-shaded.jar
+[INFO] Dependency-reduced POM written at: /root/spark/launcher/dependency-reduced-pom.xml
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:jar-no-fork (create-source-jar) @ spark-launcher_2.11 ---
+[INFO] Building jar: /root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT-sources.jar
+[INFO]
+[INFO] --- maven-source-plugin:3.0.1:test-jar-no-fork (create-source-jar) @ spark-launcher_2.11 ---
+[INFO] Building jar: /root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT-test-sources.jar
+[INFO]
+[INFO] ------------------------------------------------------------------------
+[INFO] Building Spark Project Core 2.3.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO]
+[INFO] --- maven-clean-plugin:3.0.0:clean (default-clean) @ spark-core_2.11 ---
+[INFO] Deleting /root/spark/core/target
+[INFO]
+[INFO] --- maven-enforcer-plugin:3.0.0-M1:enforce (enforce-versions) @ spark-core_2.11 ---
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:add-source (eclipse-add-source) @ spark-core_2.11 ---
+[INFO] Add Source directory: /root/spark/core/src/main/scala
+[INFO] Add Test Source directory: /root/spark/core/src/test/scala
+[INFO]
+[INFO] --- maven-dependency-plugin:3.0.2:build-classpath (default-cli) @ spark-core_2.11 ---
+[INFO] Dependencies classpath:
+/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.jar:/root/.m2/repository/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar:/root/.m2/repository/org/lz4/lz4-java/1.4.0/lz4-java-1.4.0.jar:/root/.m2/repository/com/fasterxml/jackson/module/jackson-module-paranamer/2.7.9/jackson-module-paranamer-2.7.9.jar:/root/.m2/repository/com/thoughtworks/paranamer/paranamer/2.8/paranamer-2.8.jar:/root/.m2/repository/com/twitter/chill_2.11/0.8.4/chill_2.11-0.8.4.jar:/root/.m2/repository/org/eclipse/jetty/jetty-continuation/9.3.20.v20170531/jetty-continuation-9.3.20.v20170531.jar:/root/.m2/repository/org/apache/hadoop/hadoop-hdfs/2.6.5/hadoop-hdfs-2.6.5.jar:/root/.m2/repository/org/eclipse/jetty/jetty-servlets/9.3.20.v20170531/jetty-servlets-9.3.20.v20170531.jar:/root/.m2/repository/org/fusesource/leveldbjni/leveldbjni-all/1.8/leveldbjni-all-1.8.jar:/root/.m2/repository/org/glassfish/jersey/bundles/repackaged/jersey-guava/2.22.2/jersey-guava-2.22.2.jar:/root/.m2/repository/org/apache/commons/commons-crypto/1.0.0/commons-crypto-1.0.0.jar:/root/.m2/repository/com/twitter/chill-java/0.8.4/chill-java-0.8.4.jar:/root/.m2/repository/commons-io/commons-io/2.4/commons-io-2.4.jar:/root/.m2/repository/org/apache/httpcomponents/httpclient/4.5.4/httpclient-4.5.4.jar:/root/.m2/repository/org/apache/commons/commons-lang3/3.5/commons-lang3-3.5.jar:/root/.m2/repository/org/codehaus/jackson/jackson-jaxrs/1.9.13/jackson-jaxrs-1.9.13.jar:/root/.m2/repository/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar:/root/.m2/repository/org/json4s/json4s-jackson_2.11/3.2.11/json4s-jackson_2.11-3.2.11.jar:/root/.m2/repository/com/esotericsoftware/minlog/1.3.0/minlog-1.3.0.jar:/root/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/root/.m2/repository/org/eclipse/jetty/jetty-xml/9.3.20.v20170531/jetty-xml-9.3.20.v20170531.jar:/root/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar:/root/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.58/bcprov-jdk15on-1.58.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-common/2.22.2/jersey-common-2.22.2.jar:/root/spark/common/network-shuffle/target/spark-network-shuffle_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/scala-lang/modules/scala-xml_2.11/1.0.5/scala-xml_2.11-1.0.5.jar:/root/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/root/.m2/repository/javax/xml/bind/jaxb-api/2.2.2/jaxb-api-2.2.2.jar:/root/.m2/repository/org/glassfish/hk2/hk2-api/2.4.0-b34/hk2-api-2.4.0-b34.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-server/2.22.2/jersey-server-2.22.2.jar:/root/.m2/repository/commons-lang/commons-lang/2.6/commons-lang-2.6.jar:/root/.m2/repository/org/eclipse/jetty/jetty-server/9.3.20.v20170531/jetty-server-9.3.20.v20170531.jar:/root/.m2/repository/org/apache/zookeeper/zookeeper/3.4.6/zookeeper-3.4.6.jar:/root/.m2/repository/org/tukaani/xz/1.0/xz-1.0.jar:/root/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1.jar:/root/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/root/.m2/repository/org/javassist/javassist/3.18.1-GA/javassist-3.18.1-GA.jar:/root/.m2/repository/org/eclipse/jetty/jetty-client/9.3.20.v20170531/jetty-client-9.3.20.v20170531.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-api/2.6.5/hadoop-yarn-api-2.6.5.jar:/root/.m2/repository/org/apache/httpcomponents/httpcore/4.4.8/httpcore-4.4.8.jar:/root/.m2/repository/org/apache/ivy/ivy/2.4.0/ivy-2.4.0.jar:/root/.m2/repository/org/apache/hadoop/hadoop-common/2.6.5/hadoop-common-2.6.5.jar:/root/.m2/repository/commons-beanutils/commons-beanutils-core/1.8.0/commons-beanutils-core-1.8.0.jar:/root/.m2/repository/org/eclipse/jetty/jetty-util/9.3.20.v20170531/jetty-util-9.3.20.v20170531.jar:/root/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/root/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.1/osgi-resource-locator-1.0.1.jar:/root/spark/common/kvstore/target/spark-kvstore_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar:/root/.m2/repository/org/apache/commons/commons-math3/3.4.1/commons-math3-3.4.1.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-graphite/3.1.5/metrics-graphite-3.1.5.jar:/root/.m2/repository/javax/xml/stream/stax-api/1.0-2/stax-api-1.0-2.jar:/root/.m2/repository/org/apache/avro/avro/1.7.7/avro-1.7.7.jar:/root/.m2/repository/org/codehaus/jackson/jackson-xc/1.9.13/jackson-xc-1.9.13.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-app/2.6.5/hadoop-mapreduce-client-app-2.6.5.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-server-common/2.6.5/hadoop-yarn-server-common-2.6.5.jar:/root/.m2/repository/org/glassfish/hk2/hk2-utils/2.4.0-b34/hk2-utils-2.4.0-b34.jar:/root/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.4.0-b34/aopalliance-repackaged-2.4.0-b34.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-common/2.6.5/hadoop-yarn-common-2.6.5.jar:/root/.m2/repository/org/glassfish/hk2/external/javax.inject/2.4.0-b34/javax.inject-2.4.0-b34.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.22.2/jersey-container-servlet-core-2.22.2.jar:/root/.m2/repository/oro/oro/2.0.8/oro-2.0.8.jar:/root/.m2/repository/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar:/root/.m2/repository/org/apache/hadoop/hadoop-annotations/2.6.5/hadoop-annotations-2.6.5.jar:/root/.m2/repository/org/apache/curator/curator-framework/2.6.0/curator-framework-2.6.0.jar:/root/.m2/repository/org/roaringbitmap/RoaringBitmap/0.5.11/RoaringBitmap-0.5.11.jar:/root/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:/root/.m2/repository/org/scala-lang/scala-library/2.11.8/scala-library-2.11.8.jar:/root/.m2/repository/com/twitter/parquet-hadoop-bundle/1.6.0/parquet-hadoop-bundle-1.6.0.jar:/root/.m2/repository/org/eclipse/jetty/jetty-proxy/9.3.20.v20170531/jetty-proxy-9.3.20.v20170531.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-json/3.1.5/metrics-json-3.1.5.jar:/root/.m2/repository/org/apache/commons/commons-compress/1.4.1/commons-compress-1.4.1.jar:/root/.m2/repository/org/apache/directory/server/apacheds-kerberos-codec/2.0.0-M15/apacheds-kerberos-codec-2.0.0-M15.jar:/root/.m2/repository/org/apache/curator/curator-recipes/2.6.0/curator-recipes-2.6.0.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.1.5/metrics-core-3.1.5.jar:/root/.m2/repository/org/apache/hadoop/hadoop-auth/2.6.5/hadoop-auth-2.6.5.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-shuffle/2.6.5/hadoop-mapreduce-client-shuffle-2.6.5.jar:/root/.m2/repository/org/slf4j/slf4j-api/1.7.16/slf4j-api-1.7.16.jar:/root/.m2/repository/org/apache/xbean/xbean-asm5-shaded/4.4/xbean-asm5-shaded-4.4.jar:/root/spark/common/unsafe/target/spark-unsafe_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/json4s/json4s-core_2.11/3.2.11/json4s-core_2.11-3.2.11.jar:/root/.m2/repository/org/mortbay/jetty/jetty-util/6.1.26/jetty-util-6.1.26.jar:/root/spark/common/network-common/target/spark-network-common_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.6.5/hadoop-mapreduce-client-core-2.6.5.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.6.7.1/jackson-databind-2.6.7.1.jar:/root/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/root/.m2/repository/net/sf/py4j/py4j/0.10.6/py4j-0.10.6.jar:/root/.m2/repository/com/esotericsoftware/kryo-shaded/3.0.3/kryo-shaded-3.0.3.jar:/root/.m2/repository/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar:/root/.m2/repository/org/glassfish/jersey/core/jersey-client/2.22.2/jersey-client-2.22.2.jar:/root/.m2/repository/io/netty/netty/3.9.9.Final/netty-3.9.9.Final.jar:/root/.m2/repository/org/apache/avro/avro-mapred/1.7.7/avro-mapred-1.7.7-hadoop2.jar:/root/spark/common/tags/target/spark-tags_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/xmlenc/xmlenc/0.52/xmlenc-0.52.jar:/root/.m2/repository/com/ning/compress-lzf/1.0.3/compress-lzf-1.0.3.jar:/root/.m2/repository/org/eclipse/jetty/jetty-webapp/9.3.20.v20170531/jetty-webapp-9.3.20.v20170531.jar:/root/.m2/repository/org/apache/directory/api/api-util/1.0.0-M20/api-util-1.0.0-M20.jar:/root/.m2/repository/commons-net/commons-net/2.2/commons-net-2.2.jar:/root/.m2/repository/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar:/root/.m2/repository/org/json4s/json4s-ast_2.11/3.2.11/json4s-ast_2.11-3.2.11.jar:/root/.m2/repository/org/apache/directory/api/api-asn1-api/1.0.0-M20/api-asn1-api-1.0.0-M20.jar:/root/.m2/repository/org/scala-lang/scalap/2.11.8/scalap-2.11.8.jar:/root/.m2/repository/com/clearspring/analytics/stream/2.7.0/stream-2.7.0.jar:/root/.m2/repository/org/eclipse/jetty/jetty-http/9.3.20.v20170531/jetty-http-9.3.20.v20170531.jar:/root/.m2/repository/org/apache/curator/curator-client/2.6.0/curator-client-2.6.0.jar:/root/.m2/repository/org/eclipse/jetty/jetty-security/9.3.20.v20170531/jetty-security-9.3.20.v20170531.jar:/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-common/2.6.5/hadoop-mapreduce-client-common-2.6.5.jar:/root/.m2/repository/commons-configuration/commons-configuration/1.6/commons-configuration-1.6.jar:/root/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.22.2/jersey-container-servlet-2.22.2.jar:/root/.m2/repository/commons-digester/commons-digester/1.8/commons-digester-1.8.jar:/root/.m2/repository/org/slf4j/jul-to-slf4j/1.7.16/jul-to-slf4j-1.7.16.jar:/root/.m2/repository/org/apache/hadoop/hadoop-mapreduce-client-jobclient/2.6.5/hadoop-mapreduce-client-jobclient-2.6.5.jar:/root/.m2/repository/org/eclipse/jetty/jetty-io/9.3.20.v20170531/jetty-io-9.3.20.v20170531.jar:/root/.m2/repository/org/apache/directory/server/apacheds-i18n/2.0.0-M15/apacheds-i18n-2.0.0-M15.jar:/root/.m2/repository/commons-beanutils/commons-beanutils/1.7.0/commons-beanutils-1.7.0.jar:/root/.m2/repository/org/htrace/htrace-core/3.0.4/htrace-core-3.0.4.jar:/root/.m2/repository/org/apache/hadoop/hadoop-client/2.6.5/hadoop-client-2.6.5.jar:/root/.m2/repository/org/eclipse/jetty/jetty-plus/9.3.20.v20170531/jetty-plus-9.3.20.v20170531.jar:/root/.m2/repository/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar:/root/.m2/repository/commons-cli/commons-cli/1.2/commons-cli-1.2.jar:/root/.m2/repository/xerces/xercesImpl/2.9.1/xercesImpl-2.9.1.jar:/root/.m2/repository/net/iharder/base64/2.3.8/base64-2.3.8.jar:/root/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar:/root/.m2/repository/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/root/.m2/repository/org/slf4j/slf4j-log4j12/1.7.16/slf4j-log4j12-1.7.16.jar:/root/.m2/repository/org/xerial/snappy/snappy-java/1.1.2.6/snappy-java-1.1.2.6.jar:/root/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.22.2/jersey-media-jaxb-2.22.2.jar:/root/.m2/repository/org/spark-project/spark/unused/1.0.0/unused-1.0.0.jar:/root/.m2/repository/net/java/dev/jets3t/jets3t/0.9.4/jets3t-0.9.4.jar:/root/.m2/repository/io/dropwizard/metrics/metrics-jvm/3.1.5/metrics-jvm-3.1.5.jar:/root/.m2/repository/org/apache/avro/avro-ipc/1.7.7/avro-ipc-1.7.7.jar:/root/.m2/repository/com/github/luben/zstd-jni/1.3.2-2/zstd-jni-1.3.2-2.jar:/root/.m2/repository/org/eclipse/jetty/jetty-jndi/9.3.20.v20170531/jetty-jndi-9.3.20.v20170531.jar:/root/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/root/spark/launcher/target/spark-launcher_2.11-2.3.1-SNAPSHOT.jar:/root/.m2/repository/org/glassfish/hk2/hk2-locator/2.4.0-b34/hk2-locator-2.4.0-b34.jar:/root/.m2/repository/org/apache/hadoop/hadoop-yarn-client/2.6.5/hadoop-yarn-client-2.6.5.jar:/root/.m2/repository/net/razorvine/pyrolite/4.13/pyrolite-4.13.jar:/root/.m2/repository/com/jamesmurty/utils/java-xmlbuilder/1.1/java-xmlbuilder-1.1.jar:/root/.m2/repository/org/eclipse/jetty/jetty-servlet/9.3.20.v20170531/jetty-servlet-9.3.20.v20170531.jar:/root/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.16/jcl-over-slf4j-1.7.16.jar:/root/.m2/repository/io/netty/netty-all/4.1.17.Final/netty-all-4.1.17.Final.jar:/root/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar
+[INFO]
+[INFO] --- maven-remote-resources-plugin:1.5:process (process-resource-bundles) @ spark-core_2.11 ---
+[INFO]
+[INFO] --- maven-antrun-plugin:1.8:run (default) @ spark-core_2.11 ---
+[INFO] Executing tasks
+
+main:
+[INFO] Executed tasks
+[INFO]
+[INFO] --- maven-resources-plugin:2.7:resources (default-resources) @ spark-core_2.11 ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 37 resources
+[INFO] Copying 1 resource
+[INFO] Copying 3 resources
+[INFO]
+[INFO] --- maven-compiler-plugin:3.7.0:compile (default-compile) @ spark-core_2.11 ---
+[INFO] Not compiling main sources
+[INFO]
+[INFO] --- scala-maven-plugin:3.2.2:compile (scala-compile-first) @ spark-core_2.11 ---
+[INFO] Using zinc server for incremental compilation
+[warn] Pruning sources from previous analysis, due to incompatible CompileSetup.
+[info] Compiling 487 Scala sources and 77 Java sources to /root/spark/core/target/scala-2.11/classes...
+[warn] Class java.util.function.Consumer not found - continuing with a stub.
+[warn] Class java.util.function.Consumer not found - continuing with a stub.
+[error] /root/spark/core/src/main/scala/org/apache/spark/status/AppStatusListener.scala:22: object function is not a member of package java.util
+[error] import java.util.function.Function
+[error]                  ^
+[error] /root/spark/core/src/main/scala/org/apache/spark/status/AppStatusListener.scala:793: value computeIfAbsent is not a member of java.util.concurrent.ConcurrentHashMap[(Int, Int),org.apache.spark.status.LiveStage]
+[error]     val stage = liveStages.computeIfAbsent((info.stageId, info.attemptNumber),
+[error]                            ^
+[error] /root/spark/core/src/main/scala/org/apache/spark/util/Utils.scala:1949: too many arguments for method waitFor: ()Int
+[error]     if (process.waitFor(timeoutMs, TimeUnit.MILLISECONDS)) {
+[error]                        ^
+[error] /root/spark/core/src/main/scala/org/apache/spark/util/Utils.scala:1954: value destroyForcibly is not a member of Process
+[error]         process.destroyForcibly()
+[error]                 ^
+[error] /root/spark/core/src/main/scala/org/apache/spark/util/Utils.scala:1959: too many arguments for method waitFor: ()Int
+[error]       if (process.waitFor(timeoutMs, TimeUnit.MILLISECONDS)) {
+[error]                          ^
+[error] /root/spark/core/src/main/scala/org/apache/spark/util/Utils.scala:1973: too many arguments for method waitFor: ()Int
+[error]     val terminated = process.waitFor(timeoutMs, TimeUnit.MILLISECONDS)
+[error]                                     ^
+[warn] two warnings found
+[error] 6 errors found
+[error] Compile failed at Mar 3, 2018 1:30:55 PM [13.200s]
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary:
+[INFO]
+[INFO] Spark Project Parent POM ........................... SUCCESS [  4.584 s]
+[INFO] Spark Project Tags ................................. SUCCESS [  2.765 s]
+[INFO] Spark Project Sketch ............................... SUCCESS [  2.497 s]
+[INFO] Spark Project Local DB ............................. SUCCESS [  3.260 s]
+[INFO] Spark Project Networking ........................... SUCCESS [  8.500 s]
+[INFO] Spark Project Shuffle Streaming Service ............ SUCCESS [  3.791 s]
+[INFO] Spark Project Unsafe ............................... SUCCESS [  5.544 s]
+[INFO] Spark Project Launcher ............................. SUCCESS [  6.967 s]
+[INFO] Spark Project Core ................................. FAILURE [ 19.120 s]
+[INFO] Spark Project ML Local Library ..................... SKIPPED
+[INFO] Spark Project GraphX ............................... SKIPPED
+[INFO] Spark Project Streaming ............................ SKIPPED
+[INFO] Spark Project Catalyst ............................. SKIPPED
+[INFO] Spark Project SQL .................................. SKIPPED
+[INFO] Spark Project ML Library ........................... SKIPPED
+[INFO] Spark Project Tools ................................ SKIPPED
+[INFO] Spark Project Hive ................................. SKIPPED
+[INFO] Spark Project REPL ................................. SKIPPED
+[INFO] Spark Project Assembly ............................. SKIPPED
+[INFO] Spark Integration for Kafka 0.10 ................... SKIPPED
+[INFO] Kafka 0.10 Source for Structured Streaming ......... SKIPPED
+[INFO] Spark Project Examples ............................. SKIPPED
+[INFO] Spark Integration for Kafka 0.10 Assembly .......... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 57.764 s
+[INFO] Finished at: 2018-03-03T13:30:55+00:00
+[INFO] Final Memory: 50M/422M
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal net.alchim31.maven:scala-maven-plugin:3.2.2:compile (scala-compile-first) on project spark-core_2.11: Execution scala-compile-first of goal net.alchim31.maven:scala-maven-plugin:3.2.2:compile failed. CompileFailed -> [Help 1]
+[ERROR]
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR]
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/PluginExecutionException
+[ERROR]
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <goals> -rf :spark-core_2.11
+[root@sparkonk8s-46929-p4jdl spark]#

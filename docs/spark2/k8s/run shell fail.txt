@@ -1,0 +1,407 @@
+  Authenticating with public key "imported-openssh-key"
+       ┌────────────────────────────────────────────────────────────────────┐
+       │                        • MobaXterm 10.5 •                          │
+       │            (SSH client, X-server and networking tools)             │
+       │                                                                    │
+       │ ➤ SSH session to root@49.4.69.6                                    │
+       │   • SSH compression : ✔                                            │
+       │   • SSH-browser     : ✔                                            │
+       │   • X11-forwarding  : ✘  (disabled or not supported by server)     │
+       │   • DISPLAY         : 10.229.32.110:0.0                            │
+       │                                                                    │
+       │ ➤ For more info, ctrl+click on help or visit our website           │
+       └────────────────────────────────────────────────────────────────────┘
+
+
+  Authorized users only. All activities may be monitored and reported.
+  Last login: Thu Mar  8 01:47:10 2018 from 119.145.15.121
+    ######################################################################
+    #                              Notice                                #
+    #                                                                    #
+    #  1. Please DO NOT upgrade the kernel, as the kernel upgrade would  #
+    #   damage the original operating system.                            #
+    #                                                                    #
+    #  2. Please create unique passwords that use a combination of words,#
+    #   numbers, symbols, and both upper-case and lower-case letters.    #
+    #   Avoid using simple adjacent keyboard combinations such as        #
+    #   "Qwert!234","Qaz2wsx",etc.                                       #
+    #                                                                    #
+    #  3. Unless necessary, please DO NOT open or use high-risk ports,   #
+    #   such as Telnet-23, FTP-20/21, NTP-123(UDP), RDP-3389,            #
+    #   SSH/SFTP-22, Mysql-3306, SQL-1433,etc.                           #
+    #                                                                    #
+    #                                                                    #
+    #                     Any questions please contact 4000-955-988      #
+    ######################################################################
+  [root@sparkonk8s-46929-p4jdl ~]# cd k8s/
+  [root@sparkonk8s-46929-p4jdl k8s]# ls
+  backup  build201803061753.txt  count.py  k8s.sh  kubeconfig  namespace  nginxv4.yaml  nginxv5.yaml  nginxv6.yaml  nginx.yaml  run.sh
+  [root@sparkonk8s-46929-p4jdl k8s]# ./k8s.sh
+  2018-03-08 01:53:36 WARN  Utils:66 - Your hostname, sparkonk8s-46929-p4jdl.novalocal resolves to a loopback address: 127.0.0.1; using 192.168.0.202 instead (on interface eth0)
+  2018-03-08 01:53:36 WARN  Utils:66 - Set SPARK_LOCAL_IP if you need to bind to another address
+  2018-03-08 01:53:37 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: N/A
+           start time: N/A
+           container images: N/A
+           phase: Pending
+           status: []
+  2018-03-08 01:53:37 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: N/A
+           container images: N/A
+           phase: Pending
+           status: []
+  2018-03-08 01:53:37 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=null, reason=ContainerCreating, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:53:37 INFO  Client:54 - Waiting for application spark-pi to finish...
+  2018-03-08 01:53:54 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:54:06 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:54:35 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:54:50 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:55:16 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:55:28 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:56:22 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:56:35 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:58:07 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 01:58:18 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:01:05 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:01:19 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:06:25 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:06:38 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:11:57 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:12:11 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:17:20 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:17:32 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+
+
+  2018-03-08 02:22:37 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:22:49 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+
+
+
+
+
+  2018-03-08 02:27:56 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:28:10 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:33:17 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=rpc error: code = 2 desc = Error response from daemon: Get https://registry-1.docker.io/v2/: net/http: request canceled while waiting for connection (Client.Timeout exceeded while awaiting headers), reason=ErrImagePull, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+  2018-03-08 02:33:30 INFO  LoggingPodStatusWatcherImpl:54 - State changed, new state:
+           pod name: spark-pi-1520474015614-driver
+           namespace: default
+           labels: spark-app-selector -> spark-31451ac1dbf64dd4b1f153242f0cb4b9, spark-role -> driver
+           pod uid: 847e8ef6-2273-11e8-89bc-fa163e44a675
+           creation time: 2018-03-08T01:53:37Z
+           service account name: default
+           volumes: spark-local-dir-0-spark-4d69bfac-01c6-495b-8c67-d7ee2a62d4e6, default-token-8blbc
+           node name: 192.168.0.120
+           start time: 2018-03-08T01:53:37Z
+           container images: kubespark/spark-driver:v2.2.0-kubernetes-0.5.0
+           phase: Pending
+           status: [ContainerStatus(containerID=null, image=kubespark/spark-driver:v2.2.0-kubernetes-0.5.0, imageID=, lastState=ContainerState(running=null, terminated=null, waiting=null, additionalProperties={}), name=spark-kubernetes-driver, ready=false, restartCount=0, state=ContainerState(running=null, terminated=null, waiting=ContainerStateWaiting(message=Back-off pulling image "kubespark/spark-driver:v2.2.0-kubernetes-0.5.0", reason=ImagePullBackOff, additionalProperties={}), additionalProperties={}), additionalProperties={})]
+
+
+
+
+  ^C^XYou have new mail in /var/spool/mail/root
+  [root@sparkonk8s-46929-p4jdl k8s]#
+    
