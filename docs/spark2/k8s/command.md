@@ -107,4 +107,3 @@ ssh -i KeyPair-spark.pem root@192.168.0.29
 docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
 docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f registry.cn-north-1.huaweicloud.com
 
-/var/log/containers
