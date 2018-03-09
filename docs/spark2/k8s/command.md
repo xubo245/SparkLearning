@@ -16,6 +16,10 @@
 
 	docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
 
+	docker login -u cn-north-1@EIPY1FBBA1XQA6B3RXAN -p b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad 100.125.0.198:20202
+
+docker login -u cn-north1@EIPY1FBBA1XQA6B3RXAN -p b613679a0814d9ec772f95d778c35fc5ff1697c493715653c6c712144292c5ad registry.cn-north-1.huaweicloud.com
+
 
 docker pull 100.125.0.198:20202/kernel/spark-driver:v2.2.0-kubernetes-0.5.0
 docker pull 100.125.0.198:20202/kernel/spark-init:v2.2.0-kubernetes-0.5.0
@@ -46,6 +50,61 @@ kubectl delete pod spark-pi-1520486246550-driver
 kubectl delete pod spark-pi-1520489582310-driver  
 kubectl delete pod sparkgetty2-4050180351-7f7r7 
 
+kubectl delete pod spark-pi-1520494858880-driver
+kubectl delete pod spark-pi-1520499954336-exec-1
+kubectl delete pod spark-pi-1520500197755-driver
+kubectl delete pod spark-pi-1520500418061-driver
+kubectl delete pod spark-pi-1520500435940-driver
+kubectl delete pod spark-pi-1520500508067-exec-1
+kubectl delete pod spark-pi-1520499954336-driver
+kubectl delete pod spark-pi-1520500508067-driver
+kubectl delete pod spark-pi-1520500330604-driver 
+kubectl delete pod spark-pi-1520500663662-driver
+
+
+spark-pi-1520494858880-driver   0/1       ImagePullBackOff   0          1h
+spark-pi-1520499954336-driver   1/1       Running            0          16m
+spark-pi-1520499954336-exec-1   0/1       ImagePullBackOff   0          16m
+spark-pi-1520500197755-driver   0/1       ImagePullBackOff   0          12m
+spark-pi-1520500330604-driver   0/1       ImagePullBackOff   0          10m
+spark-pi-1520500418061-driver   0/1       ImagePullBackOff   0          8m
+spark-pi-1520500435940-driver   0/1       ImagePullBackOff   0          8m
+spark-pi-1520500508067-driver   1/1       Running            0          7m
+spark-pi-1520500508067-exec-1   0/1       ImagePullBackOff   0          7m
+spark-pi-1520500663662-driver   0/1       Pending            0          4m
+[root@sparkonk8s-46929-p4jdl ~]#
+spark-pi-1520500330604-driver   0/1       ImagePullBackOff   0          12m
+spark-pi-1520500663662-driver   0/1       ImagePullBackOff   0          6m
 
 
 
+
+
+
+
+
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f registry.cn-north-1.huaweicloud.com
+
+
+ssh -i KeyPair-spark.pem root@192.168.0.124
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f registry.cn-north-1.huaweicloud.com
+
+
+ssh -i KeyPair-spark.pem root@192.168.0.120
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f registry.cn-north-1.huaweicloud.com
+
+ssh -i KeyPair-spark.pem root@192.168.0.174
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f registry.cn-north-1.huaweicloud.com
+
+ssh -i KeyPair-spark.pem root@192.168.0.29
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f 100.125.0.198:20202
+docker login -u cn-north-1@dKSqRGedkhBmKC5TwHbz -p df8123a66be96528dde2fcf9b783de13f48a87b9cee8b325bfb63bfad301831f registry.cn-north-1.huaweicloud.com
+
+/var/log/containers
