@@ -1,0 +1,33 @@
+
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999991.0 in stage 0.0 (TID 999991) in 3 ms on 172.31.4.38 (executor 2) (999992/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.401152959Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Starting task 999994.0 in stage 0.0 (TID 999994, 172.31.2.19, executor 1, partition 999994, PROCESS_LOCAL, 4844 bytes)\n","stream":"stdout","time":"2018-03-09T09:12:00.401685461Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Starting task 999995.0 in stage 0.0 (TID 999995, 172.31.2.19, executor 1, partition 999995, PROCESS_LOCAL, 4844 bytes)\n","stream":"stdout","time":"2018-03-09T09:12:00.406767734Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999992.0 in stage 0.0 (TID 999992) in 8 ms on 172.31.2.19 (executor 1) (999993/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.406821858Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999994.0 in stage 0.0 (TID 999994) in 5 ms on 172.31.2.19 (executor 1) (999994/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.406826451Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Starting task 999996.0 in stage 0.0 (TID 999996, 172.31.2.19, executor 1, partition 999996, PROCESS_LOCAL, 4844 bytes)\n","stream":"stdout","time":"2018-03-09T09:12:00.40796961Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999995.0 in stage 0.0 (TID 999995) in 4 ms on 172.31.2.19 (executor 1) (999995/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.408024808Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Starting task 999997.0 in stage 0.0 (TID 999997, 172.31.4.38, executor 2, partition 999997, PROCESS_LOCAL, 4844 bytes)\n","stream":"stdout","time":"2018-03-09T09:12:00.410988606Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999993.0 in stage 0.0 (TID 999993) in 8 ms on 172.31.4.38 (executor 2) (999996/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.411077869Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Starting task 999998.0 in stage 0.0 (TID 999998, 172.31.2.19, executor 1, partition 999998, PROCESS_LOCAL, 4844 bytes)\n","stream":"stdout","time":"2018-03-09T09:12:00.411084272Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999996.0 in stage 0.0 (TID 999996) in 2 ms on 172.31.2.19 (executor 1) (999997/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.411087741Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Starting task 999999.0 in stage 0.0 (TID 999999, 172.31.4.38, executor 2, partition 999999, PROCESS_LOCAL, 4844 bytes)\n","stream":"stdout","time":"2018-03-09T09:12:00.414382898Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999997.0 in stage 0.0 (TID 999997) in 3 ms on 172.31.4.38 (executor 2) (999998/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.414442732Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999998.0 in stage 0.0 (TID 999998) in 2 ms on 172.31.2.19 (executor 1) (999999/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.414449922Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSetManager:54 - Finished task 999999.0 in stage 0.0 (TID 999999) in 41 ms on 172.31.4.38 (executor 2) (1000000/1000000)\n","stream":"stdout","time":"2018-03-09T09:12:00.454289062Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesTaskSchedulerImpl:54 - Removed TaskSet 0.0, whose tasks have all completed, from pool \n","stream":"stdout","time":"2018-03-09T09:12:00.454932316Z"}
+  {"log":"2018-03-09 09:12:00 INFO  DAGScheduler:54 - ResultStage 0 (reduce at SparkPi.scala:38) finished in 1351.206 s\n","stream":"stdout","time":"2018-03-09T09:12:00.45898024Z"}
+  {"log":"2018-03-09 09:12:00 INFO  DAGScheduler:54 - Job 0 finished: reduce at SparkPi.scala:38, took 1356.331421 s\n","stream":"stdout","time":"2018-03-09T09:12:00.464534632Z"}
+  {"log":"Pi is roughly 3.1415680173240306\n","stream":"stdout","time":"2018-03-09T09:12:00.47336843Z"}
+  {"log":"2018-03-09 09:12:00 INFO  AbstractConnector:310 - Stopped Spark@636c5e00{HTTP/1.1,[http/1.1]}{0.0.0.0:4040}\n","stream":"stdout","time":"2018-03-09T09:12:00.486818751Z"}
+  {"log":"2018-03-09 09:12:00 INFO  SparkUI:54 - Stopped Spark web UI at http://spark-pi-1520585320304-driver-svc.default.svc.cluster.local:4040\n","stream":"stdout","time":"2018-03-09T09:12:00.489668217Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesClusterSchedulerBackend:54 - Shutting down all executors\n","stream":"stdout","time":"2018-03-09T09:12:00.50070387Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesClusterSchedulerBackend$KubernetesDriverEndpoint:54 - Asking each executor to shut down\n","stream":"stdout","time":"2018-03-09T09:12:00.501328952Z"}
+  {"log":"2018-03-09 09:12:00 INFO  KubernetesClusterSchedulerBackend:54 - Closing kubernetes client\n","stream":"stdout","time":"2018-03-09T09:12:00.604154187Z"}
+  {"log":"2018-03-09 09:12:00 INFO  MapOutputTrackerMasterEndpoint:54 - MapOutputTrackerMasterEndpoint stopped!\n","stream":"stdout","time":"2018-03-09T09:12:00.625365624Z"}
+  {"log":"2018-03-09 09:12:00 INFO  MemoryStore:54 - MemoryStore cleared\n","stream":"stdout","time":"2018-03-09T09:12:00.637169862Z"}
+  {"log":"2018-03-09 09:12:00 INFO  BlockManager:54 - BlockManager stopped\n","stream":"stdout","time":"2018-03-09T09:12:00.637618043Z"}
+  {"log":"2018-03-09 09:12:00 INFO  BlockManagerMaster:54 - BlockManagerMaster stopped\n","stream":"stdout","time":"2018-03-09T09:12:00.638292949Z"}
+  {"log":"2018-03-09 09:12:00 INFO  OutputCommitCoordinator$OutputCommitCoordinatorEndpoint:54 - OutputCommitCoordinator stopped!\n","stream":"stdout","time":"2018-03-09T09:12:00.641726563Z"}
+  {"log":"2018-03-09 09:12:00 INFO  SparkContext:54 - Successfully stopped SparkContext\n","stream":"stdout","time":"2018-03-09T09:12:00.645982614Z"}
+  {"log":"2018-03-09 09:12:00 INFO  ShutdownHookManager:54 - Shutdown hook called\n","stream":"stdout","time":"2018-03-09T09:12:00.651729519Z"}
+  {"log":"2018-03-09 09:12:00 INFO  ShutdownHookManager:54 - Deleting directory /mnt/tmp/spark-local/spark-409245e3-d3b0-44f5-9c37-91e7cdda1f1b/spark-3005a2d0-0a60-43b8-bc85-3235fcb39420\n","stream":"stdout","time":"2018-03-09T09:12:00.653550143Z"}
