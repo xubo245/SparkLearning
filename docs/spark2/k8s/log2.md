@@ -1,1 +1,0 @@
-{"log":"2018-03-09 02:23:14 INFO  SparkUI:54 - Bound SparkUI to 0.0.0.0, and started at http://spark-pi-1520562186626-driver-svc.default.svc.cluster.local:4040\n","stream":"stdout","time":"2018-03-09T02:23:14.561730208Z"}

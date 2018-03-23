@@ -1,6 +1,0 @@
-
-cd kubernetes
-mvn clean -DskipTests package
-
-
-root@ecs-2e7e:~/xubo/spark# ./dev/make-distribution.sh --name custom-spark --pip --r --tgz  -Phadoop-2.7 -Pkubernetes

@@ -1,1 +1,0 @@
-docker pull 100.125.0.198:20202/kernel/spark-driver:v2.2.0-kubernetes-0.5.0
